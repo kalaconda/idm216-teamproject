@@ -1,0 +1,71 @@
+/* INFORMATION */
+
+body {
+    background-color: #ecf0f3;
+}
+#bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.info-box {
+    text-align: center;
+    margin: 4em auto;
+}
+#title {
+    background-color: aliceblue;
+}
+#anna {
+    background-color: blue;
+}
+#dolma {
+    background-color: green;
+}
+#reid {
+    background-color: pink;
+}
+#victoria {
+    background-color: yellow;
+    transition: all ease-in-out 1s;
+}
+/* IMAGES */
+.image-button {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+.image button div {
+    width: 15%;
+}
+.button {
+    margin: 0 1em 0;
+    transform: rotate(45deg);
+}
+.button img {
+    width: 150px;
+    box-shadow:
+    -8px -4px 8px 0px #ffffff,
+    8px 4px 12px 0px #d1d9e6,
+    4px 4px 4px 0px #d1d9e6 inset,
+    -4px -4px 4px 0px #ffffff inset;
+}
+
+/* HOVER ANIMATION */
+.image-button:hover > div {
+    opacity: 0.5;
+    transition: all ease 0.5s;
+  }
+.image-button:hover > div:hover {
+    opacity: 1.0;
+    transform: scale(1.1) rotate(45deg);
+    transition: all ease 0.5s;
+}
+
+/* TEXT ANIM CSS */
+/* #anna {
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+#anna.fade {
+    opacity: 1;
+} */
