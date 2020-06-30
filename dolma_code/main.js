@@ -27,10 +27,12 @@ function description (member) {
     box = member;
     box.hidden = false;
 }
-annabtn.addEventListener('click', function() {description(anna)});
-dolmabtn.addEventListener('click', function() {description(dolma)});
-reidbtn.addEventListener('click', function() {description(reid)});
-victoriabtn.addEventListener('click', function() {description(victoria)});
-leannebtn.addEventListener('click', function() {description(leanne)});
-mikaylabtn.addEventListener('click', function() {description(mikayla)});
-bg.addEventListener('click', function() {description(title)});
+annabtn.addEventListener('mouseover', function() {description(anna)});
+dolmabtn.addEventListener('mouseover', function() {description(dolma)});
+reidbtn.addEventListener('mouseover', function() {description(reid)});
+victoriabtn.addEventListener('mouseover', function() {description(victoria)});
+leannebtn.addEventListener('mouseover', function() {description(leanne)});
+mikaylabtn.addEventListener('mouseover', function() {description(mikayla)});
+bg.addEventListener('mouseover', function() {description(title)});
+
+
