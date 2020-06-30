@@ -3,7 +3,9 @@
     margin: 0;
 }
 body {
-    background-color: white;
+    background-image: url("images/bg.svg");
+    background-size: cover;
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: bebas-neue-pro, sans-serif;
@@ -30,6 +32,8 @@ body {
 }
 #anna {
     background: linear-gradient(323.42deg, #FBAD38 -7.21%, #FFFB92 107.69%);
+    /* display: hidden;
+    transition: ; */
 }
 #dolma {
     background: linear-gradient(152.07deg, #F7D379 -3.22%, #EF7676 122.22%);
@@ -64,8 +68,8 @@ body {
 #header{
     font-size: 2.5em;
     letter-spacing: 2px;
-    margin-bottom: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
     color: white;
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.637);
 }
@@ -73,15 +77,21 @@ body {
     font-size: 1.3em;
     letter-spacing: 3px;
     font-weight: bold;
-    color: rgb(24, 14, 43);
+    color: rgb(44, 41, 105);
+}
+#email {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(44, 41, 105);
 }
 #sub-header {
     font-family: 'Poppins', sans-serif;
     font-size: 0.8em;
-}
-.space {
     margin-top: 10px;
+    color: rgb(44, 41, 105);
 }
+
 
 
 
@@ -160,15 +170,46 @@ body {
 
 @media (max-width: 62.5em) {
 
-.grid {
-    margin-top: 9em;
-    margin-bottom: 5em;
-    grid-template-areas: 
-    "victoria anna . ."
-    "leanne titlebox titlebox ."
-    ". titlebox titlebox dolma"
-    ". . mikayla reid";
+    body {
+        background-image: url("images/bg_ipad.svg");  
     }
+    .grid {
+        margin-top: 9em;
+        margin-bottom: 5em;
+        grid-template-areas: 
+        "victoria anna . ."
+        "leanne titlebox titlebox ."
+        ". titlebox titlebox dolma"
+        ". . mikayla reid";
+        }
+    #header{
+        font-size: 2em;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        margin-bottom: 7px;
+        color: white;
+        text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.637);
+    }
+    #role {
+        font-size: 1.1em;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: rgb(44, 41, 105);
+    }
+    #email {
+        font-size: 1.1em;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: rgb(44, 41, 105);
+    }
+    #sub-header {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.7em;
+        margin-top: 10px;
+        color: rgb(44, 41, 105);
+    }    
+
+    
 }
 
 @media (max-width: 37.5em) {
