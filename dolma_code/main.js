@@ -33,6 +33,6 @@ reidbtn.addEventListener('click', function() {description(reid)});
 victoriabtn.addEventListener('click', function() {description(victoria)});
 leannebtn.addEventListener('click', function() {description(leanne)});
 mikaylabtn.addEventListener('click', function() {description(mikayla)});
-bg.addEventListener('mouseover', function() {description(title)});
+bg.addEventListener('click', function() {description(title)});
 
 

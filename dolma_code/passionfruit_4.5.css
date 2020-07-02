@@ -62,8 +62,6 @@ a:hover:after {
 }
 #anna {
     background: linear-gradient(323.42deg, #FBAD38 -7.21%, #FFFB92 107.69%);
-    /* display: hidden;
-    transition: ; */
 }
 #dolma {
     background: linear-gradient(152.07deg, #F7D379 -3.22%, #EF7676 122.22%);
@@ -121,9 +119,6 @@ a:hover:after {
     margin-top: 10px;
     color: rgb(44, 41, 105);
 }
-
-
-
 
 
 .image button div {
@@ -243,7 +238,6 @@ a:hover:after {
         color: rgb(44, 41, 105);
     }    
 
-    
 }
 
 @media (max-width: 37.5em) {

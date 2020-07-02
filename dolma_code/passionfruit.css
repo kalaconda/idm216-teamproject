@@ -1,0 +1,293 @@
+/* INFORMATION */
+*{
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("images/bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    cursor: pointer;
+}
+
+/* email links */
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(44, 41, 105);
+    position: relative;
+}
+
+/* underline expands on link hover */
+a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px rgb(44, 41, 105);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+a:hover:after { 
+    transform: scaleX(1); 
+}
+
+.info-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Passionfruit Tile Gradients */
+#title {
+    background:linear-gradient(135deg, #E6679D -4.96%, #FAB057 113.54%);
+}
+#title img{
+    width: 60%;
+}
+#anna {
+    background: linear-gradient(323.42deg, #FBAD38 -7.21%, #FFFB92 107.69%);
+}
+#dolma {
+    background: linear-gradient(152.07deg, #F7D379 -3.22%, #EF7676 122.22%);
+}
+#reid {
+    background: linear-gradient(323.15deg, #839EFF -3.09%, #CFB9FF 100.73%);
+}
+#victoria {
+    background: linear-gradient(327.1deg, #47DBEF -7.36%, #AEFF92 112.14%);
+}
+#leanne {
+    background: linear-gradient(143.36deg, #FFA2B2 5.97%, #D16FFF 106.34%);
+}
+#mikayla {
+    background: linear-gradient(326.08deg, #6FE75B -6.01%, #F7FF9C 102.71%);
+}
+
+.info {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.info div{
+    width: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: none;
+}
+#header{
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.637);
+}
+#role {
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: rgb(44, 41, 105);
+}
+#email {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(44, 41, 105);
+}
+#sub-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: rgb(44, 41, 105);
+}
+
+.image button div {
+    width: 15%;
+}
+
+.button img {
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* HOVER ANIMATION */
+.grid:hover > .button img {
+    opacity: 0.5;
+    transition: all ease 0.5s;
+  }
+.grid:hover > .button img:hover {
+    opacity: 1.0;
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+
+/* ----- GRID ------ */
+/* named boxes */
+.info-box {
+    grid-area: titlebox;
+}
+#anna-btn {
+    grid-area: anna;
+}
+#dolma-btn {
+    grid-area: dolma;
+}
+#reid-btn {
+    grid-area: reid;
+}
+#victoria-btn {
+    grid-area: victoria;
+}
+#leanne-btn {
+    grid-area: leanne;
+}
+#mikayla-btn {
+    grid-area: mikayla;
+}
+
+
+.grid {
+    margin: 0 auto;
+    transform: rotate(45deg);
+    width: 50%;
+    width: 700px;
+    height: 700px;
+    grid-gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    ". . mikayla reid"
+    ". titlebox titlebox dolma"
+    "victoria titlebox titlebox ."
+    "anna leanne . .";
+}
+
+@media (max-width: 62.5em) {
+
+    #title {
+        font-size: 6vw;
+    }
+    #title img{
+        width: 60%;
+    }
+    body {
+        background-image: url("images/bg_ipad.svg");  
+    }
+    .grid {
+        margin: 12em auto 5em;
+        width: 80vw;
+        height: 80vw;
+        grid-template-areas: 
+        "victoria anna . ."
+        "leanne titlebox titlebox ."
+        ". titlebox titlebox dolma"
+        ". . mikayla reid";
+        }
+    #header{
+        font-size: 2em;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        margin-bottom: 7px;
+        color: white;
+        text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.637);
+    }
+    #role {
+        font-size: 1.1em;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: rgb(44, 41, 105);
+    }
+    #email {
+        font-size: 1.1em;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: rgb(44, 41, 105);
+    }
+    #sub-header {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.7em;
+        margin-top: 10px;
+        color: rgb(44, 41, 105);
+    }    
+
+}
+
+@media (max-width: 37.5em) {
+    body{
+        background-image: url("images/bg_iphone.svg");  
+    }
+
+    #header{
+        font-size: 4vw;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        margin-bottom: 7px;
+        color: white;
+        text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.637);
+    }
+    #role {
+        font-size: 3vw;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: rgb(44, 41, 105);
+    }
+    #email {
+        font-size: 3vw;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: rgb(44, 41, 105);
+    }
+    #sub-header {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vw;
+        margin-top: 10px;
+        color: rgb(44, 41, 105);
+    }
+
+    #title {
+        font-size: 5vw;
+    }
+    #title img{
+        width: 45%;
+    }
+    #header {
+        margin-top: -10px;
+    }
+
+    .grid {
+        width: 100vw;
+        min-width: 450px;
+        height: 100vw;
+        margin: 12em auto 3em;
+    }
+    
+}
+
+
+
