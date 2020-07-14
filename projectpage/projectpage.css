@@ -1,0 +1,170 @@
+@font-face{
+    font-family: font;
+    src: url(../ubuntu-font-family-0.83/Ubuntu-L.ttf) format('ttf');
+}
+
+*{
+    font-family: font;
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: auto;
+}
+main, #hero{
+    border-right: .25px solid var(--teal);
+    border-left: .25px solid var(--teal);
+}
+:root{
+    /* Can add custom colors here: **/
+
+    --teal: #256d69; 
+}
+img{
+    display: block;
+    margin: center;
+    max-height: 500px;
+}
+#head{
+    background-color: var(--gray);
+}
+h1{
+    font-size: 2.9rem;
+    padding: 2rem 0;
+}
+h2{
+    font-size: 1.5rem;
+    padding: 1.5rem 0 1.25rem;
+}
+.hero{
+    max-height: 250px;
+    text-align: center;
+    display: inline;
+}
+#hero{
+    display: block;
+    margin: center;
+    text-align: center;
+}
+p{
+    font-size: 1.3rem;
+    line-height: 150%;
+    padding: 0 0 1.5rem;
+}
+.h{
+    font-size: 1.5rem;
+    padding: 1.5rem 0 1.25rem;
+}
+h8{
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem auto;
+}
+a{
+    color: var(--teal);
+}
+#styletile{
+    margin: 1.5rem auto;
+    border-bottom: .15px dotted var(--teal);
+}
+.wf{
+    max-height: 300px;
+    display: inline;
+    text-align: center;
+}
+.wf:last-child{
+    max-width: 70%;
+}
+#wf{
+    text-align: center;
+    margin: 0 auto;
+}
+div{
+    box-sizing: content-box;
+    max-width: 110%;
+    padding: 2rem 0;
+}
+
+
+
+@media screen and (min-width: 1354px){
+*{
+    max-width: 80%;
+}
+body{
+    max-width: 953px;
+}
+.wf{
+    max-height: 200px;
+}
+}
+@media screen and (max-width: 1354px){
+    .hero{
+        max-height: 200px;
+    }
+    *{
+        max-width: 85%;
+    }
+}
+@media screen and (max-width: 1135px){
+    .hero{
+        max-height: 200px;
+    }
+    *{
+        max-width: 85%;
+    }
+}
+@media screen and (max-width: 1005px){
+    *{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 896px){
+    .hero{
+        max-height: 175px;
+    }
+    *{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 647px){
+    .hero{
+        max-height: 175px;
+    }
+    *{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 617px){
+    #hero{
+        width: 100%;
+    }
+    main{
+        max-width: 90%;
+    }
+    .hero{
+        max-height: 150px;
+    }
+}
+@media screen and (max-width: 530px){
+    .hero{
+        max-height: 125px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2, .h{
+        font-size: 1.35rem;
+    }
+}
+@media screen and (max-width: 444px){
+    #sc1{
+        display: none;
+    }
+}
+@media screen and (max-width: 352px){
+    .hero{
+        max-height: 125px;
+    }
+    #sc2{
+        display: none;
+    }
+}
