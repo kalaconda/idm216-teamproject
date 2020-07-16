@@ -46,18 +46,3 @@ Thumbs.db
 *.ogv
 *.webm
 
-# Custom #
-######################
-*.jpg
-*.png
-*.gif
-/assignments
-/examples/07-data_types/make
-graphics
-inbox
-instructor_materials/workshop-instructor_notes.md
-instructor_materials/WORKSHOP.md
-node_modules
-presentations/images
-tests/answer_key
-z-archive
