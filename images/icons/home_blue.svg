@@ -3,41 +3,45 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 477 359.2" style="enable-background:new 0 0 477 359.2;" xml:space="preserve">
 <style type="text/css">
-	.st0{stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st1{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
-	.st2{clip-path:url(#SVGID_2_);}
-	.st3{clip-path:url(#SVGID_4_);fill:#FFFFFF;}
-	.st4{clip-path:url(#SVGID_6_);}
-	.st5{clip-path:url(#SVGID_8_);fill:#FFFFFF;}
-	.st6{clip-path:url(#SVGID_10_);fill:#FFFFFF;}
-	.st7{clip-path:url(#SVGID_10_);}
-	.st8{clip-path:url(#SVGID_12_);fill:#FFFFFF;}
-	.st9{clip-path:url(#SVGID_14_);}
-	.st10{clip-path:url(#SVGID_16_);fill:#FFFFFF;}
-	.st11{fill:none;stroke:#FFFFFF;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st12{fill:#FFFFFF;}
-	.st13{fill:none;stroke:#FFFFFF;stroke-width:18;stroke-linecap:round;stroke-miterlimit:10;}
-	.st14{fill:none;stroke:#FFFFFF;stroke-width:27;stroke-miterlimit:10;}
-	.st15{fill:none;stroke:#FFFFFF;stroke-width:25;stroke-linecap:round;stroke-miterlimit:10;}
-	.st16{fill:none;stroke:#FFFFFF;stroke-width:21;stroke-linecap:round;stroke-miterlimit:10;}
-	.st17{fill:none;stroke:#FFFFFF;stroke-width:21;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st18{fill:none;stroke:#00ADE5;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st19{fill:#00ADE5;}
-	.st20{fill:none;}
-	.st21{font-family:'Ubuntu';}
-	.st22{font-size:90px;}
-	.st23{fill:none;stroke:#00ADE5;stroke-width:18;stroke-linecap:round;stroke-miterlimit:10;}
-	.st24{fill:none;stroke:#00ADE5;stroke-width:27;stroke-miterlimit:10;}
-	.st25{fill:none;stroke:#00ADE5;stroke-width:25;stroke-linecap:round;stroke-miterlimit:10;}
-	.st26{fill:none;stroke:#00ADE5;stroke-width:21;stroke-linecap:round;stroke-miterlimit:10;}
-	.st27{fill:none;stroke:#00ADE5;stroke-width:21;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:18;stroke-linecap:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:27;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:25;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#FFFFFF;stroke-width:21;stroke-linecap:round;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#FFFFFF;stroke-width:21;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#00ADE5;stroke-width:19;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st8{fill:#00ADE5;}
+	.st9{fill:none;stroke:#00ADE5;stroke-width:18;stroke-linecap:round;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#00ADE5;stroke-width:27;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#00ADE5;stroke-width:25;stroke-linecap:round;stroke-miterlimit:10;}
+	.st12{fill:none;stroke:#00ADE5;stroke-width:21;stroke-linecap:round;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#00ADE5;stroke-width:21;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g>
-	<g>
-		<polyline class="st18" points="129.3,111.5 240,9.5 347.7,108.7 		"/>
-		<polygon class="st19" points="157,110.2 239.6,34.1 320,108.2 320,235.2 157,235.2 		"/>
-	</g>
-	<rect x="112.9" y="272.3" class="st20" width="251.1" height="78.5"/>
-	<text transform="matrix(1 0 0 1 112.932 342.1544)" class="st19 st21 st22">Home</text>
+	<polyline class="st7" points="129.3,111.5 240,9.5 347.7,108.7 	"/>
+	<polygon class="st8" points="157,110.2 239.6,34.1 320,108.2 320,235.2 157,235.2 	"/>
+</g>
+<g>
+	<path class="st8" d="M159.9,279.8h8.7v62.4h-8.7v-28.8h-30.5v28.8h-8.7v-62.4h8.7v26h30.5V279.8z"/>
+	<path class="st8" d="M224.9,318.8c0,3.7-0.5,7.1-1.6,10.1c-1.1,3-2.6,5.6-4.5,7.7c-2,2.2-4.3,3.8-7,5c-2.7,1.2-5.6,1.8-8.8,1.8
+		c-3.2,0-6.1-0.6-8.8-1.8s-5-2.8-7-5c-2-2.2-3.5-4.7-4.5-7.7c-1.1-3-1.6-6.4-1.6-10.1c0-3.7,0.5-7,1.6-10c1.1-3,2.6-5.6,4.5-7.8
+		c1.9-2.2,4.3-3.8,7-5s5.6-1.8,8.8-1.8c3.2,0,6.1,0.6,8.8,1.8c2.7,1.2,5,2.8,7,5c1.9,2.2,3.5,4.8,4.5,7.8
+		C224.4,311.8,224.9,315.1,224.9,318.8z M216.2,318.8c0-5.3-1.2-9.5-3.6-12.6c-2.4-3.1-5.6-4.6-9.7-4.6c-4.1,0-7.3,1.5-9.7,4.6
+		c-2.4,3.1-3.6,7.3-3.6,12.6c0,5.3,1.2,9.5,3.6,12.6c2.4,3.1,5.6,4.6,9.7,4.6c4.1,0,7.3-1.5,9.7-4.6
+		C215,328.2,216.2,324,216.2,318.8z"/>
+	<path class="st8" d="M236.7,296.7c1.9-0.5,4.5-1,7.6-1.5c3.1-0.5,6.8-0.8,10.9-0.8c3,0,5.5,0.4,7.6,1.2c2,0.8,3.7,2,5.1,3.6
+		c0.4-0.3,1.1-0.7,2-1.3c0.9-0.5,2-1.1,3.3-1.6c1.3-0.5,2.8-1,4.4-1.4c1.6-0.4,3.4-0.6,5.2-0.6c3.6,0,6.5,0.5,8.8,1.6
+		c2.3,1.1,4.1,2.5,5.4,4.5c1.3,1.9,2.2,4.2,2.6,6.8c0.5,2.6,0.7,5.5,0.7,8.6v26.3h-8.4v-24.5c0-2.8-0.1-5.1-0.4-7.1s-0.8-3.6-1.5-5
+		c-0.8-1.3-1.8-2.3-3.1-2.9c-1.3-0.6-3-0.9-5-0.9c-2.8,0-5.1,0.4-7,1.1c-1.8,0.8-3.1,1.4-3.7,2c0.5,1.6,0.8,3.3,1.1,5.1
+		c0.2,1.9,0.4,3.8,0.4,5.9v26.3h-8.4v-24.5c0-2.8-0.2-5.1-0.5-7.1c-0.3-2-0.8-3.6-1.6-5c-0.8-1.3-1.8-2.3-3.1-2.9
+		c-1.3-0.6-2.9-0.9-4.9-0.9c-0.8,0-1.7,0-2.7,0.1c-1,0.1-1.9,0.1-2.7,0.2c-0.9,0.1-1.7,0.2-2.4,0.3c-0.7,0.1-1.2,0.2-1.4,0.3v39.5
+		h-8.4V296.7z"/>
+	<path class="st8" d="M311.6,318.8c0-4.1,0.6-7.8,1.8-10.8c1.2-3.1,2.8-5.7,4.8-7.7c2-2,4.3-3.6,6.8-4.6c2.6-1,5.2-1.5,7.9-1.5
+		c6.3,0,11.1,2,14.5,5.9c3.4,3.9,5,9.9,5,18c0,0.4,0,0.8,0,1.4c0,0.6,0,1.1-0.1,1.6h-32c0.4,4.9,1.8,8.5,4.2,11.1
+		c2.5,2.5,6.3,3.8,11.5,3.8c2.9,0,5.4-0.3,7.4-0.8c2-0.5,3.5-1,4.5-1.5l1.2,7c-1,0.5-2.8,1.1-5.4,1.7c-2.6,0.6-5.4,0.9-8.7,0.9
+		c-4.1,0-7.6-0.6-10.6-1.8c-3-1.2-5.4-2.9-7.3-5.1c-1.9-2.2-3.3-4.7-4.3-7.7C312,325.6,311.6,322.4,311.6,318.8z M343.7,314.3
+		c0.1-3.8-0.9-6.9-2.8-9.3c-2-2.4-4.6-3.6-8.1-3.6c-1.9,0-3.6,0.4-5.1,1.1c-1.5,0.8-2.7,1.7-3.7,2.9c-1,1.2-1.8,2.6-2.4,4.1
+		c-0.6,1.6-0.9,3.1-1.1,4.8H343.7z"/>
 </g>
 </svg>
