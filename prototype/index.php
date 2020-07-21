@@ -1,3 +1,7 @@
+<?php
+    require 'config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +25,7 @@
         <li><a href="#">Prime</a></li>
     </ul>
     <!-- featured content -->
-    <br>
+    <br></br>
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
