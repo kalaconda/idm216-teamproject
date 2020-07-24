@@ -322,3 +322,27 @@ h4 {
     float: right;
     padding: .25rem 0;
 }
+
+/* Add Name Page **/
+
+#add_name{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 28%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+h7{
+    color: var(--orange);
+    font-size: 1.25rem;
+}
+
+#name_input{
+    font-size: 1.15rem;
+    border-radius: 7px;
+    border: none;
+    padding: .5rem;
+    margin: 1rem 0;
+}
