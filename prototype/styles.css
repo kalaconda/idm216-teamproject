@@ -26,6 +26,10 @@ body {
     --gray: #555555;
 }
 
+a{
+    text-decoration: none;
+}
+
 .logo {
     display: flex;
     background-color: #111826;
@@ -289,7 +293,7 @@ h4 {
 
 /* Genre Ranking Page **/
 
-.rankings{
+.rankings, #options{
     margin: 0;
     position: absolute;
     left: 50%;
@@ -340,6 +344,16 @@ h7{
 }
 
 #name_input{
+    font-size: 1.15rem;
+    border-radius: 7px;
+    border: none;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+/* Choose/Add Profile Page **/
+
+#add_profile{
     font-size: 1.15rem;
     border-radius: 7px;
     border: none;
