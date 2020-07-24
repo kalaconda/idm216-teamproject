@@ -10,8 +10,20 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #253340;
+    background-color: var(--darkblue);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    /* There are 2 light blues that are essentially the same ? **/
+    --lightblue: rgb(0, 129, 172);
+    --lightblue2: #00ACE3;
+    
+    --bluegray: #456488;
+    --darkblue: #253340;
+    --superdarkblue: #111826;
+    --orange: #FF9A00;
+    --gray: #555555;
 }
 
 .logo {
@@ -273,4 +285,34 @@ h4 {
 .rating input:checked ~ label:after
 {
     opacity: 1;
+}
+
+/* Genre Ranking Page **/
+
+.rankings{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.rank_no{
+    display: block;
+    color: var(--orange);
+    width: 250px;
+    font-size: 1.5rem;
+}
+
+.rank_buttons{
+    background-color: var(--bluegray);
+    border: none;
+    margin: .25rem 0 0 .5rem;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    color: white;
+    border-radius: 7px;
+    text-align: left;
+    width: 210px;
 }
