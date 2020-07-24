@@ -293,7 +293,7 @@ h4 {
 
 /* Genre Ranking Page **/
 
-.rankings, #options{
+.rankings{
     margin: 0;
     position: absolute;
     left: 50%;
@@ -329,11 +329,11 @@ h4 {
 
 /* Add Name Page **/
 
-#add_name{
+#add_name, #options{
     margin: 0;
     position: absolute;
     left: 50%;
-    top: 28%;
+    top: 40%;
     transform: translate(-50%, -50%);
     z-index: -1;
 }
@@ -355,8 +355,28 @@ h7{
 
 #add_profile{
     font-size: 1.15rem;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid var(--lightblue);
+    padding: .5rem;
+    margin: 1rem 0;
+    background-color: var(--darkblue);
+    width: 230px;
+
+}
+
+.profile_button, .child_button{
+    font-size: 1rem;
+    color: white;
     border-radius: 7px;
     border: none;
     padding: .5rem;
     margin: 1rem 0;
+    background-color: var(--lightblue);
+    width: 230px;
+    height: 50px;
+}
+
+.child_button{
+    background-color: var(--orange);
 }
