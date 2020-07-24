@@ -26,6 +26,7 @@
 *.log
 *.sql
 *.sqlite
+*config.php
 
 # OS generated files #
 ######################
@@ -45,4 +46,3 @@ Thumbs.db
 *.ogg
 *.ogv
 *.webm
-

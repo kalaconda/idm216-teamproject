@@ -10,8 +10,24 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #253340;
+    background-color: var(--darkblue);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    /* There are 2 light blues that are essentially the same ? 
+     --lightblue2: rgb(0, 129, 172); **/
+    --lightblue: #00ACE3;
+    
+    --bluegray: #456488;
+    --darkblue: #253340;
+    --superdarkblue: #111826;
+    --orange: #FF9A00;
+    --gray: #555555;
+}
+
+a{
+    text-decoration: none;
 }
 
 .logo {
@@ -273,4 +289,94 @@ h4 {
 .rating input:checked ~ label:after
 {
     opacity: 1;
+}
+
+/* Genre Ranking Page **/
+
+.rankings{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.rank_no{
+    display: block;
+    color: var(--orange);
+    width: 250px;
+    font-size: 1.5rem;
+}
+
+.rank_buttons{
+    background-color: var(--bluegray);
+    border: none;
+    margin: .25rem 0 0 .5rem;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    color: white;
+    border-radius: 7px;
+    text-align: left;
+    width: 210px;
+}
+
+.hamburger{
+    max-width: 1rem;
+    float: right;
+    padding: .25rem 0;
+}
+
+/* Add Name Page **/
+
+#add_name, #options{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+h7{
+    color: var(--orange);
+    font-size: 1.25rem;
+}
+
+#name_input{
+    font-size: 1.15rem;
+    border-radius: 7px;
+    border: none;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+/* Choose/Add Profile Page **/
+
+#add_profile{
+    font-size: 1.15rem;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid var(--lightblue);
+    padding: .5rem;
+    margin: 1rem 0;
+    background-color: var(--darkblue);
+    width: 230px;
+
+}
+
+.profile_button, .child_button{
+    font-size: 1rem;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    padding: .5rem;
+    margin: 1rem 0;
+    background-color: var(--lightblue);
+    width: 230px;
+    height: 50px;
+}
+
+.child_button{
+    background-color: var(--orange);
 }
