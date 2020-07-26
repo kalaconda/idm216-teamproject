@@ -36,7 +36,9 @@ img{
 }
 h1{
     font-size: 2.9rem;
-    padding: 2rem 0;
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
 }
 h2{
     font-size: 1.5rem;
@@ -61,6 +63,7 @@ p{
     font-size: 1.5rem;
     padding: 1.5rem 0 1.25rem;
 }
+
 h8{
     display: block;
     margin: 1rem auto;
@@ -215,6 +218,9 @@ img.hover-shadow {
 .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+#fiximg{
+    margin: 2rem auto;
+}
 
 @media screen and (min-width: 1354px){
 *{
@@ -234,7 +240,6 @@ body{
 }
 
 }
-
 @media screen and (max-width: 1354px){
     .hero{
         max-height: 200px;
