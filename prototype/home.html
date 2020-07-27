@@ -20,6 +20,18 @@
         <li><a href="#">TV</a></li>
         <li><a href="#">Prime</a></li>
     </ul>
+    <!-- script for nav active page links -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script type="application/javascript">
+        $(document).ready(function(){
+            $('ul li a').click(function(){
+                $('li a').removeClass("active");
+                $(this).addClass("active");
+            })
+        });
+    </script>
+
     <!-- featured content -->
     <br>
     <!-- Swiper -->
@@ -44,8 +56,11 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
+
+    
     <h3>Continue Watching</h3>
         
+    
     <!-- bottom navigation -->
     <div class="navbar">
         <a href="index.html"><img src="images/icons/home.svg" class="svg"></a>
@@ -61,7 +76,7 @@
     <script>
         var swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
-        spaceBetween: 40,
+        spaceBetween: 30,
         centeredSlides: true,
         grabCursor: true,
         loop: true,
