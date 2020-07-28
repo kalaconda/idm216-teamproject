@@ -167,16 +167,17 @@ h4 {
     margin: 0.5em 0;
     font-size: 0.9em;
     color: #575757;
+    align-items: center;
 }
-.genre img{
-    width: 7px;
-    margin: 0 1em;
+.fa {
+    font-size: 6px;
+    margin-left: 1em;
 }
 .stars {
     display: flex;
     align-content: center;
     font-size: 1.2em;
-    color: orange;
+    color: var(--orange);
     font-weight: bold;
 }
 .stars img {
@@ -192,6 +193,7 @@ h4 {
 }
 .modal_button {
     text-align: center;
+    color: var(--lightblue);
 }
 .modal_button p{
     padding: 0.8em 0;
