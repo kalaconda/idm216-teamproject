@@ -11,6 +11,7 @@
     <script src="https://use.fontawesome.com/20cbea2300.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
 <body>
     <div class="logo">
@@ -93,8 +94,36 @@
     </div>
 
     <!-- categories -->
+
     <div class="item">
         <h3 class="categorytt">Continue Watching</h3>
+        <div class="thumbnail poster_tn">
+            <div>
+                <img src="images/paprika_poster.jpg" alt="astarisborn">
+                <div class="season_episode">
+                    <hr id="s_e_1">
+                    <p>S1: E4</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/thevastofnight_poster.jpg" alt="forevermygirl">
+                <div class="season_episode">
+                    <hr id="s_e_2">
+                    <p>S3: E6</p>
+                </div>
+            </div>
+            <div>            
+                <img src="images/astarisborn_poster.jpg" alt="crazystupidlove">
+                <div class="season_episode">
+                    <hr id="s_e_3">
+                    <p>S1: E1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <h3 class="categorytt">Anime</h3>
         <div class="thumbnail">
             <img id="long_click" src="images/thumbnail_notallofthem/blackbutler.jpg" alt="blackbutler">
             <img src="images/thumbnail_notallofthem/paprika.jpg" alt="paprika">
