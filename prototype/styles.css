@@ -5,6 +5,7 @@
 
 html {
     overflow-x: hidden;
+    
 }
 
 body {
@@ -14,6 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 1600px;
     font-family: var(--bodyfont);
+    height: 1300px;
 }
 
 :root{
@@ -117,11 +119,17 @@ h4 {
     padding-bottom: 8px;
 }
 
+h5{
+    color: var(--orange);
+    font-size: 1.25rem;
+    font-family: var(--lightfont);
+}
+
 /* featured content */
 .swiper-container {
     height: 360px;
     width: 100%;
-    margin: 0;
+    margin: auto 0;
 }
 
 .swiper-wrapper {
@@ -136,7 +144,7 @@ h4 {
 }
 
 .swiper-slide img {
-    width: 200px;
+    width: 205px;
     height: 250px;
     border-radius: 7px;
     margin-left: 55px;
@@ -311,16 +319,16 @@ h4 {
 /* Bottom Navigation */
 .navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
+    justify-content: space-around;
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #111826;
     overflow: hidden;
-    position: fixed;
     bottom: 0;
     width: 100%;
+    height: auto;
+    position: fixed;  
+    z-index: 1;
 }
 
 .navbar a {
@@ -412,7 +420,8 @@ h4 {
     padding: 0.6em;             
     padding-left: 1em; 
     padding-right: 1em;
-    font-size: 1.4em; 
+    font-size: 1.4em;
+    font-family: var(--bodyfont);
     height: 18px; 
     background-color: #376191;
     color: #FFFFFF;
@@ -451,7 +460,7 @@ h2.num {
 
 /* Add Name Page **/
 
-#add_name, #options{
+#add_name {
     margin: 0;
     position: absolute;
     left: 50%;
@@ -460,17 +469,22 @@ h2.num {
     z-index: -1;
 }
 
-h7{
-    color: var(--orange);
-    font-size: 1.25rem;
+#options {
+    margin:  0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
+
 
 #name_input{
     font-size: 1.15rem;
     border-radius: 7px;
     border: none;
     padding: .5rem;
-    margin: 1rem 0;
+    margin: 0;
 }
 
 /* Choose/Add Profile Page **/
