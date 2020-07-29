@@ -12,7 +12,7 @@ body {
     padding: 0;
     background-color: var(--darkblue);
     font-family: Arial, Helvetica, sans-serif;
-    height: 1400px;
+    height: 1600px;
     font-family: var(--bodyfont);
 }
 
@@ -170,6 +170,32 @@ h4 {
     width: 180px;
     margin: 0 0.5em;
 }
+/* Continue Watching */
+.poster_tn img {
+    width: 120px;
+}
+.season_episode {
+    margin: -3px 0.5em;
+    color: white;
+    background-color: black;
+    padding-bottom: 0.2em;
+}
+.season_episode p {
+    padding: 0.4em
+}
+.season_episode hr {
+    border: 3px solid var(--lightblue);
+    padding: 0;
+}
+#s_e_1 {
+    width: 50%;
+}
+#s_e_2 {
+    width: 20%;
+}
+#s_e_3 {
+    width: 70%;
+}
 
 /* actors */
 .thumbnail2 {
@@ -180,7 +206,8 @@ h4 {
 }
 
 .thumbnail2 img{
-    width: 130px;
+    width: 100px;
+    height: 100px;
     margin: 0 .7em;
     border-radius: 50%;
 }
@@ -193,7 +220,9 @@ h4 {
 }
 
 .inlineflex p {
+    text-align: center;
     color: white;
+    font-size: 0.8em;
     font-family: var(--lightfont);
     padding-top: 10px;
 }
