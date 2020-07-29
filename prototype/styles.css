@@ -12,19 +12,48 @@ body {
     padding: 0;
     background-color: var(--darkblue);
     font-family: Arial, Helvetica, sans-serif;
+    height: 1600px;
+    font-family: var(--bodyfont);
 }
 
 :root{
     /* There are 2 light blues that are essentially the same ? 
      --lightblue2: rgb(0, 129, 172); **/
     --lightblue: #00ACE3;
-    
     --bluegray: #456488;
     --darkblue: #253340;
     --superdarkblue: #111826;
     --orange: #FF9A00;
     --gray: #555555;
+    /*fonts*/
+    --bodyfont: 'ubuntu-r';
+    --boldfont: 'ubuntu-bold';
+    --lightfont: 'ubuntu-l';
 }
+
+@font-face {
+    font-family: 'ubuntu-l';
+    src: url('font/light/ubuntu-l.woff2') format('woff2'),
+         url('font/light/ubuntu-l.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'ubuntu-bold';
+    src: url('font/ubuntu/ubuntu-b.woff2') format('woff2'),
+         url('font/ubuntu/ubuntu-b.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'ubuntu-r';
+    src: url('font/ubuntu/ubuntu-r.woff2') format('woff2'),
+         url('font/ubuntu/ubuntu-r.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 a{
     text-decoration: none;
@@ -45,7 +74,7 @@ a{
 
 /* Top Navigation */
 ul {
-    background-color: #111826;
+    background-color: #111826; 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -59,7 +88,7 @@ ul {
 
 li {
     display: inline-block;
-    padding: 5px 10px 5px 10px;
+    padding: 5px;
 }
 
 li a {
@@ -67,7 +96,7 @@ li a {
     color: white;
 }
 
-li a:hover {
+.active {
     padding-bottom: 3px;
     border-bottom: 2px solid #FF9A00;
 }
@@ -75,7 +104,12 @@ li a:hover {
 h3 {
     color: white;
     font-size: 16px;
-    padding: 35px;
+}
+
+/* Category Titles */
+h3.categorytt {
+    padding-left: 35px;
+    padding-bottom: 15px;
 }
 
 h4 {
@@ -87,6 +121,7 @@ h4 {
 .swiper-container {
     height: 360px;
     width: 100%;
+    margin: 0;
 }
 
 .swiper-wrapper {
@@ -94,9 +129,10 @@ h4 {
 }
 
 .swiper-slide {
-    width: 200px;
+    width: 100px;
     height: 250px;
     border-radius: 7px;
+
 }
 
 .swiper-slide img {
@@ -112,6 +148,165 @@ h4 {
     transform: scale(1.2);
     transition: .4s;
 }
+
+
+/* Film/Shows Content */
+
+/* container for h3 and category horizontal scroll */
+.item {
+    margin-top: 20px;
+    padding: 10px;
+    height: auto;
+}
+
+.thumbnail {
+    display: flex;
+    overflow-y: scroll;
+    width: 100%;
+    margin-left: 27px;
+}
+
+.thumbnail img{
+    width: 180px;
+    margin: 0 0.5em;
+}
+/* Continue Watching */
+.poster_tn img {
+    width: 120px;
+}
+.season_episode {
+    margin: -3px 0.5em;
+    color: white;
+    background-color: black;
+    padding-bottom: 0.2em;
+}
+.season_episode p {
+    padding: 0.4em
+}
+.season_episode hr {
+    border: 3px solid var(--lightblue);
+    padding: 0;
+}
+#s_e_1 {
+    width: 50%;
+}
+#s_e_2 {
+    width: 20%;
+}
+#s_e_3 {
+    width: 70%;
+}
+
+/* actors */
+.thumbnail2 {
+    display: flex;
+    overflow-y: scroll;
+    width: 100%;
+    margin-left: 27px;
+}
+
+.thumbnail2 img{
+    width: 100px;
+    height: 100px;
+    margin: 0 .7em;
+    border-radius: 50%;
+}
+
+.inlineflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inlineflex p {
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    font-family: var(--lightfont);
+    padding-top: 10px;
+}
+
+      /* DESCRIPTION MODAL BOX */
+.modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fontAwesome;
+}
+.modal_contents {
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.808);
+    width: 85%;
+}
+#main_img img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.322);
+}
+.media_content {
+    padding: 1.2em;
+    font-family: var(--bodyfont);
+}
+#title {
+    font-size: 1.5em;
+    margin-top: -0.3em;
+    font-family: var(--boldfont);
+}
+
+.genre {
+    display: flex;
+    margin: 0.5em 0;
+    font-size: 0.9em;
+    color: #575757;
+    align-items: center;
+}
+.fa {
+    font-size: 6px;
+    margin-left: 1em;
+}
+.stars {
+    display: flex;
+    align-content: center;
+    font-size: 1.2em;
+    color: var(--orange);
+    font-weight: bold;
+}
+.stars img {
+    width:100px;
+    margin-top: -3px;
+    margin-left: 0.5em;
+}
+.description {
+    margin: 1em 0 0em;
+}
+.description p{
+    line-height: 1.3em;
+}
+.modal_button {
+    text-align: center;
+    color: var(--lightblue);
+}
+.modal_button p{
+    padding: 0.8em 0;
+    border-top: 1px solid #2D4C70;
+    font-family: var(--bodyfont);
+}
+#long_click {
+    cursor: pointer;
+}
+.modal--hidden{
+    display: none;
+}
+
 
 /* Bottom Navigation */
 .navbar {
@@ -196,136 +391,63 @@ h4 {
     align-items: center;
 }
 
-/* pop up menu (edit pic microinteraction) */
+/* genre rank */
+.center {
+    margin: 45px;
+}
 
-/* Popup container */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+#sortable { 
+    background-color: #253340;
+    list-style-type: none;
+    margin: 0; 
+    width: 220px; 
+    cursor: grab;
   }
   
-  /* The actual popup */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 230px;
-    height: auto;
-    background-color: #101624;
-    color: #FF9A00;
-    text-align: center;
-    border-radius: 6px;
-    padding: 15px;
-    position: absolute;
-    z-index: 1;
-    bottom: -420px;
-  }
-  
-
-  
-  /* Toggle this class - hide and show the popup */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn .2s;
-    animation: fadeIn .2s;
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
-
-/* star rating */
-.rating {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateY(180deg);
+#sortable li { 
     display: flex;
-}
-
-.rating input {
-    display: none;
-}
-
-.rating label {
-    display: block;
-    cursor: pointer;
-    width: 50px;
-}
-
-.rating label:before {
-    content: '\f005';
-    font-family: fontAwesome;
-    position: relative;
-    display: block;
-    font-size: 50px;
-    color: #555555;
-}
-
-.rating label:after {
-    content: '\f005';
-    font-family: fontAwesome;
-    position: absolute;
-    display: block;
-    font-size: 50px;
-    color: #FF9A00;
-    top: 0;
-    opacity: 0;
-    transition: .5s;
-    text-shadow: 0 2px 5px rgba(0,0,0,.5);
-}
-.rating label:hover:after,
-.rating label:hover ~ label:after,
-.rating input:checked ~ label:after
-{
-    opacity: 1;
-}
-
-/* Genre Ranking Page **/
-
-.rankings{
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-.rank_no{
-    display: block;
-    color: var(--orange);
-    width: 250px;
-    font-size: 1.5rem;
-}
-
-.rank_buttons{
-    background-color: var(--bluegray);
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3px 12px 3px; 
+    padding: 0.6em;             
+    padding-left: 1em; 
+    padding-right: 1em;
+    font-size: 1.4em; 
+    height: 18px; 
+    background-color: #376191;
+    color: #FFFFFF;
     border: none;
-    margin: .25rem 0 0 .5rem;
-    padding: .5rem 1rem;
-    font-size: 1.25rem;
-    color: white;
-    border-radius: 7px;
-    text-align: left;
-    width: 210px;
-}
-
-.hamburger{
-    max-width: 1rem;
-    float: right;
-    padding: .25rem 0;
-}
+    border-radius: 8px;
+    width: 220px;
+  }
+  
+#sortable li span { 
+    position: absolute; 
+    margin-left: -1.3em; 
+  }
+  
+.rankings {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+i {
+    color: #00ACE3;
+  }
+  
+h2.num {
+    color: #FF9A00;
+    padding-bottom: 28px;
+  }
+  
+.numbers {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
 
 /* Add Name Page **/
 
@@ -353,30 +475,37 @@ h7{
 
 /* Choose/Add Profile Page **/
 
-#add_profile{
+.profile_btn, .child_btn{
+    border-radius: 7px;
+    border: none;
+    padding: .5rem;
+    margin: 3rem auto;
+    background-color: var(--lightblue);
+    width: 230px;
+    text-align: center;
+}
+
+.add_btn{
     font-size: 1.15rem;
     color: white;
     border-radius: 7px;
     border: 1px solid var(--lightblue);
     padding: .5rem;
-    margin: 1rem 0;
+    margin: 3rem auto;
     background-color: var(--darkblue);
     width: 230px;
-
+    text-align: center;
 }
 
-.profile_button, .child_button{
-    font-size: 1rem;
-    color: white;
-    border-radius: 7px;
-    border: none;
-    padding: .5rem;
-    margin: 1rem 0;
-    background-color: var(--lightblue);
-    width: 230px;
-    height: 50px;
+.profile_btn, .child_btn{
+    font-size: 1.15rem;
+    color: white; 
 }
 
-.child_button{
+.child_btn{
     background-color: var(--orange);
+}
+
+a:visited{
+    color: white;
 }

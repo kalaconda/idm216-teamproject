@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Prime Video</title>
+    <script src="https://use.fontawesome.com/20cbea2300.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
 <body>
     <div class="logo">
@@ -20,6 +22,18 @@
         <li><a href="#">TV</a></li>
         <li><a href="#">Prime</a></li>
     </ul>
+    <!-- script for nav active page links -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script type="application/javascript">
+        $(document).ready(function(){
+            $('ul li a').click(function(){
+                $('li a').removeClass("active");
+                $(this).addClass("active");
+            })
+        });
+    </script>
+
     <!-- featured content -->
     <br>
     <!-- Swiper -->
@@ -44,8 +58,114 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
-    <h3>Continue Watching</h3>
+
+    <!-- DESCRIPTION MODAL BOX -->
+    <div class="modal modal--hidden">
+        <div class="modal_contents">
+            <div id="main_img">
+                <img src="images/thumbnail_notallofthem/blackbutler.jpg" alt="blackbutler">
+            </div>
+
+            <div class="media_content">
+                <p id="title">Black Butler - Book of the Atlantic</p>
+                <div class="genre">
+                    <p>Anime</p>
+                    <i class="fa fa-circle fa-lg" aria-hidden="true"></i>
+                </div>
+
+                <div class="stars">
+                    <p>4.5</p>
+                    <img src="images/icons/4.5stars.svg" alt="">
+                </div>
+
+                <div class="description">
+                    <p id="description">All aboard to the next great adventure for Ciel and his demonic butler, Sebastian! After hearing rumors of a peculiar society bringing people back from the dead, the two board the luxury liner Campania on her maiden voyage to investigate.</p>
+                </div>
+            </div>
+
+            <div class="modal_button">
+                <p>Not Interested</p>
+                <p>Add to "My Stuff"</p>
+            </div>
+        </div>  
+    </div>
+
+    <!-- categories -->
+
+    <div class="item">
+        <h3 class="categorytt">Continue Watching</h3>
+        <div class="thumbnail poster_tn">
+            <div>
+                <img src="images/paprika_poster.jpg" alt="astarisborn">
+                <div class="season_episode">
+                    <hr id="s_e_1">
+                    <p>S1: E4</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/thevastofnight_poster.jpg" alt="forevermygirl">
+                <div class="season_episode">
+                    <hr id="s_e_2">
+                    <p>S3: E6</p>
+                </div>
+            </div>
+            <div>            
+                <img src="images/astarisborn_poster.jpg" alt="crazystupidlove">
+                <div class="season_episode">
+                    <hr id="s_e_3">
+                    <p>S1: E1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <h3 class="categorytt">Anime</h3>
+        <div class="thumbnail">
+            <img id="long_click" src="images/thumbnail_notallofthem/blackbutler.jpg" alt="blackbutler">
+            <img src="images/thumbnail_notallofthem/paprika.jpg" alt="paprika">
+            <img src="images/thumbnail_notallofthem/persona3themovie.jpg" alt="persona3themovie">
+        </div>
+    </div>
+
+    <div class="item">
+        <h3 class="categorytt">Romance</h3>
+        <div class="thumbnail">
+            <img src="images/thumbnail_notallofthem/astarisborn.jpg" alt="astarisborn">
+            <img src="images/thumbnail_notallofthem/forevermygirl.jpg" alt="forevermygirl">
+            <img src="images/thumbnail_notallofthem/crazystupidlove.jpg" alt="crazystupidlove">
+        </div>
+    </div>
+
+    <div class="item">
+        <h3 class="categorytt">Action</h3>
+        <div class="thumbnail">
+            <img src="images/thumbnail_notallofthem/21bridges.jpg" alt="21bridges">
+            <img src="images/thumbnail_notallofthem/endersgame.jpg" alt="endersgame">
+            <img src="images/thumbnail_notallofthem/tomclancysjackryan.jpg" alt="tomclancysjackryan">
+        </div>
+    </div>
+
+    <!-- actors -->
+    <div class="item">
+        <h3 class="categorytt">Actors/Actresses</h3>
+        <div class="thumbnail2">
+            <div class="inlineflex">
+                <img src="images/actors/annehathaway.jpg" alt="annehathaway">
+                <p> Anne Hathaway </p>
+            </div>
+            <div class="inlineflex">
+                <img src="images/actors/chadwickboseman.jpg" alt="chadwickboseman">
+                <p> Chadwick Boseman </p>
+            </div>
+            <div class="inlineflex">
+                <img src="images/actors/bradleycooper.jpg" alt="bradleycooper">
+                <p> Bradley Cooper</p>
+            </div>
+        </div>
+    </div>
         
+    
     <!-- bottom navigation -->
     <div class="navbar">
         <a href="index.html"><img src="images/icons/home.svg" class="svg"></a>
@@ -61,7 +181,7 @@
     <script>
         var swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
-        spaceBetween: 40,
+        spaceBetween: 30,
         centeredSlides: true,
         grabCursor: true,
         loop: true,
@@ -71,5 +191,6 @@
         },
         });
     </script>
+     <script src="main.js"></script>
 </body>
 </html>

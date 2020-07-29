@@ -11,11 +11,21 @@
 <body>
     <div class="logo">
             <img src="images/prime_logo.svg" class="logoimg">
-            <h4>Choose Profile</h4>
+            <h4>Profile Name</h4>
+    </div>
+    <div id="add_name">
+        <h7>Name</h7> <br>
+        <input type="text" placeholder="enter your name" id="name_input">
     </div>
 
-    <div id="options">
-    <a href="addname.html"> <button id="add_profile">Add New Profile  +</button> </a> 
+    <!-- bottom navigation -->
+    <div class="skipanddone">
+        <div class="skip">
+            <a href="index.php"><h3>BACK</h3> </a>
+        </div>
+        <div class="done">
+            <a href="genrerank.php"><h3>NEXT</h3></a>
+        </div>
     </div>
 
 </body>
