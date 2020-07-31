@@ -18,3 +18,13 @@
 <h3><b> Anna Leong </b></h3>
 <p>Primary Role: Data Architect</p>
 <p>Secondary Role: UI Designer</p>
+<br></br>
+<hr></hr>
+<h1>Pulling latest code from Master Repo:</h1>
+<p> 1) Make sure you are on the master/origin branch</p>
+<p> 2) Click pull and you should get prompted with something like this:</p>
+
+![kdlakf](https://user-images.githubusercontent.com/55995794/89057765-36d26000-d32c-11ea-88f4-807e3d782215.jpg)
+
+<p> 3) Check <b>Commit merged changes immediately</b> and click <b>OK</b></p> 
+<p> 4) Compare your files in your local folder to the last updated or changed files in the master repo to confirm that you pulled the latest code </p>
