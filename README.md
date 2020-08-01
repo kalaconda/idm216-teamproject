@@ -28,3 +28,14 @@
 
 <p> 3) Check <b>Commit merged changes immediately</b> and click <b>OK</b></p> 
 <p> 4) Compare your files in your local folder to the last updated or changed files in the master repo to confirm that you pulled the latest code </p>
+<h1>Pushing code:</h1>
+<p> 1) After pulling the latest changes from the master repo to your local folder, commit your changes: </p>
+
+<img width="837" alt="uncommitted_git" src="https://user-images.githubusercontent.com/55995794/89105629-af9af000-d3f0-11ea-8e6c-5402cb948013.png">
+
+<p> The files you have made changes to will show up in your <b> Unstaged files </b>. Move the files to <b> Staged files </b>, write a commit message, and click <b>Commit</b>.</p>
+<p> 2) Once you've commited your changes, click <b>Push</b>
+  
+![kdjwkaf](https://user-images.githubusercontent.com/55995794/89105738-d6a5f180-d3f1-11ea-9bd2-731a551563df.png)
+
+<p> 3) You'll get a message asking where you want to push. If you're working on a branch like in the example above, you'd checkmark the branch you're working on and click <b>Push</b>, but since you're probably making your changes on master, make sure you checkmark where it says origin/master before clicking <b>Push</b>.</p>
