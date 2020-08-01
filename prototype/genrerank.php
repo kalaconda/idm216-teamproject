@@ -48,7 +48,7 @@
                 <li>Fantasy<i class="fa fa-bars" aria-hidden="true"></i></li>
                 <li>Sci-Fi<i class="fa fa-bars" aria-hidden="true"></i></li>
                 <li>Documentary<i class="fa fa-bars" aria-hidden="true"></i></li>
-                <li>Animated<i class="fa fa-bars" aria-hidden="true"></i></li>
+                <li>Anime<i class="fa fa-bars" aria-hidden="true"></i></li>
             </ul>
         </div>
     </div>
