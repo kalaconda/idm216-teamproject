@@ -5,6 +5,7 @@
 
 html {
     overflow-x: hidden;
+    
 }
 
 body {
@@ -124,11 +125,42 @@ h5{
     font-family: var(--lightfont);
 }
 
+/* featured content */
+.swiper-container {
+    height: 360px;
+    width: 100%;
+    margin: auto 0;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-slide {
+    width: 100px;
+    height: 250px;
+    border-radius: 7px;
+
+}
+
+.swiper-slide img {
+    width: 205px;
+    height: 250px;
+    border-radius: 7px;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 50px;
+}
+
+.swiper-slide-active {
+    transform: scale(1.2);
+    transition: .4s;
+}
 
 
-/* Film/Shows Content 
+/* Film/Shows Content */
 
-Container for h3 and category horizontal scroll */
+/* container for h3 and category horizontal scroll */
 .item {
     margin-top: 20px;
     padding: 10px;
@@ -346,15 +378,6 @@ Container for h3 and category horizontal scroll */
     width: 100%;
     height: auto;
     letter-spacing: 5px;
-    cursor: pointer;
-}
-
-.skip:hover {
-    text-shadow: 2px 2px 5px black;
-}
-
-.done:hover {
-    text-shadow: 2px 2px 5px black;
 }
 
 .skip {
@@ -447,16 +470,12 @@ h2.num {
 }
 
 #options {
-    color: white;
     margin:  0;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
-}
-#options a {
-    color: white;
 }
 
 
@@ -469,14 +488,6 @@ h2.num {
 }
 
 /* Choose/Add Profile Page **/
-
-#options {
-    cursor: pointer;
-}
-
-.profile_btn:hover, .child_btn:hover, .add_btn:hover  {
-    text-shadow: 2px 2px 5px black;
-}
 
 .profile_btn, .child_btn{
     border-radius: 7px;
@@ -509,30 +520,6 @@ h2.num {
     background-color: var(--orange);
 }
 
-/* static version of featured content */
-.poster {
-    width: 70vw;
-    height: 90vw;
-    border-radius: 7px;
-}
-
-.poster-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-} 
-
-.pag {
-    flex-direction: row;
-}
-
-#dark {
-    color: #111826;
-}
-
-/* links */
 a:link {
     text-decoration: none;
     color: white;
