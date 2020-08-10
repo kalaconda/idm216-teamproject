@@ -175,7 +175,7 @@
         <a href="#"><img src="images/icons/store.svg" class="svg"></a>
         <a href="#"><img src="images/icons/search.svg" class="svg"></a>
         <a href="#"><img src="images/icons/downloads.svg" class="svg"></a>
-        <a href="#"><img src="images/icons/mystuff.svg" class="svg"></a>
+        <a href="#"><img src="images/icons/myprofile.svg" class="svg"></a>
     </div>
 
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
