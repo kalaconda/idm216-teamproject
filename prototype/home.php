@@ -1,5 +1,5 @@
 <?php
-    // require 'config.php';
+    //require 'config.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Prime Video</title>
     <script src="https://use.fontawesome.com/20cbea2300.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -38,16 +39,30 @@
 
     <!-- featured content -->
     <br>
-    <div class="poster-container">
-        <img class="poster" src="images/thevastofnight_poster.jpg" alt="Movie Poster for Paprika">
-        <div class="pag">
-            <i class="fa fa-circle" aria-hidden="true"></i>
-            <i class="fa fa-circle" aria-hidden="true" id="dark"></i>
-            <i class="fa fa-circle" aria-hidden="true" id="dark"></i>
-            <i class="fa fa-circle" aria-hidden="true" id="dark"></i>
-            <i class="fa fa-circle" aria-hidden="true" id="dark"></i>
+    <!-- Swiper -->
+    <div class="main">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/thevastofnight_poster.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/paprika_poster.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/astarisborn_poster.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/aceofhearts_poster.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/trailofufos_poster.jpg">
+            </div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
     </div>
+    
     
     <!-- DESCRIPTION MODAL BOX -->
     <div class="modal modal--hidden">
@@ -81,12 +96,11 @@
     </div>
 
     <!-- categories -->
-
     <div class="item">
         <h3 class="categorytt">Continue Watching</h3>
         <div class="thumbnail poster_tn">
             <div>
-                <img src="images/paprika_poster.jpg" alt="astarisborn">
+                <img src="images/paprika_poster.jpg" alt="paprika">
                 <div class="season_episode">
                     <hr id="s_e_1">
                     <p>S1: E4</p>
@@ -157,13 +171,28 @@
     
     <!-- bottom navigation -->
     <div class="navbar">
-        <a href="index.php"><img src="images/icons/home.svg" class="svg"></a>
+        <a href="index.html"><img src="images/icons/home.svg" class="svg"></a>
         <a href="#"><img src="images/icons/store.svg" class="svg"></a>
         <a href="#"><img src="images/icons/search.svg" class="svg"></a>
         <a href="#"><img src="images/icons/downloads.svg" class="svg"></a>
-        <a href="#"><img src="images/icons/mystuff.svg" class="svg"></a>
+        <a href="#"><img src="images/icons/myprofile.svg" class="svg"></a>
     </div>
 
-     <script src="main.js"></script>
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            centeredSlides: true,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }, 
+            });
+        </script>
 </body>
 </html>
