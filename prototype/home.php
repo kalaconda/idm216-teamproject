@@ -1,5 +1,15 @@
 <?php
-    //require 'config.php';
+    require '../config.php';
+    
+    // Step 2 perform a datbase table query
+    $table = 'amazon';
+    $query = "select * FROM {$table}";
+    $result = mysqli_query($connection, $query);
+
+    //Check for errors in SQL statement
+    if (!$result) {
+        die ('Databse query failed');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,6 +52,8 @@
     <!-- Swiper -->
     <div class="main">
     <div class="swiper-container">
+
+   
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="images/thevastofnight_poster.jpg">
@@ -61,6 +73,9 @@
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
+
+     
+
     </div>
     
     
@@ -122,6 +137,28 @@
             </div>
         </div>
     </div>
+
+    <div class="item">
+        <h3 class="categorytt">View All</h3>
+        <div class="thumbnail">
+            <?php
+                while($row = mysqli_fetch_assoc($result)) {
+            ?>
+
+            <img class="food" src="images/thumbnail_notallofthem/<?php echo $row['thumbnail'];?>">
+
+            <?php
+                } // end php while loop
+
+                // Step 4 Release returned data
+                mysqli_free_result($result);
+
+                // Step 5 Close database connection
+                mysqli_close($connection);
+            ?>
+        </div>
+
+    </div>    
 
     <div class="item">
         <h3 class="categorytt">Anime</h3>
