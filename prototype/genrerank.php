@@ -24,7 +24,7 @@
     <!-- top bar -->
     <div class="logo">
             <img src="images/prime_logo.svg" class="logoimg">
-            <h4>Rank Your Favorite Genre</h4>
+            <h4>Personalization</h4>
     </div>
 
 <!-- genre rank -->
@@ -56,10 +56,10 @@
     <!-- bottom navigation -->
     <div class="skipanddone">
         <div class="skip">
-            <a href="home.php"><h3>SKIP</h3></a>
+            <a href="subgenre.php"><h3>SKIP</h3></a>
         </div>
         <div class="done">
-            <a href="home.php"><h3>DONE</h3></a>
+            <a href="subgenre.php"><h3>NEXT</h3></a>
         </div>
     </div>
 
