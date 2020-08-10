@@ -124,8 +124,6 @@ h5{
     font-family: var(--lightfont);
 }
 
-
-
 /* Film/Shows Content 
 
 Container for h3 and category horizontal scroll */
@@ -434,6 +432,54 @@ h2.num {
     margin-top: 10px;
   }
   
+/* sub genre page */
+#orangedesc h5 {
+    font-size: 18px;
+    text-align: center;
+}
+
+#orangedesc {
+    margin: 30px;
+}
+.flexgenrebtn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.genrebtn #subgenreicon {
+    width: 50px;
+    height: 50px;
+}
+
+.genrebtn {
+    background: #456488;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.genrebtn.active {
+    background: linear-gradient(191.53deg, #FFBF5C 5.02%, #FF9A00 91.53%);
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.57);
+}
+
+.genrebtn p {
+    color: white;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+#alignitems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 /* Add Name Page **/
 
