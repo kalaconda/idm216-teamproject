@@ -14,7 +14,7 @@
             <h4>Profile Name</h4>
     </div>
     <div id="add_name">
-        <h5>Name</h5> <br>
+        <h5>What is your name?</h5> <br>
         <input type="text" placeholder="enter your name" id="name_input">
     </div>
 
