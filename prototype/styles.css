@@ -142,10 +142,12 @@ Container for h3 and category horizontal scroll */
 
 .thumbnail img{
     width: 180px;
+    height: 100px;
     margin: 0 0.5em;
 }
 /* Continue Watching */
 .poster_tn img {
+    height: auto;
     width: 120px;
 }
 .season_episode {

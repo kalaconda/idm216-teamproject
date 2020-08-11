@@ -141,20 +141,16 @@
     <div class="item">
         <h3 class="categorytt">View All</h3>
         <div class="thumbnail">
-            <?php
+            <?php 
                 while($row = mysqli_fetch_assoc($result)) {
             ?>
 
-            <img class="food" src="images/thumbnail_notallofthem/<?php echo $row['thumbnail'];?>">
+            <img src="images/thumbnail_notallofthem/<?php echo $row['thumbnail'];?>">
 
             <?php
-                } // end php while loop
-
-                // Step 4 Release returned data
+                } 
                 mysqli_free_result($result);
-
-                // Step 5 Close database connection
-                mysqli_close($connection);
+                mysqli_free_result($row);
             ?>
         </div>
 
@@ -163,27 +159,64 @@
     <div class="item">
         <h3 class="categorytt">Anime</h3>
         <div class="thumbnail">
-            <img id="long_click" src="images/thumbnail_notallofthem/blackbutler.jpg" alt="blackbutler">
-            <img src="images/thumbnail_notallofthem/paprika.jpg" alt="paprika">
-            <img src="images/thumbnail_notallofthem/persona3themovie.jpg" alt="persona3themovie">
+            <?php
+                $genre = "SELECT * FROM {$table} WHERE `genre` = 'Anime'";
+                $result = mysqli_query($connection, $genre);
+                while($row = mysqli_fetch_assoc($result)) {
+            ?>
+
+            <img src="images/thumbnail_notallofthem/<?php echo $row['thumbnail'];?>">
+
+            <?php
+                }
+                mysqli_free_result($result);
+                mysqli_free_result($row);
+            ?>
         </div>
     </div>
 
     <div class="item">
-        <h3 class="categorytt">Romance</h3>
+        <h3 class="categorytt">Documentary</h3>
         <div class="thumbnail">
-            <img src="images/thumbnail_notallofthem/astarisborn.jpg" alt="astarisborn">
-            <img src="images/thumbnail_notallofthem/forevermygirl.jpg" alt="forevermygirl">
-            <img src="images/thumbnail_notallofthem/crazystupidlove.jpg" alt="crazystupidlove">
+
+            <?php
+                $genre = "SELECT * FROM {$table} WHERE `genre` = 'Documentary'";
+                $result = mysqli_query($connection, $genre);
+                while($row = mysqli_fetch_assoc($result)) {
+            ?>    
+
+            <img src="images/thumbnail_notallofthem/<?php echo $row['thumbnail'];?>">
+
+            <?php
+                }
+                mysqli_free_result($result);
+                mysqli_free_result($row);
+            ?>
         </div>
     </div>
 
     <div class="item">
         <h3 class="categorytt">Action</h3>
         <div class="thumbnail">
-            <img src="images/thumbnail_notallofthem/21bridges.jpg" alt="21bridges">
-            <img src="images/thumbnail_notallofthem/endersgame.jpg" alt="endersgame">
-            <img src="images/thumbnail_notallofthem/tomclancysjackryan.jpg" alt="tomclancysjackryan">
+
+            <?php
+                $genre = "SELECT * FROM {$table} WHERE `genre` = 'Action'";
+                $result = mysqli_query($connection, $genre);
+                while($row = mysqli_fetch_assoc($result)) {
+            ?>    
+
+            <img src="images/thumbnail_notallofthem/<?php echo $row['thumbnail'];?>">
+
+            <?php
+                } // end php while loop
+
+                // Step 4 Release returned data
+                mysqli_free_result($result);
+                mysqli_free_result($row);
+    
+                // Step 5 Close database connection
+                mysqli_close($connection);
+            ?>
         </div>
     </div>
 
