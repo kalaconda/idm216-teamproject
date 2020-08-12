@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Prime Video</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>"> <!-- force css to work -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
@@ -19,13 +19,8 @@
     </div>
 
     <!-- bottom navigation -->
-    <div class="skipanddone">
-        <div class="skip">
-            <a href="index.php"><h3>BACK</h3> </a>
-        </div>
-        <div class="done">
+    <div class="next">
             <a href="genrerank.php"><h3>NEXT</h3></a>
-        </div>
     </div>
 
 </body>
