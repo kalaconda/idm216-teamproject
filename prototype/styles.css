@@ -677,3 +677,93 @@ h2.num {
 .main {
     height: 200px;
 }
+
+/* Cultural Preferences Page */
+
+#culture-ques{
+    text-align: center;
+    margin: 2.6em 3em 0;
+}
+
+.culture-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.culture-grid img {
+    object-fit: cover;
+    object-position: 100% 0;
+
+}
+
+.grid-img {
+    width: 100%;
+}
+
+.single-grid {
+    background-color: #FF9A00;
+    border-radius: 1rem;
+    opacity: 100%;
+}
+
+.single-grid :hover {
+    opacity: 70%;
+    transition: opacity 1s ease-in-out;
+    cursor: pointer;
+}
+
+
+.culture-but {
+    background-color: #FF9A00;
+    border-radius: 1rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.culture-but h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+/* #west, #asian, #dance, #bolly, #soap, #decades {
+    opacity: 50%;
+}
+ */
+#west {
+    background-image: url(images/cultural_western.png);
+    background-size: cover;
+}
+
+#asian {
+    background-image: url(images/cultural_asian.png);
+    background-size: cover;
+} 
+
+#dance {
+    background-image: url(images/cultural_dance.png);
+    background-size: cover;
+}
+
+#bolly {
+    background-image: url(images/cultural_bollywood.png);
+    background-size: cover;
+}
+
+
+#soap {
+    background-image: url(images/cultural_soapopera.png);
+    background-size: cover;
+}
+
+
+#decades {
+    background-image: url(images/cultural_decades.png);
+    background-size: cover;
+}
+
+
