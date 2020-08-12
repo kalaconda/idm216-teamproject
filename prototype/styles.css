@@ -97,7 +97,7 @@ li a {
     color: white;
 }
 
-.active {
+a.homelink {
     padding-bottom: 3px;
     border-bottom: 2px solid #FF9A00;
 }
@@ -483,6 +483,7 @@ h2.num {
     border-radius: 50%;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .genrebtn.active {
@@ -530,11 +531,11 @@ h2.num {
 
 /* Age Page */
 
-.age_range {
+.agerange {
     display: flex;
     flex-direction: column;
 }
-.age_range button {
+.agerange button {
     text-align: left;
     border: none;
     margin: 0.7em 0;
@@ -542,31 +543,40 @@ h2.num {
     padding: 1em;
     border-radius: 6px;
     background-color: #456488;    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
-.age_range span {
+.agerange span {
     width: 9px;
     height: 9px;
     border-radius: 50%;
     border: 3px solid white;
+    background-color: white;
     display: inline-block;
     margin-right: 10px;
 }
+
 /* When age range is selected, this is the css. */
-.age_range.active button{
+.agebtn.active {
     background-color: #00ACE3;
     box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.4);
 }
-.age_range.active span{
-    background-color: white;
+
+.bulletdots.active {
+    border: 3px solid white;
+    background-color: #456488;
+    width: 9px;
+    height: 9px;
 }
 
 /* Finished setting up page */
 .center_setup {
-    margin-top: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .setup {
     display: flex;
@@ -585,6 +595,15 @@ h2.num {
 .setup_img {
     margin: 0 auto;
 }
+
+.start button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+}
+
 .setup button {
     background-color: #00ACE3;
     padding: 1.5em;
@@ -594,6 +613,7 @@ h2.num {
     margin: 6em auto 0;
     box-shadow: 0px 3px 13px 5px rgba(0, 0, 0, 0.2);
 }
+
 .setup h1{
     font-size: 1.25em;
     font-style: normal;
@@ -605,6 +625,67 @@ h2.num {
     color: white;
 }
 
+/* Welcome Screen */
+#handwave {
+    width: 150px;
+    height: 150px;
+}
+
+p#yourname {
+    margin: -1em 0 2em;
+    color: white;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+p#welcometxt {
+    margin: 2em 2em 0;
+    color: white;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 30px;
+}
+
+span#jfy {
+    color: var(--orange);
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome button {
+    background-color: #00ACE3;
+    padding: 1.5em;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    margin: 6em auto 0;
+    box-shadow: 0px 3px 13px 5px rgba(0, 0, 0, 0.2);
+}
+.welcome h1{
+    font-size: 1.25em;
+    font-style: normal;
+    font-family: var(--bodyfont);
+    letter-spacing: 1px;
+}
+.welcome a {
+    text-decoration: none;
+    color: white;
+}
+
+.maybelater {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+.maybelater a  {
+    color: #75AEF0;
+    text-decoration: underline;
+}
 
 /* Choose/Add Profile Page **/
 
@@ -674,6 +755,10 @@ h2.num {
     transition: .4s;
 }
 
+.swiper-pagination-bullet{
+    opacity: 0.5;
+}
+
 .main {
     height: 200px;
 }
@@ -704,23 +789,22 @@ h2.num {
 }
 
 .single-grid {
-    background-color: #FF9A00;
     border-radius: 1rem;
-    opacity: 100%;
 }
 
-.single-grid :hover {
+.single-grid.active {
     opacity: 70%;
-    transition: opacity 1s ease-in-out;
-    cursor: pointer;
+    transition: .5s ease-in-out;
 }
 
 
 .culture-but {
-    background-color: #FF9A00;
     border-radius: 1rem;
     width: 10rem;
     height: 10rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .culture-but h4 {
@@ -729,11 +813,6 @@ h2.num {
 }
 
 
-
-/* #west, #asian, #dance, #bolly, #soap, #decades {
-    opacity: 50%;
-}
- */
 #west {
     background-image: url(images/cultural_western.png);
     background-size: cover;

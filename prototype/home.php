@@ -10,7 +10,7 @@
     <title>Prime Video</title>
     <script src="https://use.fontawesome.com/20cbea2300.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>"> <!-- force css to work -->
 
 </head>
 <body>
@@ -19,23 +19,12 @@
     </div>
     <!-- top nav -->
     <ul>
-        <li><a href="#">For You</a></li>
+        <li><a href="home.php" class="homelink">For You</a></li>
         <li><a href="#">Originals</a></li>
         <li><a href="#">Movies</a></li>
         <li><a href="#">TV</a></li>
         <li><a href="#">Prime</a></li>
     </ul>
-    <!-- script for nav active page links -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-    <script type="application/javascript">
-        $(document).ready(function(){
-            $('ul li a').click(function(){
-                $('li a').removeClass("active");
-                $(this).addClass("active");
-            })
-        });
-    </script>
 
     <!-- featured content -->
     <br>
@@ -171,11 +160,11 @@
     
     <!-- bottom navigation -->
     <div class="navbar">
-        <a href="index.php"><img src="images/icons/home.svg" class="svg"></a>
+        <a href="index.php"><img src="images/icons/home_blue.svg" class="svg"></a>
         <a href="#"><img src="images/icons/store.svg" class="svg"></a>
         <a href="#"><img src="images/icons/search.svg" class="svg"></a>
         <a href="#"><img src="images/icons/downloads.svg" class="svg"></a>
-        <a href="#"><img src="images/icons/myprofile.svg" class="svg"></a>
+        <a href="index.php"><img src="images/icons/myprofile.svg" class="svg"></a>
     </div>
 
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

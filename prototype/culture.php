@@ -23,7 +23,8 @@
     </div>
 
     <!-- Images for each button item are inserted using the CSS background-image url -->
-
+    <!-- jquery for multiple buttons selected -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <div class="culture-grid">
 
         <div class="single-grid">
@@ -74,19 +75,31 @@
             </button>
         </div>
 
-
-
     </div>
+
+    <!-- script to select multiple buttons -->
+    <script>
+        $(".single-grid").click(function () {
+      clicked = true;
+      if (clicked) {
+        $(this).toggleClass('active');
+        clicked = true;
+      } else {
+        $(this).removeClass('active');
+        clicked = false;
+      }
+    });
+    </script>
 
     <!-- bottom navigation -->
     <div class="skipanddone">
         <div class="skip">
-            <a href="addname.php">
+            <a href="subgenre.php">
                 <h3>BACK</h3>
             </a>
         </div>
         <div class="done">
-            <a href="welcome.php">
+            <a href="setup.php">
                 <h3>NEXT</h3>
             </a>
         </div>
