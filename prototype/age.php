@@ -14,6 +14,7 @@
             <img src="images/prime_logo.svg" class="logoimg">
             <h4>Age</h4>
     </div>
+    
     <div id="add_name">
         <h5>What is your age range?</h5> <br>
 
