@@ -29,7 +29,7 @@
             </button>
             </div>
             <div class="maybelater">
-                <p><a href="home.php">Maybe Later</a></p>
+                <p><a href="setup.php">Maybe Later</a></p>
             </div>
         </div>
     </div>

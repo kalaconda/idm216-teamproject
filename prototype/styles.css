@@ -601,6 +601,7 @@ h2.num {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    outline: none;
 }
 
 .setup button {
@@ -754,6 +755,10 @@ span#jfy {
     transition: .4s;
 }
 
+.swiper-pagination-bullet{
+    opacity: 0.5;
+}
+
 .main {
     height: 200px;
 }
@@ -784,23 +789,22 @@ span#jfy {
 }
 
 .single-grid {
-    background-color: #FF9A00;
     border-radius: 1rem;
-    opacity: 100%;
 }
 
-.single-grid :hover {
+.single-grid.active {
     opacity: 70%;
-    transition: opacity 1s ease-in-out;
-    cursor: pointer;
+    transition: .5s ease-in-out;
 }
 
 
 .culture-but {
-    background-color: #FF9A00;
     border-radius: 1rem;
     width: 10rem;
     height: 10rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .culture-but h4 {
@@ -809,11 +813,6 @@ span#jfy {
 }
 
 
-
-/* #west, #asian, #dance, #bolly, #soap, #decades {
-    opacity: 50%;
-}
- */
 #west {
     background-image: url(images/cultural_western.png);
     background-size: cover;

@@ -95,10 +95,10 @@
 <!-- bottom navigation -->
 <div class="skipanddone">
         <div class="skip">
-            <a href="home.php"><h3>SKIP</h3></a>
+            <a href="genrerank.php"><h3>BACK</h3></a>
         </div>
         <div class="done">
-            <a href="home.php"><h3>NEXT</h3></a>
+            <a href="culture.php"><h3>NEXT</h3></a>
         </div>
     </div>
 
