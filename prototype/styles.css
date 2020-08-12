@@ -677,3 +677,7 @@ h2.num {
 .main {
     height: 200px;
 }
+
+.swiper-pagination-bullet{
+    opacity: 0.5;
+}
