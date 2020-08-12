@@ -171,7 +171,7 @@
     
     <!-- bottom navigation -->
     <div class="navbar">
-        <a href="index.html"><img src="images/icons/home.svg" class="svg"></a>
+        <a href="index.php"><img src="images/icons/home.svg" class="svg"></a>
         <a href="#"><img src="images/icons/store.svg" class="svg"></a>
         <a href="#"><img src="images/icons/search.svg" class="svg"></a>
         <a href="#"><img src="images/icons/downloads.svg" class="svg"></a>
