@@ -90,7 +90,7 @@
         clicked = false;
       }
     });
-</script>
+    </script>
 
 <!-- bottom navigation -->
 <div class="skipanddone">
@@ -98,7 +98,7 @@
             <a href="home.php"><h3>SKIP</h3></a>
         </div>
         <div class="done">
-            <a href="home.php"><h3>DONE</h3></a>
+            <a href="home.php"><h3>NEXT</h3></a>
         </div>
     </div>
 
