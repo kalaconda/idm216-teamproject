@@ -14,15 +14,13 @@
             <img src="images/prime_logo.svg" class="logoimg">
             <h4>Personalization</h4>
     </div>
-<!-- jquery for multiple buttons selected -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
     <div class="center_setup">
         <div class="setup">
             <p>You're all set!</p>
 
             <div class="setup_img">
-                <img src="images/complete-checkmark.svg" alt="">
+                <img src="images/icons/complete-checkmark.svg" alt="">
             </div>
 
             <button>
@@ -30,10 +28,6 @@
             </button>
         </div>
     </div>
-    
-   
-
-
 
 </body>
 </html>
