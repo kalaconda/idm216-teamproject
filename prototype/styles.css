@@ -788,16 +788,50 @@ span#jfy {
 }
 
 .single-grid {
+    background-color: #FF9A00;
     border-radius: 1rem;
+    opacity: 100%;
 }
 
-.single-grid.active {
+/* script buttons */
+.single-grid #west.active {
     opacity: 70%;
-    transition: .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    cursor: pointer;
 }
 
+.single-grid #asian.active {
+    opacity: 70%;
+    transition: opacity .5s ease-in-out;
+    cursor: pointer;
+}
+
+.single-grid #dance.active {
+    opacity: 70%;
+    transition: opacity .5s ease-in-out;
+    cursor: pointer;
+}
+
+.single-grid #bolly.active {
+    opacity: 70%;
+    transition: opacity .5s ease-in-out;
+    cursor: pointer;
+}
+
+.single-grid #soap.active {
+    opacity: 70%;
+    transition: opacity .5s ease-in-out;
+    cursor: pointer;
+}
+
+.single-grid #decades.active {
+    opacity: 70%;
+    transition: opacity .5s ease-in-out;
+    cursor: pointer;
+}
 
 .culture-but {
+    background-color: #FF9A00;
     border-radius: 1rem;
     width: 10rem;
     height: 10rem;
@@ -810,6 +844,7 @@ span#jfy {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 
 
 #west {

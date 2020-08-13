@@ -34,6 +34,11 @@
             <h4>Personalization</h4>
     </div>
 
+    <div id="culture-ques">
+        <h5>
+            Rank your favorite genres.
+        </h5>
+    </div>
 <!-- genre rank -->
     <div class="center">
         <div class="rankings">
