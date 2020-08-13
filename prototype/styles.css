@@ -129,7 +129,6 @@ h5{
 Container for h3 and category horizontal scroll */
 .item {
     margin-top: 20px;
-    padding: 10px;
     height: auto;
 }
 
@@ -137,7 +136,7 @@ Container for h3 and category horizontal scroll */
     display: flex;
     overflow-x: scroll;
     width: 100%;
-    margin-left: 27px;
+    padding-left: 27px;
 }
 
 .thumbnail img{
@@ -176,7 +175,7 @@ Container for h3 and category horizontal scroll */
     display: flex;
     overflow-x: scroll;
     width: 100%;
-    margin-left: 27px;
+    padding-left: 27px;
 }
 
 .thumbnail2 img{
