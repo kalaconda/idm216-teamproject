@@ -21,7 +21,7 @@
     </div>
     <div class="center_setup">
         <div class="welcome">
-            <p id="yourname">Hi "Your Name"!</p>
+            <p id="yourname">Hi</p>
             <div class="setup_img">
                 <img src="images/icons/handwave.svg" id="handwave">
             </div>
