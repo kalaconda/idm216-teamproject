@@ -1,6 +1,6 @@
 <?php
     // Step 1 Open a connection to DB
-    require '../config.php';
+    require '../prototype/config.php';
 
     // Step 2 perform a datbase table query
     $table = 'amazon';
