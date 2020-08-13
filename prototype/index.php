@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
+
+    <!-- Screen Orientation Change Alert -->
+    <div class="screen_change">
+            <img src="images/rotatephonealert.svg" alt="">
+            <div id="background_screen"></div>
+    </div>
+    
     <div class="logo">
             <img src="images/prime_logo.svg" class="logoimg">
             <h4>Choose Profile</h4>
