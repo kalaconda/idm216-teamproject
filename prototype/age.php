@@ -9,6 +9,13 @@
     <script src="https://use.fontawesome.com/cce24d2a9e.js"></script>
 </head>
 <body>
+
+    <!-- Screen Orientation Change Alert -->
+    <div class="screen_change">
+                <img src="images/rotatephonealert.svg" alt="">
+                <div id="background_screen"></div>
+    </div>
+    
     <!-- top bar -->
     <div class="logo">
             <img src="images/prime_logo.svg" class="logoimg">

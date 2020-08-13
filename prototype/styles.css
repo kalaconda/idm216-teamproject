@@ -845,4 +845,35 @@ span#jfy {
     background-size: cover;
 }
 
+/* screen orientation */
+#background_screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 1s ease-in-out;
+    position: fixed;
+    z-index: 99;
+}
+.screen_change img {
+    width: 60%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+@media screen and (orientation: portrait) {
+    .screen_change {
+        display: none;
+        transition: all 1s ease-in-out;
+    }
+  }
 
+@media screen and (orientation: landscape) {
+    .screen_change {
+        display: block;
+        transition: all 1s ease-in-out;
+    }
+  }
+  
+  

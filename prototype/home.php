@@ -14,6 +14,13 @@
 
 </head>
 <body>
+    <!-- Screen Orientation Change Alert -->
+    <div class="screen_change">
+        <img src="images/rotatephonealert.svg" alt="">
+        <div id="background_screen"></div>
+    </div>
+
+
     <div class="logo">
         <img src="images/prime_logo.svg" class="logoimg">
     </div>
@@ -167,7 +174,7 @@
         <a href="index.php"><img src="images/icons/myprofile.svg" class="svg"></a>
     </div>
 
-     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
         <!-- Initialize Swiper -->
         <script>
