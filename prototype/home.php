@@ -1,11 +1,17 @@
 <?php
+<<<<<<< HEAD
     require 'config.php';
 ?>
 
+=======
+    //require 'config.php';
+?>
+>>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Prime Video</title>
@@ -13,20 +19,50 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prime Video</title>
+    <script src="https://use.fontawesome.com/20cbea2300.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>"> <!-- force css to work -->
+
+</head>
+<body>
+    <!-- Screen Orientation Change Alert -->
+    <div class="screen_change">
+        <img src="images/rotatephonealert.svg" alt="">
+        <div id="background_screen"></div>
+    </div>
+
+
+>>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
     <div class="logo">
         <img src="images/prime_logo.svg" class="logoimg">
     </div>
     <!-- top nav -->
     <ul>
+<<<<<<< HEAD
         <li><a href="#">For You</a></li>
+=======
+        <li><a href="home.php" class="homelink">For You</a></li>
+>>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
         <li><a href="#">Originals</a></li>
         <li><a href="#">Movies</a></li>
         <li><a href="#">TV</a></li>
         <li><a href="#">Prime</a></li>
     </ul>
+<<<<<<< HEAD
     <!-- featured content -->
     <br></br>
     <!-- Swiper -->
+=======
+
+    <!-- featured content -->
+    <br>
+    <!-- Swiper -->
+    <div class="main">
+>>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -36,18 +72,27 @@
                 <img src="images/paprika_poster.jpg">
             </div>
             <div class="swiper-slide">
+<<<<<<< HEAD
                 <img src="images/trailofufos_poster.jpg">
+=======
+                <img src="images/astarisborn_poster.jpg">
+>>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
             </div>
             <div class="swiper-slide">
                 <img src="images/aceofhearts_poster.jpg">
             </div>
             <div class="swiper-slide">
+<<<<<<< HEAD
                 <img src="images/astarisborn_poster.jpg">
+=======
+                <img src="images/trailofufos_poster.jpg">
+>>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
             </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
+<<<<<<< HEAD
     <h3>Continue Watching</h3>
         
     <!-- bottom navigation -->
@@ -57,10 +102,127 @@
         <a href="#"><img src="images/icons/search.svg" class="svg"></a>
         <a href="#"><img src="images/icons/downloads.svg" class="svg"></a>
         <a href="#"><img src="images/icons/mystuff.svg" class="svg"></a>
+=======
+    
+    
+    <!-- DESCRIPTION MODAL BOX -->
+    <div class="modal modal--hidden">
+        <div class="modal_contents">
+            <div id="main_img">
+                <img src="images/thumbnail_notallofthem/blackbutler.jpg" alt="blackbutler">
+            </div>
+
+            <div class="media_content">
+                <p id="title">Black Butler - Book of the Atlantic</p>
+                <div class="genre">
+                    <p>Anime</p>
+                    <i class="fa fa-circle fa-lg" aria-hidden="true"></i>
+                </div>
+
+                <div class="stars">
+                    <p>4.5</p>
+                    <img src="images/icons/4.5stars.svg" alt="">
+                </div>
+
+                <div class="description">
+                    <p id="description">All aboard to the next great adventure for Ciel and his demonic butler, Sebastian! After hearing rumors of a peculiar society bringing people back from the dead, the two board the luxury liner Campania on her maiden voyage to investigate.</p>
+                </div>
+            </div>
+
+            <div class="modal_button">
+                <p>Not Interested</p>
+                <p>Add to "My Stuff"</p>
+            </div>
+        </div>  
+    </div>
+
+    <!-- categories -->
+    <div class="item">
+        <h3 class="categorytt">Continue Watching</h3>
+        <div class="thumbnail poster_tn">
+            <div>
+                <img src="images/paprika_poster.jpg" alt="paprika">
+                <div class="season_episode">
+                    <hr id="s_e_1">
+                    <p>S1: E4</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/thevastofnight_poster.jpg" alt="forevermygirl">
+                <div class="season_episode">
+                    <hr id="s_e_2">
+                    <p>S3: E6</p>
+                </div>
+            </div>
+            <div>            
+                <img src="images/astarisborn_poster.jpg" alt="crazystupidlove">
+                <div class="season_episode">
+                    <hr id="s_e_3">
+                    <p>S1: E1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <h3 class="categorytt">Anime</h3>
+        <div class="thumbnail">
+            <img id="long_click" src="images/thumbnail_notallofthem/blackbutler.jpg" alt="blackbutler">
+            <img src="images/thumbnail_notallofthem/paprika.jpg" alt="paprika">
+            <img src="images/thumbnail_notallofthem/persona3themovie.jpg" alt="persona3themovie">
+        </div>
+    </div>
+
+    <div class="item">
+        <h3 class="categorytt">Romance</h3>
+        <div class="thumbnail">
+            <img src="images/thumbnail_notallofthem/astarisborn.jpg" alt="astarisborn">
+            <img src="images/thumbnail_notallofthem/forevermygirl.jpg" alt="forevermygirl">
+            <img src="images/thumbnail_notallofthem/crazystupidlove.jpg" alt="crazystupidlove">
+        </div>
+    </div>
+
+    <div class="item">
+        <h3 class="categorytt">Action</h3>
+        <div class="thumbnail">
+            <img src="images/thumbnail_notallofthem/21bridges.jpg" alt="21bridges">
+            <img src="images/thumbnail_notallofthem/endersgame.jpg" alt="endersgame">
+            <img src="images/thumbnail_notallofthem/tomclancysjackryan.jpg" alt="tomclancysjackryan">
+        </div>
+    </div>
+
+    <!-- actors -->
+    <div class="item">
+        <h3 class="categorytt">Actors/Actresses</h3>
+        <div class="thumbnail2">
+            <div class="inlineflex">
+                <img src="images/actors/annehathaway.jpg" alt="annehathaway">
+                <p> Anne Hathaway </p>
+            </div>
+            <div class="inlineflex">
+                <img src="images/actors/chadwickboseman.jpg" alt="chadwickboseman">
+                <p> Chadwick Boseman </p>
+            </div>
+            <div class="inlineflex">
+                <img src="images/actors/bradleycooper.jpg" alt="bradleycooper">
+                <p> Bradley Cooper</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- bottom navigation -->
+    <div class="navbar">
+        <a href="index.php"><img src="images/icons/home_blue.svg" class="svg"></a>
+        <a href="#"><img src="images/icons/store.svg" class="svg"></a>
+        <a href="#"><img src="images/icons/search.svg" class="svg"></a>
+        <a href="#"><img src="images/icons/downloads.svg" class="svg"></a>
+        <a href="index.php"><img src="images/icons/myprofile.svg" class="svg"></a>
+>>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+<<<<<<< HEAD
      <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -75,5 +237,21 @@
         },
         });
     </script>
+=======
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            centeredSlides: true,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }, 
+            });
+        </script>
+>>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
 </body>
 </html>

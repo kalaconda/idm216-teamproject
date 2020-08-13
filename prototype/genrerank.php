@@ -18,16 +18,27 @@
         $( "#sortable" ).disableSelection();
     } );
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/cce24d2a9e.js"></script>
 </head>
 <body>
+
+    <!-- Screen Orientation Change Alert -->
+    <div class="screen_change">
+                <img src="images/rotatephonealert.svg" alt="">
+                <div id="background_screen"></div>
+    </div>
+
     <!-- top bar -->
     <div class="logo">
             <img src="images/prime_logo.svg" class="logoimg">
-            <h4>Rank Your Favorite Genre</h4>
+            <h4>Personalization</h4>
     </div>
 
+    <div id="culture-ques">
+        <h5>
+            Rank your favorite genres.
+        </h5>
+    </div>
 <!-- genre rank -->
     <div class="center">
         <div class="rankings">
@@ -49,7 +60,7 @@
                 <li>Fantasy<i class="fa fa-bars" aria-hidden="true"></i></li>
                 <li>Sci-Fi<i class="fa fa-bars" aria-hidden="true"></i></li>
                 <li>Documentary<i class="fa fa-bars" aria-hidden="true"></i></li>
-                <li>Animated<i class="fa fa-bars" aria-hidden="true"></i></li>
+                <li>Anime<i class="fa fa-bars" aria-hidden="true"></i></li>
             </ul>
         </div>
     </div>
@@ -57,10 +68,10 @@
     <!-- bottom navigation -->
     <div class="skipanddone">
         <div class="skip">
-            <a href="home.html"><h3>SKIP</h3></a>
+            <a href="subgenre.php"><h3>SKIP</h3></a>
         </div>
         <div class="done">
-            <a href="home.html"><h3>DONE</h3></a>
+            <a href="subgenre.php"><h3>NEXT</h3></a>
         </div>
     </div>
 
