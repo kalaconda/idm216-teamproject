@@ -95,28 +95,28 @@
 
     <!-- categories -->
     <div class="item">
-        <h3 class="categorytt">Continue Watching</h3>
+        <h3 class="categorytt">Prime Picks</h3>
         <div class="thumbnail poster_tn">
             <div>
                 <img src="images/paprika_poster.jpg" alt="paprika">
-                <div class="season_episode">
+                <!-- <div class="season_episode">
                     <hr id="s_e_1">
                     <p>S1: E4</p>
-                </div>
+                </div> -->
             </div>
             <div>
                 <img src="images/thevastofnight_poster.jpg" alt="forevermygirl">
-                <div class="season_episode">
+                <!-- <div class="season_episode">
                     <hr id="s_e_2">
                     <p>S3: E6</p>
-                </div>
+                </div> -->
             </div>
             <div>            
                 <img src="images/astarisborn_poster.jpg" alt="crazystupidlove">
-                <div class="season_episode">
+                <!-- <div class="season_episode">
                     <hr id="s_e_3">
                     <p>S1: E1</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
