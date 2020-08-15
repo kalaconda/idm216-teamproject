@@ -68,7 +68,7 @@
     <!-- bottom navigation -->
     <div class="skipanddone">
         <div class="skip">
-            <a href="subgenre.php"><h3>SKIP</h3></a>
+            <a href="welcome.php"><h3>BACK</h3></a>
         </div>
         <div class="done">
             <a href="subgenre.php"><h3>NEXT</h3></a>
