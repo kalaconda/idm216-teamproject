@@ -26,8 +26,18 @@
     </div>
 
     <!-- bottom navigation -->
+<<<<<<< HEAD:prototype/addname.php
+    <div class="skipanddone">
+        <div class="skip">
+            <a href="index.php"><h3>BACK</h3> </a>
+        </div>
+        <div class="done">
+            <a href="genrerank.php"><h3>NEXT</h3></a>
+        </div>
+=======
     <div class="next">
             <a href="age.php"><h3>NEXT</h3></a>
+>>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92:prototype/addname.html
     </div>
 
 </body>
