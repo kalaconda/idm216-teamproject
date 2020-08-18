@@ -25,7 +25,7 @@
    <!-- desc text -->
     <div id="orangedesc">
         <h5> Let's dive deeper. </h5>
-        <h5> Choose <b>3</b> or more topics you're into!</h5>
+        <h5> Choose <b>3</b> topics you're into!</h5>
     </div>
     <!-- buttons -->
     <div class="flexgenrebtn">
