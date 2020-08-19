@@ -572,9 +572,11 @@ h2.num {
     background-color: #00ACE3;
     box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.4);
 }
+
 .agebtn.active span{
     background-color: white;
 }
+
 /* Finished setting up page */
 .center_setup {
     margin-top: 60px;
@@ -600,8 +602,6 @@ h2.num {
 .setup_img {
     margin: 0 auto;
 }
-
-
 
 .setup button {
     background-color: #00ACE3;
@@ -697,9 +697,6 @@ span#jfy {
 
 /* Choose/Add Profile Page **/
 
-<<<<<<< HEAD
-.profile_btn, .child_btn{
-=======
 #options {
     cursor: pointer;
 }
@@ -716,20 +713,6 @@ span#jfy {
     border: none;
     padding: .5rem;
     margin: 3rem auto;
-    background-color: var(--lightblue);
-    width: 230px;
-    text-align: center;
-}
-
-.add_btn{
-    font-size: 1.15rem;
-    color: white;
->>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
-    border-radius: 7px;
-    border: none;
-    padding: .5rem;
-    margin: 3rem auto;
-<<<<<<< HEAD
     background-color: var(--lightblue);
     width: 230px;
     text-align: center;
@@ -759,19 +742,10 @@ span#jfy {
 a:visited{
     color: white;
 }
-=======
-    background-color: var(--darkblue);
-    width: 230px;
-    text-align: center;
-}
 
 .profile_btn, .child_btn{
     font-size: 1.15rem;
     color: white; 
-}
-
-.child_btn{
-    background-color: var(--orange);
 }
 
 /* featured microinteraction */
@@ -958,6 +932,3 @@ a:visited{
         transition: all 1s ease-in-out;
     }
   }
-  
-  
->>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
