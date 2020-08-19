@@ -85,7 +85,7 @@
 
     <!-- script to select multiple buttons -->
     <script>
-        $(".single-grid").click(function () {
+        $(".culture-but").click(function () {
       clicked = true;
       if (clicked) {
         $(this).toggleClass('active');
