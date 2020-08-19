@@ -18,7 +18,7 @@
         $( "#sortable" ).disableSelection();
     } );
     </script>
-    <script src="https://use.fontawesome.com/cce24d2a9e.js"></script>
+    
 </head>
 <body>
 
