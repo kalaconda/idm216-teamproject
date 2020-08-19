@@ -36,7 +36,6 @@
     </div>
     <!-- top nav -->
     <ul>
-        <li><a href="#">For You</a></li>
         <li><a href="home.php" class="homelink">For You</a></li>
         <li><a href="#">Originals</a></li>
         <li><a href="#">Movies</a></li>
@@ -160,7 +159,7 @@
     <div class="item">
         <h3 class="categorytt">Anime</h3>
         <div class="thumbnail">
-        ````<?php
+            <?php
                 $genre = "SELECT * FROM {$table} WHERE `genre` = 'Anime'";
                 $result = mysqli_query($connection, $genre);
                 while($row = mysqli_fetch_assoc($result)) {
@@ -263,21 +262,6 @@
         },
         });
     </script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto',
-            spaceBetween: 40,
-            centeredSlides: true,
-            grabCursor: true,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            }, 
-            });
-        </script>
 
 </body>
 </html>
