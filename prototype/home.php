@@ -10,26 +10,26 @@
     if (!$result) {
         die ('Databse query failed');
     }
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Prime Video</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/20cbea2300.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>"> <!-- force css to work -->
+
 </head>
 <body>
-
     <!-- Screen Orientation Change Alert -->
     <div class="screen_change">
         <img src="images/rotatephonealert.svg" alt="">
         <div id="background_screen"></div>
     </div>
+
 
     <div class="logo">
         <img src="images/prime_logo.svg" class="logoimg">
@@ -50,34 +50,25 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="images/thevastofnight_poster.jpg">
+                <img src="images/posters/thevastofnight_poster.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="images/paprika_poster.jpg">
+                <img src="images//posters/paprika_poster.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="images/astarisborn_poster.jpg">
+                <img src="images//posters/astarisborn_poster.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="images/aceofhearts_poster.jpg">
+                <img src="images//posters/aceofhearts_poster.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="images/trailofufos_poster.jpg">
+                <img src="images//posters/trailofufos_poster.jpg">
             </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
-
-    <h3>Continue Watching</h3>
-        
-    <!-- bottom navigation -->
-    <div class="navbar">
-        <a href="index.html"><img src="images/icons/home.svg" class="svg"></a>
-        <a href="#"><img src="images/icons/store.svg" class="svg"></a>
-        <a href="#"><img src="images/icons/search.svg" class="svg"></a>
-        <a href="#"><img src="images/icons/downloads.svg" class="svg"></a>
-        <a href="#"><img src="images/icons/mystuff.svg" class="svg"></a>
+    
     
     <!-- DESCRIPTION MODAL BOX -->
     <div class="modal modal--hidden">
@@ -116,24 +107,24 @@
         <div class="thumbnail poster_tn">
             <div>
                 <img src="images/paprika_poster.jpg" alt="paprika">
-                <!-- <div class="season_episode">
+                <!--<div class="season_episode">
                     <hr id="s_e_1">
                     <p>S1: E4</p>
-                </div> -->
+                </div>-->
             </div>
             <div>
                 <img src="images/thevastofnight_poster.jpg" alt="forevermygirl">
-                <!-- <div class="season_episode">
+                <!--<div class="season_episode">
                     <hr id="s_e_2">
                     <p>S3: E6</p>
-                </div> -->
+                </div>-->
             </div>
             <div>            
                 <img src="images/astarisborn_poster.jpg" alt="crazystupidlove">
-                <!-- <div class="season_episode">
+                <!--<div class="season_episode">
                     <hr id="s_e_3">
                     <p>S1: E1</p>
-                </div> -->
+                </div>-->
             </div>
         </div>
     </div>
@@ -246,22 +237,21 @@
         <a href="index.php"><img src="images/icons/myprofile.svg" class="svg"></a>
     </div>
 
-     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-     <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
-        spaceBetween: 40,
-        centeredSlides: true,
-        grabCursor: true,
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        });
-    </script>
-
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            centeredSlides: true,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }, 
+            });
+        </script>
 </body>
 </html>

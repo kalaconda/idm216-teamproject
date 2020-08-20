@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Prime Video</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://use.fontawesome.com/cce24d2a9e.js"></script>
 </head>
 <body>
 
