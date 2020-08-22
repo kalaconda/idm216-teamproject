@@ -10,25 +10,33 @@
     if (!$result) {
         die ('Databse query failed');
     }
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Prime Video</title>
-    <script src="https://use.fontawesome.com/20cbea2300.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>"> <!-- force css to work -->
-
 </head>
 <body>
+
+    <!-- Screen Orientation Change Alert -->
+    <div class="screen_change">
+        <img src="images/rotatephonealert.svg" alt="">
+        <div id="background_screen"></div>
+    </div>
+
     <div class="logo">
         <img src="images/prime_logo.svg" class="logoimg">
     </div>
     <!-- top nav -->
     <ul>
+        <li><a href="#">For You</a></li>
         <li><a href="home.php" class="homelink">For You</a></li>
         <li><a href="#">Originals</a></li>
         <li><a href="#">Movies</a></li>
@@ -61,6 +69,16 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
+
+    <h3>Continue Watching</h3>
+        
+    <!-- bottom navigation -->
+    <div class="navbar">
+        <a href="index.html"><img src="images/icons/home.svg" class="svg"></a>
+        <a href="#"><img src="images/icons/store.svg" class="svg"></a>
+        <a href="#"><img src="images/icons/search.svg" class="svg"></a>
+        <a href="#"><img src="images/icons/downloads.svg" class="svg"></a>
+        <a href="#"><img src="images/icons/mystuff.svg" class="svg"></a>
     
     <!-- DESCRIPTION MODAL BOX -->
     <div class="modal modal--hidden">
@@ -231,6 +249,21 @@
 
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+     <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 40,
+        centeredSlides: true,
+        grabCursor: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        });
+    </script>
+
         <!-- Initialize Swiper -->
         <script>
             var swiper = new Swiper('.swiper-container', {
@@ -245,5 +278,6 @@
             }, 
             });
         </script>
+
 </body>
 </html>

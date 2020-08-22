@@ -697,6 +697,9 @@ span#jfy {
 
 /* Choose/Add Profile Page **/
 
+<<<<<<< HEAD
+.profile_btn, .child_btn{
+=======
 #options {
     cursor: pointer;
 }
@@ -721,10 +724,42 @@ span#jfy {
 .add_btn{
     font-size: 1.15rem;
     color: white;
+>>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
+    border-radius: 7px;
+    border: none;
+    padding: .5rem;
+    margin: 3rem auto;
+<<<<<<< HEAD
+    background-color: var(--lightblue);
+    width: 230px;
+    text-align: center;
+}
+
+.add_btn{
+    font-size: 1.15rem;
+    color: white;
     border-radius: 7px;
     border: 1px solid var(--lightblue);
     padding: .5rem;
     margin: 3rem auto;
+    background-color: var(--darkblue);
+    width: 230px;
+    text-align: center;
+}
+
+.profile_btn, .child_btn{
+    font-size: 1.15rem;
+    color: white; 
+}
+
+.child_btn{
+    background-color: var(--orange);
+}
+
+a:visited{
+    color: white;
+}
+=======
     background-color: var(--darkblue);
     width: 230px;
     text-align: center;
@@ -925,3 +960,4 @@ span#jfy {
   }
   
   
+>>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
