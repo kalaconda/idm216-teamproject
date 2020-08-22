@@ -22,7 +22,7 @@
     <div class="center_setup">
         <div class="welcome">
             <p id="yourname">Hi</p>
-            <div class="setup_img">
+            <div class="setup_img rock">
                 <img src="images/icons/handwave.svg" id="handwave">
             </div>
             <div>

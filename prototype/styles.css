@@ -14,7 +14,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 1600px;
     font-family: var(--bodyfont);
-    height: 1600px;
+    height: 1650px;
 }
 
 :root{
@@ -402,7 +402,7 @@ Container for h3 and category horizontal scroll */
     align-items: center;
 }
 
-/* genre rank */
+/* genre rank microinteraction */
 .center {
     margin: 45px;
 }
@@ -411,9 +411,20 @@ Container for h3 and category horizontal scroll */
     background-color: #253340;
     list-style-type: none;
     margin: 0; 
-    width: 220px; 
+    width: auto; 
     cursor: grab;
   }
+
+#sortable li:active {
+    width: 200px;
+    height: 25px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
   
 #sortable li { 
     display: flex;
@@ -430,7 +441,7 @@ Container for h3 and category horizontal scroll */
     color: #FFFFFF;
     border: none;
     border-radius: 8px;
-    width: 220px;
+    width: 180px;
   }
   
 #sortable li span { 
@@ -531,12 +542,13 @@ h2.num {
 }
 
 #name_input{
+    outline: none;
     font-size: 1.15rem;
     border-radius: 7px;
     border: none;
     padding: .5rem;
     margin: 0;
-    width: 80%;
+    width: 90%;
 }
 
 /* Age Page */
@@ -561,8 +573,8 @@ h2.num {
     width: 9px;
     height: 9px;
     border-radius: 50%;
+    background-color: white;
     border: 3px solid white;
-    background-color: #456488;
     display: inline-block;
     margin-right: 10px;
 }
@@ -572,9 +584,12 @@ h2.num {
     background-color: #00ACE3;
     box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.4);
 }
+
 .agebtn.active span{
-    background-color: white;
+    border: 3px solid white;
+    background-color: #00ACE3;
 }
+
 /* Finished setting up page */
 .center_setup {
     margin-top: 60px;
@@ -583,11 +598,13 @@ h2.num {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .setup {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .setup p{
     margin: -1em 0 3em;
     color: white;
@@ -597,10 +614,30 @@ h2.num {
 .setup img {
     width: 280px;
 }
+
 .setup_img {
     margin: 0 auto;
 }
 
+/* handwave animation */
+@keyframes rock {
+    from {
+      transform: rotate(0deg) scale(1);
+    }
+    33% {
+      transform: rotate(-25deg) scale(1);
+    }
+    66% {
+      transform: rotate(2deg) scale(1);
+    }
+  }
+
+  .rock {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: rock;
+    animation-iteration-count: infinite;
+  }
 
 
 .setup button {
@@ -611,6 +648,8 @@ h2.num {
     width: 200px;
     margin: 5em auto 0;
     box-shadow: 0px 3px 13px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    outline: none;
 }
 
 .setup h1{
@@ -691,15 +730,12 @@ span#jfy {
     padding-top: 2rem;
 }
 .maybelater a  {
-    color: #75AEF0;
+    color: #75AEF0 !important;
     text-decoration: underline;
 }
 
 /* Choose/Add Profile Page **/
 
-<<<<<<< HEAD
-.profile_btn, .child_btn{
-=======
 #options {
     cursor: pointer;
 }
@@ -716,20 +752,6 @@ span#jfy {
     border: none;
     padding: .5rem;
     margin: 3rem auto;
-    background-color: var(--lightblue);
-    width: 230px;
-    text-align: center;
-}
-
-.add_btn{
-    font-size: 1.15rem;
-    color: white;
->>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
-    border-radius: 7px;
-    border: none;
-    padding: .5rem;
-    margin: 3rem auto;
-<<<<<<< HEAD
     background-color: var(--lightblue);
     width: 230px;
     text-align: center;
@@ -759,19 +781,10 @@ span#jfy {
 a:visited{
     color: white;
 }
-=======
-    background-color: var(--darkblue);
-    width: 230px;
-    text-align: center;
-}
 
 .profile_btn, .child_btn{
     font-size: 1.15rem;
     color: white; 
-}
-
-.child_btn{
-    background-color: var(--orange);
 }
 
 /* featured microinteraction */
@@ -806,14 +819,16 @@ a:visited{
 }
 
 .main {
-    height: 200px;
+    height: 350px;
 }
+
+/* category scroll microinteraction */
 
 /* Cultural Preferences Page */
 
 #culture-ques{
     text-align: center;
-    margin: 2.6em 3em 0;
+    margin: 2.4em 3em 0;
 }
 
 .culture-grid{
@@ -827,7 +842,6 @@ a:visited{
 .culture-grid img {
     object-fit: cover;
     object-position: 100% 0;
-
 }
 
 .grid-img {
@@ -841,44 +855,13 @@ a:visited{
 }
 
 /* script buttons */
-.single-grid #west.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
-    cursor: pointer;
-}
-
-.single-grid #asian.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
-    cursor: pointer;
-}
-
-.single-grid #dance.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
-    cursor: pointer;
-}
-
-.single-grid #bolly.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
-    cursor: pointer;
-}
-
-.single-grid #soap.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
-    cursor: pointer;
-}
-
-.single-grid #decades.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
+.culture-but.active {
+    opacity: 50%;
+    transition: .5s ease-in-out;
     cursor: pointer;
 }
 
 .culture-but {
-    background-color: #FF9A00;
     border-radius: 1rem;
     width: 8rem;
     height: 8rem;
@@ -892,39 +875,40 @@ a:visited{
     font-weight: bold;
     font-family: var(--boldfont);
     text-shadow: 3px 3px 16px rgba(0, 0, 0, 1);
+    position: relative;
+    z-index: 100;
 }
 
-
+/* culture images */
 
 #west {
-    background-image: url(images/cultural_western.png);
+    background-image: url(images/cultural_imgs/cultural_western.png);
     background-size: cover;
 }
 
 #asian {
-    background-image: url(images/cultural_asian.png);
+    background-image: url(images/cultural_imgs/cultural_asian.png);
     background-size: cover;
 } 
 
 #dance {
-    background-image: url(images/cultural_dance.png);
+    background-image: url(images/cultural_imgs/cultural_dance.png);
     background-size: cover;
 }
 
 #bolly {
-    background-image: url(images/cultural_bollywood.png);
+    background-image: url(images/cultural_imgs/cultural_bollywood.png);
     background-size: cover;
 }
 
-
 #soap {
-    background-image: url(images/cultural_soapopera.png);
+    background-image: url(images/cultural_imgs/cultural_soapopera.png);
     background-size: cover;
 }
 
 
 #decades {
-    background-image: url(images/cultural_decades.png);
+    background-image: url(images/cultural_imgs/cultural_decades.png);
     background-size: cover;
 }
 
@@ -945,6 +929,7 @@ a:visited{
     transform: translate(-50%, -50%);
     z-index: 100;
 }
+
 @media screen and (orientation: portrait) {
     .screen_change {
         display: none;
@@ -958,6 +943,23 @@ a:visited{
         transition: all 1s ease-in-out;
     }
   }
-  
-  
->>>>>>> 1d8cd92714186d22d2088caf4c00b93244f6ab92
+
+/* progress bar */
+.progress {
+    width: 100%;
+    height: 10px;
+}
+
+.progress-wrap {
+    background: #00ACE3;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .progress-bar {
+    background: #13304A;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
