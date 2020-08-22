@@ -14,7 +14,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 1600px;
     font-family: var(--bodyfont);
-    height: 1600px;
+    height: 1650px;
 }
 
 :root{
@@ -402,7 +402,7 @@ Container for h3 and category horizontal scroll */
     align-items: center;
 }
 
-/* genre rank */
+/* genre rank microinteraction */
 .center {
     margin: 45px;
 }
@@ -542,6 +542,7 @@ h2.num {
 }
 
 #name_input{
+    outline: none;
     font-size: 1.15rem;
     border-radius: 7px;
     border: none;
@@ -597,11 +598,13 @@ h2.num {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .setup {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .setup p{
     margin: -1em 0 3em;
     color: white;
@@ -611,9 +614,31 @@ h2.num {
 .setup img {
     width: 280px;
 }
+
 .setup_img {
     margin: 0 auto;
 }
+
+/* handwave animation */
+@keyframes rock {
+    from {
+      transform: rotate(0deg) scale(1);
+    }
+    33% {
+      transform: rotate(-25deg) scale(1);
+    }
+    66% {
+      transform: rotate(2deg) scale(1);
+    }
+  }
+
+  .rock {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: rock;
+    animation-iteration-count: infinite;
+  }
+
 
 .setup button {
     background-color: #00ACE3;
@@ -624,6 +649,7 @@ h2.num {
     margin: 5em auto 0;
     box-shadow: 0px 3px 13px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    outline: none;
 }
 
 .setup h1{
@@ -704,7 +730,7 @@ span#jfy {
     padding-top: 2rem;
 }
 .maybelater a  {
-    color: #75AEF0;
+    color: #75AEF0 !important;
     text-decoration: underline;
 }
 
@@ -796,11 +822,13 @@ a:visited{
     height: 350px;
 }
 
+/* category scroll microinteraction */
+
 /* Cultural Preferences Page */
 
 #culture-ques{
     text-align: center;
-    margin: 2.6em 3em 0;
+    margin: 2.4em 3em 0;
 }
 
 .culture-grid{
@@ -914,4 +942,24 @@ a:visited{
         display: block;
         transition: all 1s ease-in-out;
     }
+  }
+
+/* progress bar */
+.progress {
+    width: 100%;
+    height: 10px;
+}
+
+.progress-wrap {
+    background: #00ACE3;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .progress-bar {
+    background: #13304A;
+    left: 0;
+    position: absolute;
+    top: 0;
   }
