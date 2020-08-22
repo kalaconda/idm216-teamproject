@@ -20,7 +20,6 @@
     <title>Prime Video</title>
     <script src="https://use.fontawesome.com/20cbea2300.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>"> <!-- force css to work -->
 
 </head>
@@ -38,10 +37,10 @@
     <!-- top nav -->
     <ul>
         <li><a href="home.php" class="homelink">For You</a></li>
-        <li><a href="#">Prime</a></li>
-        <li><a href="#">TV</a></li>
         <li><a href="#">Originals</a></li>
         <li><a href="#">Movies</a></li>
+        <li><a href="#">TV</a></li>
+        <li><a href="#">Prime</a></li>
     </ul>
 
     <!-- featured content -->
@@ -104,7 +103,7 @@
 
     <!-- categories -->
     <div class="item">
-        <h3 class="categorytt">Prime Picks For You</h3>
+        <h3 class="categorytt">Prime Picks</h3>
         <div class="thumbnail poster_tn">
             <div>
                 <img src="images/paprika_poster.jpg" alt="paprika">
@@ -212,7 +211,7 @@
 
     <!-- actors -->
     <div class="item">
-        <h3 class="categorytt">Recommended Actors</h3>
+        <h3 class="categorytt">Actors/Actresses</h3>
         <div class="thumbnail2">
             <div class="inlineflex">
                 <img src="images/actors/annehathaway.jpg" alt="annehathaway">
@@ -231,7 +230,8 @@
     
     <!-- bottom navigation -->
     <div class="navbar">
-        <a href="home.php"><img src="images/icons/home_blue.svg" class="svg"></a>
+        <a href="index.php"><img src="images/icons/home_blue.svg" class="svg"></a>
+        <a href="#"><img src="images/icons/store.svg" class="svg"></a>
         <a href="#"><img src="images/icons/search.svg" class="svg"></a>
         <a href="#"><img src="images/icons/downloads.svg" class="svg"></a>
         <a href="index.php"><img src="images/icons/myprofile.svg" class="svg"></a>
