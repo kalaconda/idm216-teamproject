@@ -9,6 +9,8 @@
     <!-- link jquery -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/20cbea2300.js"></script>
     <!-- script for genre rank -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -18,7 +20,6 @@
         $( "#sortable" ).disableSelection();
     } );
     </script>
-    
 </head>
 <body>
 
@@ -32,6 +33,11 @@
     <div class="logo">
             <img src="images/prime_logo.svg" class="logoimg">
             <h4>Personalization</h4>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress-wrap progress" data-progress-percent="35">
+        <div class="progress-bar progress"></div>
     </div>
 
     <div id="culture-ques">
@@ -75,5 +81,29 @@
         </div>
     </div>
 
+    <script>
+    // on page load...
+    moveProgressBar();
+    // on browser resize...
+    $(window).resize(function() {
+        moveProgressBar();
+    });
+
+    // PROGRESS SCRIPT
+    function moveProgressBar() {
+      console.log("moveProgressBar");
+        var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
+        var getProgressWrapWidth = $('.progress-wrap').width();
+        var progressTotal = getPercent * getProgressWrapWidth;
+        // how long the animation is
+        var animationLength = 1300;
+        
+        // on page load, animate percentage bar to data percentage length
+        // .stop() used to prevent animation queueing
+        $('.progress-bar').stop().animate({
+            left: progressTotal
+        }, animationLength);
+    }
+    </script>
 </body>
 </html>
