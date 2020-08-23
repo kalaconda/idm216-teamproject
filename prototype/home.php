@@ -20,20 +20,28 @@
     <title>Prime Video</title>
     <script src="https://use.fontawesome.com/20cbea2300.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>"> <!-- force css to work -->
 
 </head>
 <body>
+    <!-- Screen Orientation Change Alert -->
+    <div class="screen_change">
+        <img src="images/rotatephonealert.svg" alt="">
+        <div id="background_screen"></div>
+    </div>
+
+
     <div class="logo">
         <img src="images/prime_logo.svg" class="logoimg">
     </div>
     <!-- top nav -->
     <ul>
         <li><a href="home.php" class="homelink">For You</a></li>
+        <li><a href="#">Prime</a></li>
+        <li><a href="#">TV</a></li>
         <li><a href="#">Originals</a></li>
         <li><a href="#">Movies</a></li>
-        <li><a href="#">TV</a></li>
-        <li><a href="#">Prime</a></li>
     </ul>
 
     <!-- featured content -->
@@ -43,24 +51,25 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="images/thevastofnight_poster.jpg">
+                <img src="images/posters/thevastofnight_poster.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="images/paprika_poster.jpg">
+                <img src="images//posters/paprika_poster.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="images/astarisborn_poster.jpg">
+                <img src="images//posters/astarisborn_poster.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="images/aceofhearts_poster.jpg">
+                <img src="images//posters/aceofhearts_poster.jpg">
             </div>
             <div class="swiper-slide">
-                <img src="images/trailofufos_poster.jpg">
+                <img src="images//posters/trailofufos_poster.jpg">
             </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
+    
     
     <!-- DESCRIPTION MODAL BOX -->
     <div class="modal modal--hidden">
@@ -95,28 +104,28 @@
 
     <!-- categories -->
     <div class="item">
-        <h3 class="categorytt">Continue Watching</h3>
+        <h3 class="categorytt">Prime Picks For You</h3>
         <div class="thumbnail poster_tn">
             <div>
                 <img src="images/paprika_poster.jpg" alt="paprika">
-                <div class="season_episode">
+                <!--<div class="season_episode">
                     <hr id="s_e_1">
                     <p>S1: E4</p>
-                </div>
+                </div>-->
             </div>
             <div>
                 <img src="images/thevastofnight_poster.jpg" alt="forevermygirl">
-                <div class="season_episode">
+                <!--<div class="season_episode">
                     <hr id="s_e_2">
                     <p>S3: E6</p>
-                </div>
+                </div>-->
             </div>
             <div>            
                 <img src="images/astarisborn_poster.jpg" alt="crazystupidlove">
-                <div class="season_episode">
+                <!--<div class="season_episode">
                     <hr id="s_e_3">
                     <p>S1: E1</p>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -142,7 +151,7 @@
     <div class="item">
         <h3 class="categorytt">Anime</h3>
         <div class="thumbnail">
-        ````<?php
+            <?php
                 $genre = "SELECT * FROM {$table} WHERE `genre` = 'Anime'";
                 $result = mysqli_query($connection, $genre);
                 while($row = mysqli_fetch_assoc($result)) {
@@ -203,7 +212,7 @@
 
     <!-- actors -->
     <div class="item">
-        <h3 class="categorytt">Actors/Actresses</h3>
+        <h3 class="categorytt">Recommended Actors</h3>
         <div class="thumbnail2">
             <div class="inlineflex">
                 <img src="images/actors/annehathaway.jpg" alt="annehathaway">
@@ -222,14 +231,13 @@
     
     <!-- bottom navigation -->
     <div class="navbar">
-        <a href="index.php"><img src="images/icons/home_blue.svg" class="svg"></a>
-        <a href="#"><img src="images/icons/store.svg" class="svg"></a>
+        <a href="home.php"><img src="images/icons/home_blue.svg" class="svg"></a>
         <a href="#"><img src="images/icons/search.svg" class="svg"></a>
         <a href="#"><img src="images/icons/downloads.svg" class="svg"></a>
         <a href="index.php"><img src="images/icons/myprofile.svg" class="svg"></a>
     </div>
 
-     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
         <!-- Initialize Swiper -->
         <script>

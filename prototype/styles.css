@@ -14,7 +14,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 1600px;
     font-family: var(--bodyfont);
-    height: 1600px;
+    height: 1650px;
 }
 
 :root{
@@ -142,6 +142,14 @@ Container for h3 and category horizontal scroll */
 .thumbnail img{
     width: 180px;
     margin: 0 0.5em;
+}
+
+/* to remove scrollbar bar but keep functionality */
+.thumbnail::-webkit-scrollbar {
+    display: none;
+}
+.thumbnail2::-webkit-scrollbar {
+    display: none;
 }
 /* Continue Watching */
 .poster_tn img {
@@ -394,7 +402,7 @@ Container for h3 and category horizontal scroll */
     align-items: center;
 }
 
-/* genre rank */
+/* genre rank microinteraction */
 .center {
     margin: 45px;
 }
@@ -403,9 +411,20 @@ Container for h3 and category horizontal scroll */
     background-color: #253340;
     list-style-type: none;
     margin: 0; 
-    width: 220px; 
+    width: auto; 
     cursor: grab;
   }
+
+#sortable li:active {
+    width: 200px;
+    height: 25px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
   
 #sortable li { 
     display: flex;
@@ -422,7 +441,7 @@ Container for h3 and category horizontal scroll */
     color: #FFFFFF;
     border: none;
     border-radius: 8px;
-    width: 220px;
+    width: 180px;
   }
   
 #sortable li span { 
@@ -457,7 +476,9 @@ h2.num {
     font-size: 18px;
     text-align: center;
 }
-
+#orangedesc h5 b{
+    font-family: var(--boldfont);
+}
 #orangedesc {
     margin: 30px;
 }
@@ -467,18 +488,18 @@ h2.num {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin: 20px 0em 0;
 }
 
 .genrebtn #subgenreicon {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 
 .genrebtn {
     background: #456488;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: none;
     outline: none;
@@ -494,7 +515,7 @@ h2.num {
     color: white;
     padding-bottom: 10px;
     padding-top: 5px;
-    font-size: 14px;
+    font-size: 13px;
     font-family: var(--bodyfont);
 }
 
@@ -521,12 +542,13 @@ h2.num {
 }
 
 #name_input{
+    outline: none;
     font-size: 1.15rem;
     border-radius: 7px;
     border: none;
     padding: .5rem;
     margin: 0;
-    width: 80%;
+    width: 90%;
 }
 
 /* Age Page */
@@ -551,8 +573,8 @@ h2.num {
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    border: 3px solid white;
     background-color: white;
+    border: 3px solid white;
     display: inline-block;
     margin-right: 10px;
 }
@@ -563,11 +585,9 @@ h2.num {
     box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.4);
 }
 
-.bulletdots.active {
+.agebtn.active span{
     border: 3px solid white;
-    background-color: #456488;
-    width: 9px;
-    height: 9px;
+    background-color: #00ACE3;
 }
 
 /* Finished setting up page */
@@ -578,11 +598,13 @@ h2.num {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .setup {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .setup p{
     margin: -1em 0 3em;
     color: white;
@@ -592,17 +614,31 @@ h2.num {
 .setup img {
     width: 280px;
 }
+
 .setup_img {
     margin: 0 auto;
 }
 
-.start button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    outline: none;
-}
+/* handwave animation */
+@keyframes rock {
+    from {
+      transform: rotate(0deg) scale(1);
+    }
+    33% {
+      transform: rotate(-25deg) scale(1);
+    }
+    66% {
+      transform: rotate(2deg) scale(1);
+    }
+  }
+
+  .rock {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: rock;
+    animation-iteration-count: infinite;
+  }
+
 
 .setup button {
     background-color: #00ACE3;
@@ -612,6 +648,8 @@ h2.num {
     width: 200px;
     margin: 5em auto 0;
     box-shadow: 0px 3px 13px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    outline: none;
 }
 
 .setup h1{
@@ -632,18 +670,18 @@ h2.num {
 }
 
 p#yourname {
-    margin: -1em 0 2em;
+    margin: -1em 0 1.5em;
     color: white;
     text-align: center;
     font-size: 1.25em;
 }
 
 p#welcometxt {
-    margin: 2em 2em 0;
+    margin: 1em 1em 0;
     color: white;
     text-align: center;
-    font-size: 1.25em;
-    line-height: 30px;
+    font-size: 1.2em;
+    line-height: 28px;
 }
 
 span#jfy {
@@ -656,13 +694,22 @@ span#jfy {
     justify-content: center;
 }
 
+.start button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+}
+
 .welcome button {
     background-color: #00ACE3;
     padding: 1.5em;
     border: none;
     border-radius: 50px;
     width: 200px;
-    margin: 6em auto 0;
+    margin: 3em auto 0;
     box-shadow: 0px 3px 13px 5px rgba(0, 0, 0, 0.2);
 }
 .welcome h1{
@@ -683,7 +730,7 @@ span#jfy {
     padding-top: 2rem;
 }
 .maybelater a  {
-    color: #75AEF0;
+    color: #75AEF0 !important;
     text-decoration: underline;
 }
 
@@ -691,6 +738,9 @@ span#jfy {
 
 #options {
     cursor: pointer;
+}
+#options a{
+    color: white;
 }
 
 .profile_btn:hover, .child_btn:hover, .add_btn:hover  {
@@ -728,6 +778,15 @@ span#jfy {
     background-color: var(--orange);
 }
 
+a:visited{
+    color: white;
+}
+
+.profile_btn, .child_btn{
+    font-size: 1.15rem;
+    color: white; 
+}
+
 /* featured microinteraction */
 .swiper-container {
     height: 350px;
@@ -760,14 +819,16 @@ span#jfy {
 }
 
 .main {
-    height: 200px;
+    height: 350px;
 }
+
+/* category scroll microinteraction */
 
 /* Cultural Preferences Page */
 
 #culture-ques{
     text-align: center;
-    margin: 2.6em 3em 0;
+    margin: 2.4em 3em 0;
 }
 
 .culture-grid{
@@ -781,7 +842,6 @@ span#jfy {
 .culture-grid img {
     object-fit: cover;
     object-position: 100% 0;
-
 }
 
 .grid-img {
@@ -795,47 +855,16 @@ span#jfy {
 }
 
 /* script buttons */
-.single-grid #west.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
-    cursor: pointer;
-}
-
-.single-grid #asian.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
-    cursor: pointer;
-}
-
-.single-grid #dance.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
-    cursor: pointer;
-}
-
-.single-grid #bolly.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
-    cursor: pointer;
-}
-
-.single-grid #soap.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
-    cursor: pointer;
-}
-
-.single-grid #decades.active {
-    opacity: 70%;
-    transition: opacity .5s ease-in-out;
+.culture-but.active {
+    opacity: 50%;
+    transition: .5s ease-in-out;
     cursor: pointer;
 }
 
 .culture-but {
-    background-color: #FF9A00;
     border-radius: 1rem;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     outline: none;
     border: none;
     cursor: pointer;
@@ -844,39 +873,42 @@ span#jfy {
 .culture-but h4 {
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: var(--boldfont);
+    text-shadow: 3px 3px 16px rgba(0, 0, 0, 1);
+    position: relative;
+    z-index: 100;
 }
 
-
+/* culture images */
 
 #west {
-    background-image: url(images/cultural_western.png);
+    background-image: url(images/cultural_imgs/cultural_western.png);
     background-size: cover;
 }
 
 #asian {
-    background-image: url(images/cultural_asian.png);
+    background-image: url(images/cultural_imgs/cultural_asian.png);
     background-size: cover;
 } 
 
 #dance {
-    background-image: url(images/cultural_dance.png);
+    background-image: url(images/cultural_imgs/cultural_dance.png);
     background-size: cover;
 }
 
 #bolly {
-    background-image: url(images/cultural_bollywood.png);
+    background-image: url(images/cultural_imgs/cultural_bollywood.png);
     background-size: cover;
 }
 
-
 #soap {
-    background-image: url(images/cultural_soapopera.png);
+    background-image: url(images/cultural_imgs/cultural_soapopera.png);
     background-size: cover;
 }
 
 
 #decades {
-    background-image: url(images/cultural_decades.png);
+    background-image: url(images/cultural_imgs/cultural_decades.png);
     background-size: cover;
 }
 
@@ -897,6 +929,7 @@ span#jfy {
     transform: translate(-50%, -50%);
     z-index: 100;
 }
+
 @media screen and (orientation: portrait) {
     .screen_change {
         display: none;
@@ -910,5 +943,23 @@ span#jfy {
         transition: all 1s ease-in-out;
     }
   }
-  
-  
+
+/* progress bar */
+.progress {
+    width: 100%;
+    height: 10px;
+}
+
+.progress-wrap {
+    background: #00ACE3;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .progress-bar {
+    background: #13304A;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }

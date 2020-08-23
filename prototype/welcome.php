@@ -17,12 +17,12 @@
 <!-- top bar -->
 <div class="logo">
             <img src="images/prime_logo.svg" class="logoimg">
-            <h4>Welcome</h4>
+            <h4>Personalization</h4>
     </div>
     <div class="center_setup">
         <div class="welcome">
             <p id="yourname">Hi</p>
-            <div class="setup_img">
+            <div class="setup_img rock">
                 <img src="images/icons/handwave.svg" id="handwave">
             </div>
             <div>
@@ -30,9 +30,11 @@
             homepage <span id="jfy">Just For You!</span></p>
             </div>
             <div class="start">
-            <button>
-                <h1><a href="genrerank.php">Start</a></h1>
-            </button>
+                <a href="genrerank.php">
+                    <button>
+                        <h1>Start</h1>
+                    </button>
+                </a>
             </div>
             <div class="maybelater">
                 <p><a href="setup.php">Maybe Later</a></p>

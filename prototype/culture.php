@@ -22,6 +22,11 @@
         <h4>Personalization</h4>
     </div>
 
+    <!-- Progress bar -->
+    <div class="progress-wrap progress" data-progress-percent="100">
+        <div class="progress-bar progress"></div>
+    </div>
+
     <div id="culture-ques">
         <h5>
             Do you have any cultural preferences?
@@ -85,7 +90,7 @@
 
     <!-- script to select multiple buttons -->
     <script>
-        $(".single-grid").click(function () {
+        $(".culture-but").click(function () {
       clicked = true;
       if (clicked) {
         $(this).toggleClass('active');
@@ -95,6 +100,31 @@
         clicked = false;
       }
     });
+    </script>
+
+    <script>
+    // on page load...
+    moveProgressBar();
+    // on browser resize...
+    $(window).resize(function() {
+        moveProgressBar();
+    });
+
+    // PROGRESS SCRIPT
+    function moveProgressBar() {
+      console.log("moveProgressBar");
+        var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
+        var getProgressWrapWidth = $('.progress-wrap').width();
+        var progressTotal = getPercent * getProgressWrapWidth;
+        // how long the animation is
+        var animationLength = 1300;
+        
+        // on page load, animate percentage bar to data percentage length
+        // .stop() used to prevent animation queueing
+        $('.progress-bar').stop().animate({
+            left: progressTotal
+        }, animationLength);
+    }
     </script>
 
     <!-- bottom navigation -->

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Prime Video</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://use.fontawesome.com/cce24d2a9e.js"></script>
 </head>
 <body>
 
@@ -29,15 +28,23 @@
         <div class="agerange">
 
             <button type="button" class="agebtn">
-                <p><span class="bulletdots"></span>Below 13</p>
+                <p><span class="bulletdots"></span>12 Years Old</p>
             </button>
 
             <button type="button" class="agebtn">
-                <p><span class="bulletdots"></span>Between 13 and 17</p>
+                <p><span class="bulletdots"></span>12 - 17 Years Old</p>
             </button>
 
             <button type="button" class="agebtn">
-                <p><span class="bulletdots"></span>Above 18</p>
+                <p><span class="bulletdots"></span>18 - 40 Years Old</p>
+            </button>
+
+            <button type="button" class="agebtn">
+                <p><span class="bulletdots"></span>40 - 65 Years Old</p>
+            </button>
+
+            <button type="button" class="agebtn">
+                <p><span class="bulletdots"></span>65+</p>
             </button>
 
         </div>
