@@ -92,6 +92,17 @@
             <p>Gore</p>
         </button>
     </div>
+    <div class="flexgenrebtn">
+        <button type="button" class="genrebtn" id="alignitems">
+            <img src="images/subgenre/icon_LGBTQ.svg" id="subgenreicon">
+            <p>Melo-drama</p>
+        </button>
+        <button type="button" class="genrebtn" id="alignitems">
+            <img src="images/subgenre/icon_dance.svg" id="subgenreicon">
+            <p>Medical</p>
+        </button>
+        </button>
+    </div>
 
     <!-- script to select multiple buttons -->
     <script>

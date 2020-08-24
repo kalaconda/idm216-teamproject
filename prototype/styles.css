@@ -551,6 +551,33 @@ h2.num {
     width: 90%;
 }
 
+form {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+input {
+    outline: none;
+    font-size: 1.15rem;
+    border-radius: 7px;
+    border: none;
+    padding: .5rem;
+    margin: 0;
+    width: 90%;
+}
+
+span.isvalid:after {
+    content: '✓';
+    color: #CFFF9F;
+}
+  
+span.notvalid:after {
+    content: '×';
+    color: #ff4f3b;
+} 
+
+
 /* Age Page */
 
 .agerange {
@@ -828,7 +855,7 @@ a:visited{
 
 #culture-ques{
     text-align: center;
-    margin: 2.4em 3em 0;
+    margin: 2.4em 2.0em 0;
 }
 
 .culture-grid{
@@ -856,7 +883,7 @@ a:visited{
 
 /* script buttons */
 .culture-but.active {
-    opacity: 50%;
+    opacity: 60%;
     transition: .5s ease-in-out;
     cursor: pointer;
 }
