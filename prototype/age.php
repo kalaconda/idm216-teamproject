@@ -32,19 +32,19 @@ $_SESSION['enteryourname'] = $_GET['enteryourname'];
         <div class="agerange">
 
             <button type="button" class="agebtn">
-                <p><span class="bulletdots"></span>12 Years Old</p>
+                <p><span class="bulletdots"></span>-12</p>
             </button>
 
             <button type="button" class="agebtn">
-                <p><span class="bulletdots"></span>12 - 17 Years Old</p>
+                <p><span class="bulletdots"></span>12-17</p>
             </button>
 
             <button type="button" class="agebtn">
-                <p><span class="bulletdots"></span>18 - 40 Years Old</p>
+                <p><span class="bulletdots"></span>18-40</p>
             </button>
 
             <button type="button" class="agebtn">
-                <p><span class="bulletdots"></span>40 - 65 Years Old</p>
+                <p><span class="bulletdots"></span>40-65</p>
             </button>
 
             <button type="button" class="agebtn">
