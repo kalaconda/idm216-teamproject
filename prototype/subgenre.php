@@ -95,11 +95,11 @@
     <div class="flexgenrebtn">
         <button type="button" class="genrebtn" id="alignitems">
             <img src="images/subgenre/icon_LGBTQ.svg" id="subgenreicon">
-            <p>Melo-drama</p>
+            <p>LGBTQA+</p>
         </button>
         <button type="button" class="genrebtn" id="alignitems">
             <img src="images/subgenre/icon_dance.svg" id="subgenreicon">
-            <p>Medical</p>
+            <p>Dance</p>
         </button>
         </button>
     </div>
