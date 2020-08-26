@@ -134,14 +134,13 @@ Container for h3 and category horizontal scroll */
 .item {
     margin-top: 20px;
     height: auto;
+    overflow-x: hidden;
 }
 
 .thumbnail {
     display: flex;
-    overflow-x: scroll;
     width: 100%;
     padding-left: 27px;
-    cursor: grab;
 }
 
 .thumbnail img{
@@ -156,6 +155,7 @@ Container for h3 and category horizontal scroll */
 .thumbnail2::-webkit-scrollbar {
     display: none;
 }
+
 /* Continue Watching */
 .poster_tn img {
     width: 120px;
@@ -913,23 +913,22 @@ a:visited{
     font-family: var(--boldfont);
     text-shadow: 3px 3px 16px rgba(0, 0, 0, 1);
     position: relative;
-    z-index: 100;
 }
 
 /* culture images */
 
-#west {
-    background-image: url(images/cultural_imgs/cultural_western.png);
+#spanish {
+    background-image: url(images/cultural_imgs/cultural-spanish.png);
     background-size: cover;
-}
+} 
 
 #asian {
     background-image: url(images/cultural_imgs/cultural_asian.png);
     background-size: cover;
 } 
 
-#dance {
-    background-image: url(images/cultural_imgs/cultural_dance.png);
+#korean {
+    background-image: url(images/cultural_imgs/cultural-korean.png);
     background-size: cover;
 }
 
@@ -938,16 +937,27 @@ a:visited{
     background-size: cover;
 }
 
-#soap {
-    background-image: url(images/cultural_imgs/cultural_soapopera.png);
+#african {
+    background-image: url(images/cultural_imgs/cultural-african.png);
+    background-size: cover;
+}
+
+#french {
+    background-image: url(images/cultural_imgs/cultural-french.png);
+    background-size: cover;
+}
+
+#italian {
+    background-image: url(images/cultural_imgs/cultural-italian.png);
+    background-size: cover;
+}
+
+#japanese {
+    background-image: url(images/cultural_imgs/cultural-japanese.png);
     background-size: cover;
 }
 
 
-#decades {
-    background-image: url(images/cultural_imgs/cultural_decades.png);
-    background-size: cover;
-}
 
 /* screen orientation */
 #background_screen {
