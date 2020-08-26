@@ -60,6 +60,10 @@ a{
     text-decoration: none;
 }
 
+.hidden{
+    display: none;
+}
+
 .logo {
     display: flex;
     background-color: #111826;
@@ -644,6 +648,7 @@ span.notvalid:after {
 
 .setup_img {
     margin: 0 auto;
+    width: 170px;
 }
 
 /* handwave animation */
