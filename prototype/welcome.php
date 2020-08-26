@@ -9,6 +9,11 @@
 </head>
 <body>
 
+<?php 
+session_start();
+$_SESSION['enteryourname'] 
+?>
+
     <!-- Screen Orientation Change Alert -->
     <div class="screen_change">
                 <img src="images/rotatephonealert.svg" alt="">
@@ -21,10 +26,12 @@
     </div>
     <div class="center_setup">
         <div class="welcome">
-            <p id="yourname">Hi</p>
-            <div class="setup_img rock">
-                <img src="images/icons/handwave.svg" id="handwave">
+            <p id="yourname">Hi <?php echo $_SESSION['enteryourname'] ?>!</p>
+
+            <div class="setup_img">
+                <div id="lottie"></div>
             </div>
+
             <div>
             <p id="welcometxt">Tell us what you're into so we can create a personalized
             homepage <span id="jfy">Just For You!</span></p>
@@ -41,5 +48,9 @@
             </div>
         </div>
     </div>
+
+<!-- Javascript for Handwave Animation -->
+<script src="lottie.js" type="text/javascript"></script>
+<script src="handwave.js"></script>
 </body>
 </html>

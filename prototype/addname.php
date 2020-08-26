@@ -26,12 +26,20 @@
     </div>
     <div id="add_name">
         <h5>What is your name?</h5> <br>
-        <form>
-            <span class="notvalid"><input type="text" placeholder="Enter your name..." 
-            name="enteryourname" pattern="^[a-zA-Z]{1,20}$" title="Must Include Characters Only" required>
+
+        <form name="form" action="age.php" method="get">
+
+            <span class="notvalid">
+                <input type="text" placeholder="Enter your name..." 
+                name="enteryourname" pattern="^[a-zA-Z]{1,20}$" title="Must Include Characters Only" required>
             &nbsp;</span>
+
+            <input type="submit" id="submit-nameform" class="hidden" /> <!-- this submit button has been set to the button "NEXT" at the bottom. -->
+
         </form>
+
     </div>
+
 
     <!-- bottom navigation -->
     <div class="skipanddone">
@@ -42,9 +50,15 @@
             <a href="genrerank.php"><h3>NEXT</h3></a>
         </div>
 
-    <div class="next">
-            <a href="age.php"><h3>NEXT</h3></a>
-    </div>
+    <label class="next" for="submit-nameform"> <!-- setting the for= to the submit id above makes this label works as a submit button now. -->
+    
+        <div>
+            <h3>NEXT</h3>
+        </div>
+
+    </label>
+
+    
 
     <!-- input script -->
     <script>

@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<?php 
+session_start();
+$_SESSION['enteryourname'] = $_GET['enteryourname'];
+?>
 
     <!-- Screen Orientation Change Alert -->
     <div class="screen_change">
