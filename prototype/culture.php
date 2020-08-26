@@ -37,55 +37,54 @@
     <!-- jquery for multiple buttons selected -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <div class="culture-grid">
-
+     
         <div class="single-grid">
-            <button class="culture-but" id="west">
-                <h4>
-                    Western
-                </h4>
+            <button class="culture-but"id="spanish">
+                <h4>Spanish</h4>
             </button>
         </div>
-
+     
         <div class="single-grid">
-            <button class="culture-but" id="asian">
-                <h4>
-                    Asian
-                </h4>
+            <button class="culture-but"id="asian">
+                <h4>Asian</h4>
             </button>
         </div>
-
+        
         <div class="single-grid">
-            <button class="culture-but" id="dance">
-                <h4>
-                    Dance
-                </h4>
+            <button class="culture-but"id="korean">
+                <h4>Korean</h4>
             </button>
         </div>
-
+        
         <div class="single-grid">
-            <button class="culture-but" id="bolly">
-                <h4>
-                    Bollywood
-                </h4>
+            <button class="culture-but"id="bolly">
+                <h4>Bollywood</h4>
             </button>
         </div>
-
+        
         <div class="single-grid">
-            <button class="culture-but" id="soap">
-                <h4>
-                    Soap Opera
-                </h4>
+            <button class="culture-but"id="african">
+                <h4>African</h4>
             </button>
         </div>
-
+        
         <div class="single-grid">
-            <button class="culture-but" id="decades">
-                <h4>
-                    Decades
-                </h4>
+            <button class="culture-but"id="french">
+                <h4>French</h4>
             </button>
         </div>
-
+        
+        <div class="single-grid">
+            <button class="culture-but"id="italian">
+                <h4>Italian</h4>
+            </button>
+        </div>
+        
+        <div class="single-grid">
+            <button class="culture-but"id="japanese">
+                <h4>Japanese</h4>
+            </button>
+        </div>    
     </div>
 
     <!-- script to select multiple buttons -->
