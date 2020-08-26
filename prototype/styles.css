@@ -141,6 +141,7 @@ Container for h3 and category horizontal scroll */
     overflow-x: scroll;
     width: 100%;
     padding-left: 27px;
+    cursor: grab;
 }
 
 .thumbnail img{
@@ -567,7 +568,7 @@ input {
     border-radius: 7px;
     border: none;
     padding: .5rem;
-    margin: 0;
+    margin: 0 0 1rem;
     width: 90%;
 }
 
@@ -583,6 +584,10 @@ span.notvalid:after {
 
 
 /* Age Page */
+#enteryourname-error{
+    color: white;
+    margin: 1rem 0;
+}
 
 .agerange {
     display: flex;
