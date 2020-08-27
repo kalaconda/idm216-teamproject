@@ -118,23 +118,23 @@
         </div>
     </div>
 
-    <div class="item">
+    <!-- <div class="item">
         <h3 class="categorytt">View All</h3>
         <div class="thumbnail">
-            <?php 
-                while($row = mysqli_fetch_assoc($result)) {
+            <?php  
+                //while($row = mysqli_fetch_assoc($result)) {
             ?>
 
-            <img src="images/thumbnail_notallofthem/<?php echo $row['thumbnail'];?>">
+            <img src="images/thumbnail_notallofthem/<?php //echo $row['thumbnail'];?>">
 
             <?php
-                } 
-                mysqli_free_result($result);
-                mysqli_free_result($row);
+                //} 
+                //mysqli_free_result($result);
+                //mysqli_free_result($row);
             ?>
         </div>
 
-    </div>    
+    </div>     -->
 
     <div class="item">
         <h3 class="categorytt">Anime</h3>
