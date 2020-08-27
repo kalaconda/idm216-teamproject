@@ -134,8 +134,17 @@ Container for h3 and category horizontal scroll */
 .item {
     margin-top: 20px;
     height: auto;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.item::-webkit-scrollbar {
+    display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+.item {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 .thumbnail {
     display: flex;
