@@ -214,6 +214,18 @@
                 <img src="images/actors/bradleycooper.jpg" alt="bradleycooper">
                 <p> Bradley Cooper</p>
             </div>
+            <div class="inlineflex">
+                <img src="images/actors/jonahhill.jpg" alt="jonahhill">
+                <p> Jonah Hill</p>
+            </div>
+            <div class="inlineflex">
+                <img src="images/actors/devpatel.jpg" alt="devpatel">
+                <p> Dev Patel</p>
+            </div>
+            <div class="inlineflex">
+                <img src="images/actors/bradpitt.jpg" alt="bradpitt">
+                <p> Brad Pitt</p>
+            </div>
         </div>
     </div>
     

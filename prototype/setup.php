@@ -60,7 +60,7 @@
                 <h1><a href="home.php">Start Watching!</a></h1>
             </button>
             <div class="maybelater goback">
-                <p><a href="setup.php">Go Back</a></p>
+                <p><a href="culture.php">Go Back</a></p>
             </div>
         </div>
     </div>
