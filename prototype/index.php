@@ -22,7 +22,7 @@
     </div>
 
     <div id="options">
-        <div class="profile_btn"> <a href="home.html" class="profile_button"> Example Name</a> </div>
+        <div class="profile_btn"> <a href="home.html" class="profile_button"> Uncle Joe</a> </div>
         <div class="child_btn"> <a href="home.html" class="child_button"> Child</a> </div>
         <div class="add_btn"> <a href="addname.php" id="add_profile"> + Add New Profile</a> </div>
     </div>
