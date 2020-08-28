@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1600px;
+    font-family: var(--bodyfont);
+    height: 1650px;
+}
+
+:root{
+    /* There are 2 light blues that are essentially the same ? 
+     --lightblue2: rgb(0, 129, 172); **/
+    --lightblue: #00ACE3;
+    --bluegray: #456488;
+    --darkblue: #253340;
+    --superdarkblue: #111826;
+    --orange: #FF9A00;
+    --gray: #555555;
+    /*fonts*/
+    --bodyfont: 'ubuntu-r';
+    --boldfont: 'ubuntu-bold';
+    --lightfont: 'ubuntu-l';
+}
+
+@font-face {
+    font-family: 'ubuntu-l';
+    src: url('font/light/ubuntu-l.woff2') format('woff2'),
+         url('font/light/ubuntu-l.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'ubuntu-bold';
+    src: url('font/ubuntu/ubuntu-b.woff2') format('woff2'),
+         url('font/ubuntu/ubuntu-b.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'ubuntu-r';
+    src: url('font/ubuntu/ubuntu-r.woff2') format('woff2'),
+         url('font/ubuntu/ubuntu-r.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: #13304A;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.heroimage {
+    margin: 0 auto;
+    text-align: center;
+}
+.heroimage img {
+    width: 80%;
+
+}
+
+.classname {
+    text-align: center;
+    margin: 4em 3em;
+}
+.classname p {
+    color: white;
+    font-weight: bold;
+    font-size: 4em;
+    font-family: var(--bodyfont);
+}
+.casestudy{
+    margin: 3em auto;
+    text-align: center;
+}
+.casestudy hr{
+    width: 30%;
+    margin: 0 auto;
+    border-color: #00ACE3 ;
+}
+.casestudy p {
+    letter-spacing: 5px;
+    font-size: 1.2em;
+    position: relative;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #13304A;
+    width: 200px;
+}
+
+/* overview */
+
+.main-textbox {
+    margin: 3em auto;
+    width: 46%;
+}
+.title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+.main-textbox p{
+    color: #0A4171;
+    line-height: 1.5em;
+    margin: 1.5em 0;
+    font-weight: light;
+}
+#subtitle {
+    font-size: 1.5em;
+    color: #ffc55b;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 2em;
+}
+
+/* PROCESS AND INSIGHTS */
+.alpha {
+    position: relative;
+    z-index: 10;
+    background-color:#e1f5ed;
+    padding-bottom: 2em;
+}
+.alpha-header{
+    position: relative;
+    top: -0.35em;
+    margin-bottom: -0.6em;
+    font-size: 10em;
+    font-weight: bold;
+    opacity: 0.5;
+    color: white;
+}
+
+.image {
+    text-align: center;
+}
+.image img {
+    width: 100%;
+}
+.image figcaption {
+    margin-top: 0.5em;
+    font-style: italic;
+    opacity: 0.6;
+    color: rgb(17, 18, 75);
+}
+
+
+#style_tile img {
+    width: 40%;
+    background-color: white;
+}
+#logo img {
+    width: 15%;
+}
+#cutefood img{
+    background-color: white;
+    width: 100%;
+}
+#timeline img {
+    width: 60%;
+    margin: 2em 0 0;
+}
+#team img {
+    width: 75%;
+}
+#team_link{
+    text-decoration: none;
+    color: #FF9A00;
+    transition: all 0.3s ease-in-out;
+}
+#team_button {
+    width: 140px;
+    text-align: center;
+    padding: 1em;
+    border: 2px solid #FF9A00;
+    transition: all 0.3s ease-in-out;
+}
+#team_button:hover {
+    background-color: #FF9A00;
+    cursor: pointer;
+}
+#team_button:hover > #team_link {
+    color: white;
+}
+#team_link a{
+    text-decoration: none;
+}
+#userflow img {
+    width: 80%;
+}
+#subgenre img{
+    width: 40%;
+}
+#cultural img {
+    width: 40%;
+}
+#code {
+    background-color: #251e47;
+    padding-top: 2em;
+}
+#code p{
+    color: rgb(201, 201, 201);
+}
+#nav img {
+    width: 40%;
+}
+#spreadsheet img{
+    width: 70%;
+}
+
+#code figcaption {
+    color: white;
+}
+#database img {
+    width: 40%;
+}
+#challenges {
+    background-color: #e0f5a7;
+    position: relative;
+    z-index: 5;
+}
+#subtitle2 {
+    font-size: 1.5em;
+    color: #F6A101;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 2em;
+}
+#random img {
+    width: 20%;
+}
+#solution {
+    background-color: rgb(255, 212, 192);
+    position: relative;
+    z-index: 0;
+}
+#ui {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+#ui img {
+    width: 90%;
+}
+#cooktime img{
+    width: 20%;
+}
+#color img{
+    width: 20%;
+}
+#checkmark img{
+    width: 40%;
+}
+
+#end {
+    padding-top: 3em;
+}
+.result-link {
+    width: 80%;
+    margin: 0 auto;
+}
+.result-link a {
+    color: black;
+    margin: 0 auto;
+}
+
+#center  {
+    text-align: center;
+    color: #EFA834;
+}
+
+
