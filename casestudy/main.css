@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.video {
+    height: 90vh;
+    background-color: #1e353b;
+    text-align: center;
+}
+.video video {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* border: 10px white solid; */
+}
+
+.heroimage img {
+    width: 100%;
+}
+
+.classname {
+    text-align: center;
+    margin: 3em 0em;
+}
+.classname p {
+    color: #F6A101;
+    font-weight: bold;
+    font-size: 8em;
+}
+.classname hr {
+    margin: 4em auto;
+    width: 8%;
+    border: 8px #D0EA8B solid
+}
+
+/* overview */
+
+.main-textbox {
+    margin: 3em auto;
+    width: 46%;
+}
+.title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+.main-textbox p{
+    color: #0A4171;
+    line-height: 1.5em;
+    margin: 1.5em 0;
+    font-weight: light;
+}
+#subtitle {
+    font-size: 1.5em;
+    color: #ffc55b;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 2em;
+}
+
+/* PROCESS AND INSIGHTS */
+.alpha {
+    position: relative;
+    z-index: 10;
+    background-color:#e1f5ed;
+    padding-bottom: 2em;
+}
+.alpha-header{
+    position: relative;
+    top: -0.35em;
+    margin-bottom: -0.6em;
+    font-size: 10em;
+    font-weight: bold;
+    opacity: 0.5;
+    color: white;
+}
+.main-textbox a {
+    text-decoration: none;
+    color: pink;
+}
+.image {
+    text-align: center;
+}
+.image img {
+    width: 85%;
+}
+.image figcaption {
+    margin-top: 0.5em;
+    font-style: italic;
+    opacity: 0.6;
+    color: rgb(17, 18, 75);
+}
+
+
+#style_tile img {
+    width: 40%;
+    background-color: white;
+}
+#logo img {
+    width: 15%;
+}
+#cutefood img{
+    background-color: white;
+    width: 100%;
+}
+#sketch img {
+    width: 40%;
+    margin: 2em 0 0;
+}
+
+#code {
+    background-color: #251e47;
+    padding-top: 2em;
+}
+#code p{
+    color: rgb(201, 201, 201);
+}
+#spreadsheet img{
+    width: 70%;
+}
+
+#code figcaption {
+    color: white;
+}
+#database img {
+    width: 40%;
+}
+#challenges {
+    background-color: #e0f5a7;
+    position: relative;
+    z-index: 5;
+}
+#subtitle2 {
+    font-size: 1.5em;
+    color: #F6A101;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 2em;
+}
+#random img {
+    width: 20%;
+}
+#solution {
+    background-color: rgb(255, 212, 192);
+    position: relative;
+    z-index: 0;
+}
+#ui {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+#ui img {
+    width: 90%;
+}
+#cooktime img{
+    width: 20%;
+}
+#color img{
+    width: 20%;
+}
+#checkmark img{
+    width: 40%;
+}
+
+#end {
+    padding-top: 3em;
+}
+.result-link {
+    width: 80%;
+    margin: 0 auto;
+}
+.result-link a {
+    color: black;
+    margin: 0 auto;
+}
+
+#center  {
+    text-align: center;
+    color: #EFA834;
+}
+
+
