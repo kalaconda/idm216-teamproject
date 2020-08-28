@@ -32,7 +32,7 @@
     <!-- desc text -->
     <div id="orangedesc">
         <h5> Let's dive deeper. </h5>
-        <h5> Choose <b>3</b> topics you're into!</h5>
+        <h5>What else do you watch?</h5>
     </div>
 
     <!-- buttons -->
