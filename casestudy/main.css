@@ -14,11 +14,12 @@ body {
 :root{
     /* There are 2 light blues that are essentially the same ? 
      --lightblue2: rgb(0, 129, 172); **/
-    --lightblue: #00ACE3;
+    --lightblue: #009ACC;
     --bluegray: #456488;
+    --semiblue:#2E648A;
     --darkblue: #253340;
-    --superdarkblue: #111826;
-    --orange: #FF9A00;
+    --superdarkblue: #162B3C;
+    --orange: #FCD47F;
     --gray: #555555;
     /*fonts*/
     --bodyfont: 'ubuntu-r';
@@ -111,7 +112,7 @@ body {
     margin-bottom: 1.5em;
 }
 .main-textbox p{
-    color: #0A4171;
+    color: #162B3C;
     line-height: 1.5em;
     margin: 1.5em 0;
     font-weight: light;
@@ -128,7 +129,7 @@ body {
 .alpha {
     position: relative;
     z-index: 10;
-    background-color:#e1f5ed;
+    background-color:#2E648A;
     padding-bottom: 2em;
 }
 .alpha-header{
@@ -205,12 +206,17 @@ body {
     width: 40%;
 }
 #code {
-    background-color: #251e47;
+    background-color: #162B3C;
     padding-top: 2em;
 }
 #code p{
     color: rgb(201, 201, 201);
 }
+
+#designthink p{
+    color: rgb(201, 201, 201);
+}
+
 #nav img {
     width: 40%;
 }
@@ -225,22 +231,28 @@ body {
     width: 40%;
 }
 #challenges {
-    background-color: #e0f5a7;
+    background-color: #FFA400;
     position: relative;
     z-index: 5;
 }
+
 #subtitle2 {
     font-size: 1.5em;
-    color: #F6A101;
+    color: #162B3C;
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 2em;
 }
+
+#subtitle3 {
+    color: white;
+} 
+
 #random img {
     width: 20%;
 }
 #solution {
-    background-color: rgb(255, 212, 192);
+    background-color: #009ACC;
     position: relative;
     z-index: 0;
 }
