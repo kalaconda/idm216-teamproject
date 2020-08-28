@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Interaction Case Study</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="blob.css">
+</head>
+<body>
+    <div class="video">
+        <video width="899" height="451" controls autoplay>
+            <source src="videos/final.mp4" type=video/mp4>
+          </video>
+    </div>
+
+    
+    <div class="heroimage">
+        <img src="images/header_image.jpg" alt="">
+    </div>
+
+    <div class="classname">
+        <p>IDM 232</p>
+        <hr>
+    </div>
+
+    <div class="main-textbox">
+        <p class="title">Overview</p>
+        <p>IDM 232 is a “Scripting 2” course where we explore modern server-side scripting languages that allows user to interact with relational database content through browser web pages. The final project is to build a responsive recipe website based off the large amount of recipe data including many images and pdf recipe files given to me.   </p>
+        
+        <h2 id="subtitle">Background</h2>
+        <p>In this course we learnt how to employ server-side technologies to pull data from a database and used php scripting language to build an interactive, data driven recipe site. We were given an individual project to build a dynamic recipe website. </p>
+        <p><b>The Problem:</b> I was given a large amount of recipe data consisting of images of the finished meals, ingredients, images for each steps as well as 40 different pdf recipe files. The problem is that the client wanted me to sort out these files, take all these data and present them all on a website where it is easily accessible for users to get to any recipes they want. The client also wanted the website to be fully responsive so more users can use the site with ease.</p>
+        <p><b>Goal:</b> To learn about php scripting language and server-side technologies to essentially build a fully responsive and data driven recipe site based off the large amount of data given to me.</p>
+        <p>The <b>purpose</b> of this class was to challenge myself to learn new scripting language to be able to tackle large data and organize and process them to be easily accessible by users on a data driven website.</p>
+        <p><b>Timeline:</b> 9 weeks</p>
+    </div>
+
+    <div class="alpha">
+        <div class="alpha-header">
+            <p>EARLY STAGE</p>
+        </div>
+        <div class="main-textbox alpha-text">
+            <p class="title">Process and Insights</p>
+            
+            <h2 id="subtitle">Persona Profiles</h2>
+            <p>I started off by building basic user personas I geared my target users to be younger adults, rather than middle aged adults. I explored the different types of young adults user types from roughly age 20 to 35.</p>
+        </div>
+        <div class="image">
+            <img src="images/persona.svg" alt="">
+            <figcaption>My 3 User Personal Profiles.</figcaption>
+        </div>
+        
+        <div class="main-textbox alpha-text">
+            <p>I found that the majority of my potential users seem to have a goal of learning new recipes when visiting the website. Some want to find new healthy recipes; some just wants to be explorative and learn something new in general. Considering this, I came up with the idea of having a button on my homepage to generate a random recipe whenever the user is feeling explorative or is just unsure of what to cook. I also want to make sure the users are provided with a list of food categories to help them figure out where to start from. As time is valuable for busy young adults, I want to make sure the user can easily see the cook time for each meal to help them in their decision-making process.</p>
+        
+            <h2 id="subtitle">Style Guides/ Branding</h2>
+        </div>
+
+        <div class="image" id="style_tile">
+            <img src="images/style_tile.png" alt="">
+            <figcaption>My Style Tile.</figcaption>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <p>I decided to make my website have a vibrant color scheme to make it look fun and energetic for my users. To match with this look, I chose my main font to be “Quicksand” font. This is a sans serif font with round edges, adding to the fun and joyful look. </p>
+        </div>
+
+        <div class="image" id="logo">
+            <img src="images/natsu_logo_text.png" alt="">
+            <figcaption>Natsu Logo made on Illustrator.</figcaption>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <p>I have also created a logo that is a mascot for the website. It was designed using Adobe Illustrator.The mascot is based off my plushie dog called “Natsu”, which means summer in Japanese. The choice of color scheme was inspired from his light orange fur. The cute mascot gives the website a strong unique branding presence. </p>
+            <p>I have also included some small illustrations of ingredients that can be used throughout my website.</p>
+        </div>
+
+        <div class="image" id="cutefood">
+            <img src="images/cutefoods.png" alt="">
+        </div>
+
+        <div class="main-textbox alpha-text" id="wireframe">
+            <h2 id="subtitle">Wireframes</h2>
+            <p>After understanding and establishing my style tile and targeted users, I began to make rough sketches on paper and turned them into wireframes using Adobe XD.</p>
+        </div>
+
+        <div class="image" id="sketch">
+            <img src="images/sketches.png" alt="sketches">
+            <figcaption>Early rough sketches.</figcaption>
+            <img src="images/adobeXD.png" alt="sketches">
+            <figcaption>A snippet of my Adobe XD Wireframes.</figcaption>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <p>I wanted my results recipes to have the card designs that is currently popular. I felt like the round edges flows in with the overall image of the branding and the slight box shadow makes it look really smooth and yet pop out. The majority of the meal photos are on a plate and so I got this idea to crop each image into a circle to really make it look like it’s on a plate on the website. </p>
+        </div>
+
+    </div>  
+    
+    <!-- CODE AND DEVELOPMENT -->
+    
+    <div class="alpha" id="code">
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle">Code/Development</h2>
+            <p>For the first 4 weeks, other than building my personas and style tile, I began to develop my website. During this time, I only focused on developing the HTML, CSS, and JavaScript based off my wireframes. I had a mobile first approach when developing and made it fully responsive using media queries. I did not make a page for every recipe, except only developed one recipe page to be used as a template. This template will later be dynamic with php scripting when inputting the data from a local server. I made sure to focus a lot on making my backend code easy to read when building the code. This is important because when I start putting php scripting in, it could change my layout a bit and going back and tweaking my CSS code will become necessary.</p>
+            <p>During this time, I also began to sort out all the data given to me into a spreadsheet which will eventually be imported into the myphpAdmin of my local and remote server as a MySQL database. The spreadsheet consisted of 40 rows of recipes and the several columns consisting of further data for each such as cook time, calories per serving, name of image files, instruction for each step etc. I have also divided the recipes into 7 categories: vegan, dinner, salad, potluck, Asian, Mexican, and Italian. These categories are made based on the most common types of food I found when analyzing all of the 40 recipes. I listed the category of meal in an additional column named “type”. This will be used for retrieving recipes from the specific category based on its “type” when clicking on the categories on the homepage. </p>
+        </div>
+
+        <div class="image" id="spreadsheet">
+            <img src="images/table.png" alt="">
+            <figcaption>A snippet of my data spreadsheet.</figcaption>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle">Connecting to Database</h2>
+            <p>From week 4 to 9 is when I began to make it data driven. First, I need a local server environment to serve up the web files that I will look back at in my browser. I am using MAMP which installed a local server environment for me. It is a useful tool where I can easily test my website locally. Next, I imported my spreadsheet to the local host myphpAdmin as a csv file where all the data will be stored there. I did this remotely using Bluehost as well. I also added an extra column named “id” in myphpAdmin so that when referring to a specific recipe, you can call out its id number rather than its long recipe name. Now, I have a MySQL database ready locally and remotely to retrieve data from. </p>
+            <p>To retrieve the data, I need to first have my website connected to my local database. For local only, the dbuser and dbpass is for the root user who has the full privileges. For my remote server, I used Bluehost and created its own dbuser and dbpass, so the value for these will be different from the local server. After this, I identified dbname for both the local and remote server. Last, to finally connect to my database, I used the “mysqli_connect” key line. I have also added the “mysqli_connect_errno” key line so in case there is an error with my php code for example, it will inform me there is a database connection error. In result, this is what my database connection looks like:</p>
+        </div>
+
+        <div class="image" id="database">
+            <img src="images/database.png" alt="">
+            <figcaption>My database setup.</figcaption>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <p>For clear organization purposes, I have also created an includes folder that consists of my _header.php, _footer.php, and database.php.. This will help in preventing repeating lines of code in every page. </p>
+            <h2 id="subtitle">Search Function</h2>
+            <p>One of my main function of course, is the search function and this will always create various types of search results based on whatever is typed in the search bar.</p>
+            <p>The search bar in the html page is in a form and everytime a form is submitted, in this case, a search value is inputted, it is going to send a POST request. All the values posted will be in an associative array that is ready for us to access. I added the “action” attribute to send the form data to “searchresults.php” where the search results will appear. I put all these values in a variable called $search and this will be used when performing the database query in the “searchresults.php” page. This is how my search results appear. To get to the recipe page from the search results, I used the super variable $_GET so that whatever recipe is clicked on, the GET method will access the “id” of that recipe and show its recipe page. In the recipe page the “id” is set as a variable that is equal to $_GET[‘id’]. </p>
+        </div>
+    </div>
+
+    <div class="alpha" id="challenges">
+        <div class="alpha-header">
+            <p>DEBUGGING</p>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <p class="title">Challenges</p>
+            <h2 id="subtitle2">Random Recipe Generator</h2>
+        </div>
+        <div class="image" id="random">
+            <img src="images/random.png" alt="">
+            <figcaption>The Random Recipe button</figcaption>
+        </div>
+        <div class="main-textbox alpha-text">
+            <p>One of my challenges was implementing the random recipe generator button in my homepage. I was unsure as to how I should make it work. After doing my research, I learnt about the _rand php code which will generate a random number. I figured I could use this for generating a random “id” number to show a random recipe. At first, I put this in the recipe page but I realized that “id” is already made into a variable equaled to $_GET[‘id’]. If I were to put another “id” variable with the _rand php code, it’s impossible as you can’t have two of the same variable existing. </p>
+            <p>To solve this, I duplicated the recipe page and called it random_recipe.php. It has the exact same HTML and CSS code, but the only difference will be that the “id” variable will equal to “rand (1, 40)”. The two numbers in the parameters represent the minimum and maximum number of “id” there is.</p>
+            <h2 id="subtitle2">The Z-Index</h2>
+            <p>For the first 8 weeks, I had an issue with not being able to click on any of the category buttons in my homepage. They each had an anchor tag around them, yet none of them were clickable and none of them had the cursor pointer even when I added cursor:pointer CSS to each button.</p>
+            <p>To solve this issue, I started off by commenting out the different CSS file linked to the homepage. I had three links. After commenting two out of the three for each link to see which link is affecting the ability to click on the button, I found out that the issue lies in the index.css file. I went through my index.css file and try to search for an issue and still could not find any pressuring mistake. So I tried to play around with the values of different properties such as position, cursor, on hover etc. Later, when I changed the z-index for the div the buttons reside in from – 1 to 10 it worked! I didn’t know this before, but I learnt that if the z-index is a negative number, it means that it is ways behind the screen of interaction and therefore cannot be clicked.</p>
+        </div>
+    </div>
+
+    <div class="alpha" id="solution">
+        <div class="alpha-header">
+            <p>DESIGNS</p>
+        </div>
+        <div class="main-textbox alpha-text">
+            <p class="title">Design Solutions</p>
+            <h2 id="subtitle2">Responsive UI</h2>
+            <p>The card design is very malleable and useful for responsive website. An example of this is the difference between the arrangement of content inside card design for mobile phone and laptop devices in the search results page. </p>
+            <p>For mobile phone, the card has a landscape format where the content is laid out horizontally. This is so that more results can fit into the screen below it. If it had a portrait format like in the desktop, it wouldn’t be suitable because it would take up a lot of vertical space and show less results. </p>
+            <p>For desktop, the portrait format is better suited as the width is longer than is height compared to mobile phone. Taking up more vertical space is better so more horizontal space is available to present more results for users to pick from. </p>
+        </div>
+        <div class="image" id="ui">
+            <div>
+                <img src="images/portraitcard.png" alt="">
+                <figcaption>Card UI for Desktop</figcaption>
+            </div>
+            <div>
+                <img src="images/landscapecard.png" alt="">
+                <figcaption>Card UI for Mobile</figcaption>
+            </div>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle2">Easy to see Cook Time</h2>
+            <p>Based on my persona profile findings, I mentioned how the display for cook time is valuable for busy young adults. Because of this, for the search results I made sure the cook time for each recipe can be seen. This can save user from adding another click to find out the cook time of the recipe. </p>
+        </div>
+        <div class="image" id="cooktime">
+            <img src="images/cooktime.png" alt="">
+            <figcaption>Searchresult's UI with the Cook Time on view.</figcaption>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle2">Color and Branding</h2>
+            <p>I am happy with the branding and color schemes I have created for my site. I felt like I did a good job on keeping the color consistent. My primary colors are the light orange and teal blue which pairs up well due to being complimentary colors. The vibrant colors also resonate with the bright variety of colors from the recipe photos as well. The majority of the meals have yellow, orange, and greenish blue colors – it’s almost as if the color scheme was pulled from the meal images!</p>
+        </div>
+        <div class="image" id="color">
+            <img src="images/color.png" alt="">
+            <figcaption>Keeping colors everywhere consistent!</figcaption>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle2">Checkmark</h2>
+            <p>A lot of the recipe have a long list of ingredients and keeping track of them all can be very difficult. This is why I included the checklist buttons for each ingredient which will help users to keep track of what they have and don’t have. Though it is a small design decision, it is a powerful one I believe that enhances and ease the user’s experience when cooking their meal.</p>
+        </div>
+        <div class="image" id="checkmark">
+            <img src="gif/checkmark.gif" alt="">
+            <figcaption>Makes your life easier!</figcaption>
+        </div>
+    </div>
+
+    <div class="main-textbox" id="end">
+        <p class="title">End Result</p>
+        <p id="center"><b>Check out my final website by cliking on the blob!</b></p>
+    </div>
+
+    <div class="result-link">
+        
+
+        <a href="http://www.dolmayangchensherpa.com/idm232-dys43/">
+            <div class="blob" >
+            <div></div>
+            <p>Recipe Site</p>
+        </div></a>
+    </div>
+
+    <div class="main-textbox">
+        <p>The project was long and challenging, but I am super proud of the end result. Never would I thought I could make such a dynamic data driven website! I have succeeded in the challenge: I was able to organize the data on a spreadsheet and create a MySQL databased out of it, I was able to retrieve the data by performing a database query, and have it connected to my website, and also make it fully responsive! I am also satisfied with my overall branding and UI look of the website. I have gone through lots of hurdles but overcoming them have been valuable for me as I have learnt many new skills such as working with php and even CSS styling like about Z-index! </p>
+        <p>For the future, I would love to try and implemented a “My Favorite” page where users can heart recipes they like or even would like to try out later. I also think it would be informative and useful if users can hover over the search results recipe and a description for that meal would appear up above the recipe title without having to click on it to help in their decision making process.</p>
+    </div>
+
+
+</body>
+</html>
