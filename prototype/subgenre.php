@@ -39,19 +39,20 @@
     <div class="flexgenrebtn">
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_detective.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_detective_light.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_detective.svg" id="subiconshow">
             </button>
             <p>Detective</p>
         </div>
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_adventure.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_adventure_light.svg" id="subgenreicon">
             </button>
             <p>Adventure</p>
         </div>
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_crime.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_crime_light.svg" id="subgenreicon">
             </button>
             <p>Crime</p>
         </div>     
@@ -60,19 +61,19 @@
     <div class="flexgenrebtn">
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_military.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_military_light.svg" id="subgenreicon">
             </button>
             <p>Military</p>
         </div>
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_romcom.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_romcom_light.svg" id="subgenreicon">
             </button>
             <p>Rom Com</p>
         </div>
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_kdrama.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_kdrama_light.svg" id="subgenreicon">
             </button>
             <p>K-Drama</p>
         </div>
@@ -81,19 +82,19 @@
     <div class="flexgenrebtn">
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_musical.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_musical_light.svg" id="subgenreicon">
             </button>
             <p>Musical</p>
         </div>
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_supernatural.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_supernatural_light.svg" id="subgenreicon">
             </button>
             <p>Supernatural</p>
         </div>
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_fantasy.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_fantasy_light.svg" id="subgenreicon">
             </button>
             <p>Fantasy</p>
         </div>
@@ -102,19 +103,19 @@
     <div class="flexgenrebtn">
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_melodrama.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_melodrama_light.svg" id="subgenreicon">
             </button>
             <p>Melo-drama</p>
         </div>
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_medical.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_medical_light.svg" id="subgenreicon">
             </button>
             <p>Medical</p>
         </div>
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_gore.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_gore_light.svg" id="subgenreicon">
             </button>
             <p>Gore</p>
         </div>
@@ -123,21 +124,42 @@
     <div class="flexgenrebtn">
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_LGBTQ.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_LGBTQ_light.svg" id="subgenreicon">
             </button>
             <p>LGBTQA+</p>
         </div>
         <div class="alignitems">
             <button type="button" class="genrebtn">
-                <img src="images/subgenre/icon_dance.svg" id="subgenreicon">
+                <img src="images/subgenre/icon_dance_light.svg" id="subgenreicon">
             </button>
             <p>Dance</p>
         </div>
     </div>
 
     <!-- script to select multiple buttons -->
+
     <script>
         $("button").click(function () {
+      clicked = true;
+      if (clicked) {
+        $(this).toggleClass('active');
+        clicked = true;
+      } else {
+        $(this).removeClass('active');
+        clicked = false;
+      }
+    });
+        $("#subiconshow").click(function () {
+      clicked = true;
+      if (clicked) {
+        $(this).toggleClass('active');
+        clicked = true;
+      } else {
+        $(this).removeClass('active');
+        clicked = false;
+      }
+    });
+        $("#subgenreicon").click(function () {
       clicked = true;
       if (clicked) {
         $(this).toggleClass('active');
