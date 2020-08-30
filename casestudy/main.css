@@ -260,24 +260,15 @@ body {
     position: relative;
     z-index: 0;
 }
-#ui {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: 80%;
+.microinteraction {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
     margin: 0 auto;
     align-items: center;
 }
-#ui img {
-    width: 90%;
-}
-#cooktime img{
-    width: 20%;
-}
-#color img{
-    width: 20%;
-}
-#checkmark img{
-    width: 40%;
+.microinteraction div{
+    margin: 0 1em;
 }
 
 #end {
