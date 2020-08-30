@@ -182,6 +182,8 @@ body {
     text-decoration: none;
     color: #FF9A00;
     transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+    text-align: center;
 }
 #team_button {
     width: 140px;
@@ -193,12 +195,16 @@ body {
 #team_button:hover {
     background-color: #FF9A00;
     cursor: pointer;
+    color: white;
 }
 #team_button:hover > #team_link {
     color: white;
 }
 #team_link a{
     text-decoration: none;
+}
+.github div{
+    margin: -2em auto 0;
 }
 #userflow img {
     width: 80%;
@@ -232,7 +238,7 @@ body {
     color: white;
 }
 #database img {
-    width: 40%;
+    width: 60%;
 }
 #challenges {
     background-color: #FFA400;
@@ -260,24 +266,15 @@ body {
     position: relative;
     z-index: 0;
 }
-#ui {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: 80%;
+.microinteraction {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
     margin: 0 auto;
     align-items: center;
 }
-#ui img {
-    width: 90%;
-}
-#cooktime img{
-    width: 20%;
-}
-#color img{
-    width: 20%;
-}
-#checkmark img{
-    width: 40%;
+.microinteraction div{
+    margin: 0 1em;
 }
 
 #end {

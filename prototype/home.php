@@ -105,7 +105,7 @@
     <!-- categories -->
     <div class="item">
         <h3 class="categorytt">Prime Picks For You</h3>
-        <div class="thumbnail poster_tn">
+        <div class="thumbnail scroll poster_tn">
             <div>
                 <img src="images/paprika_poster.jpg" alt="paprika">
             </div>
@@ -138,7 +138,7 @@
 
     <div class="item">
         <h3 class="categorytt">Anime</h3>
-        <div class="thumbnail">
+        <div class="thumbnail scroll">
             <?php
                 $genre = "SELECT * FROM {$table} WHERE `genre` = 'Anime'";
                 $result = mysqli_query($connection, $genre);
@@ -157,7 +157,7 @@
 
     <div class="item">
         <h3 class="categorytt">Documentary</h3>
-        <div class="thumbnail">
+        <div class="thumbnail scroll">
             <?php
                 $genre = "SELECT * FROM {$table} WHERE `genre` = 'Documentary'";
                 $result = mysqli_query($connection, $genre);
@@ -176,7 +176,7 @@
 
     <div class="item">
         <h3 class="categorytt">Action</h3>
-        <div class="thumbnail">
+        <div class="thumbnail scroll">
             <?php
                 $genre = "SELECT * FROM {$table} WHERE `genre` = 'Action'";
                 $result = mysqli_query($connection, $genre);
@@ -201,7 +201,7 @@
     <!-- actors -->
     <div class="item">
         <h3 class="categorytt">Recommended Actors</h3>
-        <div class="thumbnail2">
+        <div class="thumbnail2 scroll">
             <div class="inlineflex">
                 <img src="images/actors/annehathaway.jpg" alt="annehathaway">
                 <p> Anne Hathaway </p>
@@ -237,6 +237,9 @@
         <a href="index.php"><img src="images/icons/myprofile.svg" class="svg"></a>
     </div>
 
+<script src="main.js"></script>
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
         <!-- Initialize Swiper -->
@@ -253,7 +256,6 @@
             }, 
             });
         </script>
-
             
 </body>
 </html>
