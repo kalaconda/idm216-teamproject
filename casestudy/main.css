@@ -1,14 +1,14 @@
 * {
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
-    margin: 0;
+    margin: 0 auto;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    height: 1600px;
     font-family: var(--bodyfont);
-    height: 1650px;
+/*     height: 1650px; */
+/*     height: 1600px; */
 }
 
 :root{
@@ -53,7 +53,7 @@ body {
 
 .background {
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     background-color: #13304A;
     position: absolute;
     top: 0;
@@ -76,7 +76,7 @@ body {
 .classname p {
     color: white;
     font-weight: bold;
-    font-size: 4em;
+    font-size: 2em;
     font-family: var(--bodyfont);
 }
 .casestudy{
@@ -84,7 +84,7 @@ body {
     text-align: center;
 }
 .casestudy hr{
-    width: 30%;
+    width: 80%;
     margin: 0 auto;
     border-color: #00ACE3 ;
 }
@@ -93,17 +93,18 @@ body {
     font-size: 1.2em;
     position: relative;
     top: -14px;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
     background-color: #13304A;
-    width: 200px;
+    width: 10em;
+    /* width: 200px; */
 }
 
 /* overview */
 
 .main-textbox {
     margin: 3em auto;
-    width: 46%;
+    width: 80%;
 }
 .title {
     font-size: 2em;
@@ -136,10 +137,10 @@ body {
     position: relative;
     top: -0.35em;
     margin-bottom: -0.6em;
-    font-size: 10em;
+    font-size: 5em;
     font-weight: bold;
     opacity: 0.5;
-    color: white;
+    color: white; /* blue */
 }
 
 .image {
@@ -175,8 +176,9 @@ body {
 #timeline figcaption{
     color:#162B3C ;
 }
+
 #team img {
-    width: 75%;
+    width: 90%;
 }
 #team_link{
     text-decoration: none;
@@ -210,10 +212,10 @@ body {
     width: 80%;
 }
 #subgenre img{
-    width: 40%;
+    width: 80%;
 }
 #cultural img {
-    width: 40%;
+    width: 80%;
 }
 #code {
     background-color: #162B3C;
@@ -228,7 +230,7 @@ body {
 }
 
 #nav img {
-    width: 40%;
+    width: 70%;
 }
 #spreadsheet img{
     width: 70%;
@@ -238,7 +240,7 @@ body {
     color: white;
 }
 #database img {
-    width: 60%;
+    width: 80%;
 }
 #challenges {
     background-color: #FFA400;
@@ -267,14 +269,19 @@ body {
     z-index: 0;
 }
 .microinteraction {
-    display: flex;
-    flex-direction: row;
+    display: block;
     width: 70%;
     margin: 0 auto;
     align-items: center;
 }
+
+
 .microinteraction div{
     margin: 0 1em;
+}
+
+.microinteraction img {
+    padding-top: 2em;
 }
 
 #end {
@@ -299,3 +306,104 @@ body {
     opacity: 0.8;
 }
 
+@media screen and (min-width: 768px) {
+
+    .casestudy hr{
+        width: 50%;
+        margin: 0 auto;
+        border-color: #00ACE3 ;
+    }
+
+    .casestudy p {
+        letter-spacing: 5px;
+        font-size: 1.2em;
+        position: relative;
+        top: -14px;
+        left: 15%;
+        transform: translateX(-50%);
+        background-color: #13304A;
+        width: 10em;
+        /* width: 200px; */
+    }
+
+    .microinteraction {
+        display: flex;
+        flex-direction: row;
+    }
+    
+  }
+  @media screen and (min-width: 1024px) {
+
+    .alpha-header{
+        font-size: 10em;
+    }
+
+    .background {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .classname p {
+        color: white;
+        font-weight: bold;
+        font-size: 5em;
+        font-family: var(--bodyfont);
+    }
+
+    .casestudy hr{
+        width: 30%;
+        margin: 0 auto;
+        border-color: #00ACE3 ;
+    }
+
+    .casestudy p {
+        letter-spacing: 5px;
+        font-size: 1.2em;
+        position: relative;
+        top: -14px;
+        left: 8%;
+        transform: translateX(-50%);
+        background-color: #13304A;
+        width: 10em;
+        /* width: 200px; */
+    }
+
+    .main-textbox {
+        margin: 3em auto;
+        width: 46%;
+    }
+
+    /* Images in responsive mode */
+
+    #timeline{
+        width: 80%;
+    }
+
+    #team {
+        width: 75%;
+    }
+
+    #subgenre img{
+        width: 40%;
+    }
+
+    #cultural img {
+        width: 40%;
+    }
+
+    .microinteraction {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #nav img {
+        width: 40%;
+    }
+    
+    #database img {
+        width: 60%;
+    }
+    
+    
+    
+  }
