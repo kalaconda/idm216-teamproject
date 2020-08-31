@@ -84,20 +84,19 @@ body {
     text-align: center;
 }
 .casestudy hr{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     border-color: #00ACE3 ;
 }
 .casestudy p {
     letter-spacing: 5px;
-    font-size: 1.2em;
+    font-size: 1em;
     position: relative;
     top: -14px;
-    left: 30%;
-    transform: translateX(-50%);
+    left: 0%;
+    transform: translateX(0%);
     background-color: #13304A;
-    width: 10em;
-    /* width: 200px; */
+    width: 200px;
 }
 
 /* overview */
@@ -309,22 +308,13 @@ body {
 @media screen and (min-width: 768px) {
 
     .casestudy hr{
-        width: 50%;
-        margin: 0 auto;
-        border-color: #00ACE3 ;
+        width: 80%;
     }
 
     .casestudy p {
-        letter-spacing: 5px;
         font-size: 1.2em;
-        position: relative;
-        top: -14px;
-        left: 15%;
-        transform: translateX(-50%);
-        background-color: #13304A;
-        width: 10em;
-        /* width: 200px; */
     }
+
 
     .microinteraction {
         display: flex;
