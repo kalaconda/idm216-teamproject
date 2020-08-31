@@ -20,7 +20,6 @@
     <title>Prime Video</title>
     <script src="https://use.fontawesome.com/20cbea2300.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>"> <!-- force css to work -->
 
 </head>
