@@ -45,8 +45,8 @@
         </div>
      
         <div class="single-grid">
-            <button class="culture-but"id="asian">
-                <h4>Asian</h4>
+            <button class="culture-but"id="chinese">
+                <h4>Chinese</h4>
             </button>
         </div>
         
