@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video App Redesign</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="blob.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="classname">
+        <p>Prime Video App <br> Redesign and Development</p>
+        <div class="casestudy">
+            <hr>
+            <p>CASE STUDY</p>
+        </div>
+    </div>
+
+    <div class="heroimage">
+        <img src="images/hero-image.png" alt="">
+    </div>
+
+
+
+    <div class="main-textbox">
+        <p class="title">Overview</p>
+        <p>Over the course of eleven weeks, a team of six designers and developers worked on designing and implementing the redesign of the Amazon Prime Video App. This project adopted an iterative process, where we held three phases of usability testing
+            and made necessary design changes in response to our findings. Through the testing, we received insightful and valuable feedback that contributed to enhancing the “Creating a New Profile” task flow, particularly the personalization process
+            that now has five more pages in comparison to the Alpha state. The app is a fully coded webpage using HTML, CSS, JavaScript, PHP and MySQL. </p>
+
+        <h2 id="subtitle">Background</h2>
+        <p><b>Prime Video</b> is a video streaming service available for Amazon Prime members. It offers thousands of Prime titles for free, with the option to rent or buy movies and TV episodes not included with Prime Video. </p>
+        <p><b>The Problem:</b> For our class, we were given the project of redesigning and implementing a functioning web-based app of the Prime Video app based on a previous redesign on Figma. Our task was to carry on with the redesign and make it functional
+            with code and a database. The critical path we chose to focus on starts from the “Adding A New Profile” page until the “Home” page.
+        </p>
+        <p><b>Goal:</b> To design with usability testing a satisfactory user experience “Adding a New Profile” leading up to an intuitive "For You” homepage that is fully functional and dynamic with HTML, CSS, Javascript, PHP, and MySQL as a web-based app.
+        </p>
+        <p><b>Purpose:</b> To learn how to work in teams collaboratively and efficiently with management tools, and fully utilize all the skills we have learnt so far to successfully build this web-based app. </p>
+        <p><b>Timeline:</b> The project spanned over 11 weeks with a strict timeline structure as outlined below. </p>
+
+    </div>
+
+    <div class="image" id="timeline">
+        <img src="images/timeline.png" alt="timeline">
+        <figcaption>Timeline Structure</figcaption>
+    </div>
+
+    <div class="main-textbox">
+        <h2 id="subtitle"><br><br>Our Team</h2>
+    </div>
+
+    <div class="image" id="team">
+        <img src="images/team.png" alt="team photo and bio">
+    </div>
+
+    <div class="main-textbox">
+        <p>
+            Each of us were assigned a primary role which we were held fully accountable for, and a secondary role supporting the primary. The team consists of Project Managers, UX Designers, UI Designers, Data-Architects, Backend Developer and Frontend Developer.
+            The UI and UX Designers worked closely together to conduct usability testing and design prototypes on Figma, while the Frontend and Backend coders worked closely to implement the final design. The whole team would formally meet every week
+            after lecture to discuss, analyze findings, and decide on the next steps. Sub-teams such as just the UI/UX Designer would also meet when necessary.
+
+            <br><br> As this project was done fully virtually due to COVID-19, our main communication channel was Microsoft Teams. Here we kept track of all of our progress: set tasks in the planner tab that was assigned a due date and a person(s), had
+            group call meetings, archived all of our usability test videos and results, and created different group chats within the team such as “UI/UX,” or “Frontend” etc. Using Microsoft Team as a channel and workspace was a way to organize all our
+            content and allow for efficient project management. It also was used for members to be up to date with other’s work.
+
+            <br><br> To collaboratively work on the development of the app, we used GitHub where we created a team repository everyone has forked from and used either Source Tree GitHub Desktop to work on a local repository.
+
+            <br><br>
+
+            <a id="team_link" href="http://www.dolmayangchensherpa.com/idm216/teampage/passionfruit.html" target="_blank">
+                <div id="team_button">
+                    <b>Team Site</b>
+                </div>
+            </a>
+
+            <br><br>
+
+
+        </p>
+
+    </div>
+
+    <div class="alpha" id="designthink">
+        <div class="alpha-header">
+            <p>DESIGN THINKING</p>
+        </div>
+        <div class="main-textbox alpha-text">
+            <p class="title">Process and Insights</p>
+            <h2 id="subtitle">Easing the User’s Flow </h2>
+            <p>
+                In our first prototype, we only had two screens in our onboarding personalization process – name input and a genre ranking feature. Based on our first usability session, one of the major pain points was how the end of the personalization process felt
+                so sudden; it was missing a sense of closure and left the users somewhat unsatisfied.
+            </p>
+            <p>
+                In response to this, we added an age page for users to select their age range as we realized age is needed to offer appropriate content (e.g. kids content vs adult content). We also added pages where users could select additional film genres and their
+                cultural preferences. Taking this a step further, we designed two more pages: a starting and ending page for the personalization process to help the users know they reached the end of the personalization.
+            </p>
+            <p>
+                In addition, we wanted to incorporate direct personalization with the user. The starting page of the personalization process, which I will call the “welcome page,” comes after the name and age question. To offer a more user-friendly atmosphere, the page
+                starts by saying “Hi [user’s name]!” with a hand icon animation waving hello below it. This page tells the users what they will be expecting in the next few pages before suddenly overloading them with a bunch of questions. By knowing what
+                to expect, the users are also given the option to “Start” or answer the questions “Maybe Later.”
+            </p>
+            <p>
+                The ending page was designed to offer the satisfying sense of closure, making them feel like they have truly completed the personalization process and are ready to move ahead. The green checkmark animation expanding enhances that sense of achievement.
+                The “Start Watching” button immediately tells them that they are ready.
+            </p>
+            <p>
+                Based on our second usability session, we got feedback from users how user-friendly the welcome page was and that were able to anticipate what followed after “Start.” For the ending page, we received user insights stating that it “makes me feel like I
+                am done and ready to start!” and that it gives an “end point” and feels “completed.” One user expressed disappointment of not being able to go back and change their answers in case they changed their mind. In response, we added a “Go Back”
+                button.
+            </p>
+        </div>
+
+        <div class="image" id="userflow">
+            <img src="images/userflow.png" alt="userflow">
+            <figcaption>Personalization User Flow</figcaption>
+        </div>
+
+
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle"> Establishing Hierarchy through Spatial Clarity </h2>
+        </div>
+
+        <div class="image" id="subgenre">
+            <img src="images/subgenre.png" alt="sub-genre changes">
+            <figcaption>Before and After</figcaption>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <p>
+                Our first prototype included an onboarding process of inputting username and then ranking genre preferences. After usability testing for that prototype, we noticed that many of our users liked the personalization process of the home page. However, we
+                found that many of our users did not enjoy how the onboarding seemed short – it was only two screens. It felt like an abrupt stop soon after they had started the personalization. With this feedback, we decided to expand the personalization
+                process. One of the screens we implemented was a sub-genre page for users to choose other topics they were interested in watching. This sub-genre page from the Beta Prototype got a lot of useful feedback in improving both the UI and UX.
+            </p>
+
+            <p>
+                The UX issue was that asking the user to choose only three topics felt very limiting and to some, stressful. The users felt as if they had to “sacrifice” some choices if they liked more than three topics. As a result, it requires the user to stall longer
+                on this page and think deeply what their final 3 choices are. We acknowledged this unsettling feeling, so for the final prototype we removed the limit and user can select as many as they want.
+            </p>
+
+            <p>Regarding the UI issues, we received feedback that the circles themselves appeared congested and busy. The users felt the need to look carefully and read every choice– which was very tedious. Users also commented that the dark color of the
+                icon lacked contrast and blended with the background color. Considering hierarchy of the information, this lack of contrast didn't convey to users that the icons were significant. The icons were added to allow recognition over recall to
+                speed up decision making and indicate that they are significant, so this was an issue we had to address. </p>
+
+            <p>In response, we changed the color of the icons to be a very light shade of blue – its brighter color allows for a stark contrast against the background. The text is also repositioned below the circle, so the circle holds only the icon. This
+                allows a greater emphasis on the icon and makes it very clean and easy to see. As pictorial images communicate faster than words, users can look at the icons first and can read the text below for clarification. </p>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle"> Increasing User Inclusiveness </h2>
+        </div>
+        <div class="image" id="cultural">
+            <img src="images/cultural.png" alt="Cultural Preferences Changes">
+            <figcaption>Before and After</figcaption>
+        </div>
+
+        <div class="main-textbox alpha-text">
+
+            <p>One of the other newly added steps we added following our Alpha usability testing was a screen called the “Cultural Preferences” page, for users to choose movies and films of various cultures.
+
+                <p>The Cultural Preferences page was perhaps our most criticized page during our Beta Usability Tests. This was our first time implementing this new page and gained much useful information. Our users told us that if they had the choice to,
+                    they would have skipped this page altogether. They knew that the page hadn’t been full developed, but the question was why. Why would they skip this page?
+                </p>
+
+                <p>
+                    First, we found out that the Cultural Preference choices the UI and UX designers had chosen did not accurately depict what “culture” was. In the page, we included options such as Asia, Bollywood, Dance, and Soap Operas. One of the reasons we found was
+                    that the options were very limited. The cultures were limited to Asia, Bollywood, and Western movies. But what did these mean? Some of our users didn’t want the entirety of Asian movies. They wanted to have Chinese movies in their
+                    personalized home screen, but not Japanese movies. What did Western Movies indicate? Was it Western culture, or American Western Cowboy movies? The choices Soap Opera, Dance, and Decades seemed out of place for our users as well.
+                </p>
+
+                <p>
+                    In order to fix our choices and make sure our users were getting the choices they desired, we decided to send out a survey asking people what type of cultures they would enjoy watching. The survey was a multiple-choice survey displaying as many different
+                    cultures we could think of, while also providing another option to let users type out their own culture preferences. After three days, we received many results, and analyzed the data.
+                </p>
+
+                <p>
+                    Our top eight choices for culture preferences were Korean, Chinese, Japanese, European, Italian, Spanish/Latin, French, and a tie between Hispanic and East Asian. We decided to take away the choices “European” and “East Asian” because they were too broad,
+                    while also consisting of the top choices, for example Japanese, Chinese, Italian, etc. We also decided to take away Hispanic since it was closely related to Spanish/Latin. To offer more diversity, we chose to include Bollywood and
+                    African, which were at 9th and 10th place. In the end we had the following Cultural Preferences thanks to a very useful survey: Japanese, Chinese, Korean, Italian, French, Spanish/Latin, African, and Bollywood.</p>
+        </div>
+
+
+        <div class="main-textbox alpha-text">
+            <p>Another way we promoted user inclusivity was through our age page. This page is something we had added after the alpha stage because users had given us feedback that the onboarding process seemed a bit short and rushed. We decided to add a
+                page for age, since this is a typical page of a setup process. Our main purpose and vision for this page was to tailor and filter out movie age restrictions based on the user’s age. For instance, movie guidelines have common age restrictions
+                of PG-13, G, etc. With that in mind, we set the age range options to be “Below 13,” “Between 13 and 17,” and “Above 18.” The general comments we received after implementing this page was that the age ranges seemed limited. If a user fell
+                far outside of an age range, they felt less included. One example is if one our users was 53 years old, they felt awkward just selecting the “Above 18” option. There was also feedback to eliminate the spelled-out words and simply use symbols,
+                since that is visually faster and easier to process. Because the user’s experience is our priority, we decided to add more age ranges. The new options we added are: -12 years old, 12-17 years old, 18-40 years old, 40-65 years old, and
+                65+ years old. </p>
+        </div>
+
+    </div>
+
+    <!-- Microinteractions and Onward -->
+
+    <div class="alpha" id="code">
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle">Micro-Interactions</h2>
+        </div>
+
+        <div class="microinteraction">
+            <div class="image">
+                <img src="gif/ranking.gif" alt="Ranking">
+                <figcaption>Genre Ranking</figcaption>
+            </div>
+            <div class="image">
+                <img src="gif/carousel.gif" alt="Carousel">
+                <figcaption>Carousel</figcaption>
+            </div>
+            <div class="image">
+                <img src="gif/ranking.gif" alt="Sub-Gnre">
+                <figcaption>Sub-Genre</figcaption>
+            </div>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <p>In order to add some user engagement to our app, we incorporated some interactions to our screens. These implementations allowed our users to select options, explore content areas, and interact with our pages.
+            </p>
+
+            <p>One of the micro interaction features we decided to build was an interaction where options are draggable, to create an interactive ranking function. This feature was for our ranking genre page, where users are asked to rank their favorite
+                genres from 1-8. The affordance of three lines on each option indicated to users that this was something that they could click, drag, and arrange how they desired. This was a feature we added early on in our development, so we were able
+                to receive feedback and improve the interaction throughout. We received positive feedback about this interaction, and many users said it was seamless and worked as expected. It was also clear and intuitive, and lined up with the purpose
+                of the page. Some of the suggestions we received was to make the animation smoother, limit the range of draggable movement so that the options “snapped” into place, and to add more weight to it in order to give some user feedback. This
+                was addressed and improved, and now the option selected also becomes enlarged when it is dragged to the desired position.</p>
+
+            <p>Another micro interaction we included in our beta testing phase is a scrolling carousel area on our home page. This shows featured films and movies and allows users to explore. To do this, users can click the dots below the thumbnails or drag
+                and scroll through the carousel. The thumbnail of the featured content becomes bigger once it is shown in the center of the screen. Users liked the concept of this feature, however some did not know that they could physically drag the
+                images at first. This was probably due to the prototype being on a browser instead of on a mobile device. We made the thumbnails that were partially hidden peek from the sides so that users could tell that there were more films to view.
+                This helped them know that it was a slideshow.
+            </p>
+        </div>
+
+
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle"> Reordering the Top Navigation Bar Categories </h2>
+
+            <p>In the process of designing and making sure that the users felt like each item on the app was intuitive, we realized not everything about UX was about how easy it is to see buttons, or to automatically tell a user how to use a page. We realized
+                that it also dealt with users' own mental models of how an application is laid out. We were curious to see whether the Top Navigation bar was organized the way that users would want to see it. We knew we shouldn’t order the Top Navigation
+                bar based on what we assumed would be the users’ choices. In order to produce an accurate order for the menu navigation, we decided to perform a card sort on several of our users. </p>
+            <p> There were several different methods we used to perform the card sort virtually. One was using Post-It notes, writing down the different Navigation options. The user then looked through the screen and told the Usability Tester how they wanted
+                to order it, why, and what they thought each option meant. The second option was similar, but instead of using Post It notes, a Figma file was created where the Tester shared their screen and ordered the digital cards. </p>
+            <p>When analyzing the data, we found differences in our Navigation bar and how the users expected it. The order that we found from analyzing the data showed: For You, Prime, TV Shows, Originals, and Movies. We found that this order slightly different
+                from what we thought the order was. This taught us that we should not assume anything when designing for our users. Each little thing must be tested and can be easily researched in order to learn more about the user and to make the user’s
+                experience that much better. </p>
+        </div>
+
+        <div class="image" id="nav">
+            <img src="images/top_nav.jpg" alt="topnav">
+            <figcaption>Top Nav</figcaption>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle">Becoming More Explicit for Naming Categories </h2>
+            <p>In addition to details like menu navigation, we wanted to make the best user experience with how we went about naming things too. The wording of the different categories in the homepage really matters to users, and we realized this when users
+                posed several questions about what these categories really meant.
+            </p>
+            <p>For example, the first row after the featured movies carousel is a “Prime Picks” section we added that displays films/shows generated based on the users taste so users can have something to start off with. The concerns we got from our usability
+                testing, however, was users were confused whether it’s Prime Picks tailored to specifically the user or just a default Prime Picks that everyone sees in their own account. To clarify this, we changed the category from “Prime Picks” to
+                “Prime Picks For You.” Being clear and explicit is more important than whether the wording is too lengthy, as having a short and ambiguous title can leave some users with more frustration. Similar to the “Prime Picks” section, “Actors/Actresses”
+                was also ambiguous for some users, so we changed it to “Recommended Actors.”
+            </p>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle">Changing the Bottom Navigation </h2>
+            <p>A problem we faced very early on in the process of implementing the design into a web-based app was how to get the user back to the beginning of the critical path. The process of our critical path starts where you create your very own page
+                and ends at your very own personalized page. We needed the user to be able to start the entire process again once they ended up at their home page.
+            </p>
+            <p>First, we decided to link our first page to the critical path to our “Home” icon. We soon realized that it didn’t make sense for the user to click onto the Home Icon to create a brand-new profile. Instead of guessing where we should have linked
+                the first page of the critical path, we decided to leave it be and see what would happen if we asked users to create a brand-new profile starting at the home page.
+            </p>
+            <p>During our Alpha Usability Test, we asked users how they would go back and create a brand-new profile. Each time we did, users selected the “My Stuff” icon. They explained that they didn’t think the Home Icon would make sense because that
+                is where they were at that moment. It would make more sense to go to the My Stuff icon because that was the most intuitive for them. Whenever they create a new profile for any application, users said that they would get to anything that
+                seemed like their own profile settings, and then proceeding to tap onto it. From there, they would usually expect for there to be another screen or pop up to say if they want to logout, go to settings, or anything of that sort. We took
+                that information into consideration and then linked the first page of the critical path to the “My Stuff” icon. </p>
+            <p>Unfortunately, due to the short time constraints and the scope of the project, we were not able to create another page for the users to access in order to get to their My Stuff page. In the essence of time, we decided to just link the first
+                critical path page directly to the My Stuff icon. </p>
+            <p>During our Beta test, we once again tested users to see if they would go towards the My Stuff icon. We assumed that they would reach for the My Stuff icon, according to our Alpha Test results. We saw that during our Beta test, each user reached
+                for the My Stuff Icon in order to create a brand-new profile. From analyzing our results, we also realized that we had to change the wording of “My Stuff” to “My Profile.” Each time users tried to search for a way back, they always said
+                that they were trying to find a way to getto their own profile pages. Simply labeling the icon as My Profile was straightforward and more intuitive for the user to see. </p>
+        </div>
+
+
+        <div class="image" id="nav">
+            <img src="images/bottom_nav.jpg" alt="bottomnav">
+            <figcaption>Bottom Nav</figcaption>
+        </div>
+
+    </div>
+
+
+
+    <div class="alpha" id="challenges">
+        <div class="alpha-header">
+            <p>Backend</p>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <h2 id="subtitle2">Database Implementation </h2>
+        </div>
+        <div class="main-textbox alpha-text">
+            <p>Database Implementation for this project was made simple by our team’s collaboration. Our Data Architects collected the content and put it into a spreadsheet, so all backend had to do was download the spreadsheet as a CSV file and create a
+                local database in MySQL, from which to import into a remote database. Creating our individual local databases was our main challenge, but as a team we were able to meet and walk through the proper steps to create a consistent local database
+                and table structure for reference. </p>
+            <p>Our database’s main purpose was to import categorized photos into the home page. To do this we began by linking the code to the remote database. This was done using a config php file that contained credentials for accessing the database. In
+                our home.php file, where we planned on implementing the pulled categorized photos, we linked the config file in a php statement along with a database table query that located the correct table in the database with the image file name information.
+                Our plan saw that the images should be sorted by genre, so we located the code that pulled the static images into the homepage and began to augment them with php statements. We created a variable for genre that selected all forms from
+                the table where the genre equaled the desired genre to be displayed. That variable was then connected to a result variable that contained a MySQL query for the connection to our database. The next step had us create a while loop where
+                the result variable would be fetched and was attributed to a row variable. That row variable was echoes within the html to write out the thumbnail image names to be displayed on the page. The results were then freed, and the process was
+                copied and pasted for each genre we displayed. After our last database code, we added php to close the connection to the database. </p>
+        </div>
+
+        <!-- This Photo Needs to be CHANGED! -->
+
+        <div class="image" id="database">
+            <img src="images/idm216_php-code.png" alt="PHP Code">
+            <figcaption>PHP Code</figcaption>
+        </div>
+
+        <div class="main-textbox alpha-text">
+            <p>When faced with this challenge, coders were able meet as a group and troubleshoot the issue to work towards a solution. This was one of our team’s greatest strengths. Whenever we were faced with a challenge or issue, our teammates were quick
+                to hop on calls and offer help. It was a very collaborative space, as we all were willing to ask questions work toward solutions together. There was a clear balance between all members, and a willingness to help outside of our own roles.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="alpha" id="solution">
+        <div class="alpha-header">
+            <p>Solutions</p>
+        </div>
+        <div class="main-textbox alpha-text" id="final_prod">
+            <h2 id="subtitle3">THE FINAL PRODUCT </h2>
+            <p>Looking at our project overall, we made considerable changes and improvement to our critical path. We added and implemented various features to create an engaging and personalized experience for our users. We relied heavily on data and feedback
+                from our usability testing phases to push us towards continuous iterations and revisions. These revisions drove us to expand our user personalization process to create a process that was overall more complete. By adding pages for age,
+                genre selection, and cultural preferences, we were able to hone in on and include more user interests. These would then help the user’s home page be specifically tailored according to the choices they had made. We also considered the user
+                during the personalization flow by implementing a progress bar so that they would know how far along they were in the process and how much they had left. In addition to that, we created additional screens to give users the ability to skip
+                by clicking “maybe later” or to “go back” in case they wanted to revise their responses. These same screens also increased user emotions through animations like a hand wave, welcoming them to their new profile or letting them know they
+                completed the process successfully. </p>
+            <p>User experience design methods governed our design thinking throughout this project. Some highlights from these methods aside from our usability testing sessions include using card sorting and surveying potential users. We wanted to make sure
+                we were designing our product in a way that is intuitive to our users. We used a card sorting technique to pull responses about the order of our navigation structure. From it, we received helpful feedback which we used to restructure our
+                menu. Another form of user experience we used was through creating and sending out a survey. This was to promote user inclusivity for our cultural preferences, and we implemented the categories based on those comments.</p>
+            <p>Lastly, we knew even little details should be clear to our users. With that in mind, we revised the names of our categories to avoid confusion on the personalization aspect of the product. We also changed the “My Stuff” page to “My Profile”
+                and made the critical path start from that page instead of the home.</p>
+            <p>All in all, our final product is enhanced with setup personalization, micro interactions, and more clarity for a smooth and pleasant experience that tailors watch suggestions for each user.</p>
+        </div>
+
+    </div>
+
+    <div class="main-textbox" id="end">
+        <p class="title">The Results</p>
+        <p id="center"><b>Check out the final Prime Video App by clicking on the blob!</b></p>
+    </div>
+
+    <div class="result-link">
+
+        <a href="http://www.dolmayangchensherpa.com/idm216/final/index.php" target="_blank">
+            <div class="blob">
+                <div></div>
+                <p>Prime Video</p>
+            </div>
+        </a>
+
+    </div>
+    
+    <div class="main-textbox">
+        
+        <a class="github" id="team_link" href="https://github.com/mikaylalisiy/idm216-teamproject" target="_blank">
+            <div id="team_button">
+                <b>Github Repo</b>
+            </div>
+        </a>
+
+        <p>
+            Our implementation of the Amazon Prime App was an overall success. We were able to code out the mobile based app, including micro-interactions, front-end, and back-end coding. The critical path that we chose was fully implemented, and we added some new
+            redesigns into the critical path as well. Each week we were able to dedicate our time to further redesign the app, performing a variety of different usability tests and making weekly updates to code out the entire mobile-based application.
+            If we were to further develop this application in the future, we would make sure that all our micro interactions would be able to be functional when in a phone simulator instead of just having it function when the browser is sized down. </p>
+        <p>During this project, our team faced the challenge of meeting during COVID-19 as well as having a team member with a 13-hour time difference. We overcame this challenge and met each week as a team at times that worked for all of us, as well as
+            separate meetings amongst different members to make sure that our app was developed for its greatest potential. </p>
+    </div>
+
+
+</body>
+
+</html>
