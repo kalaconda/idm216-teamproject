@@ -500,22 +500,26 @@ h2.num {
 }
 
 /* icons */
-.genrebtn #subgenreicon {
+.subgenreicon {
     width: 50px;
     height: 50px;
 }
 
+
 /* hide dark svg */
-#subiconshow {
+.subiconshow {
     display: none;
 }
 
 /* on active button, show dark svg, hide light svg */
-#subiconshow.active {
-    display: show;
+.subiconshow.active {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
 }
 
-#subgenreicon.active {
+.subgenreicon.active {
     display: none;
 }
 
@@ -535,8 +539,9 @@ h2.num {
 }
 
 
+
 .alignitems p {
-    color: white;
+    color: #C1DAF3;
     padding-bottom: 10px;
     padding-top: 5px;
     font-size: 13px;
