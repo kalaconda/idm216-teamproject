@@ -14,6 +14,12 @@
 </head>
 <body>
 
+<?php
+session_set_cookie_params(['samesite' => 'None']);
+// ini_set('session.cookie_samesite', 'Lax');
+session_start();
+?>
+
     <!-- Screen Orientation Change Alert -->
     <div class="screen_change">
                 <img src="images/rotatephonealert.svg" alt="">
