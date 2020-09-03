@@ -9,8 +9,11 @@
 </head>
 <body>
 <?php 
+session_set_cookie_params(['samesite' => 'None']);
+ini_set('session.cookie_samesite', 'Lax');
 session_start();
 $_SESSION['enteryourname'] = $_GET['enteryourname'];
+// echo $_SESSION['enteryourname'];
 ?>
 
     <!-- Screen Orientation Change Alert -->
