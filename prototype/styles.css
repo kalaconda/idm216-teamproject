@@ -142,12 +142,20 @@ Container for h3 and category horizontal scroll */
     padding-left: 27px;
     overflow-x: scroll;
 }
-
 .thumbnail img{
     width: 180px;
     height: 100px;
     margin: 0 0.5em;
 }
+.scroll.active{
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+.scroll img{
+    pointer-events: none;
+    user-select: none;
+}
+
 
 /* to remove scrollbar bar but keep functionality */
 .thumbnail::-webkit-scrollbar {
